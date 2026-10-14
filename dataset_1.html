@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+        <link rel="canonical" href="https://pages.nist.gov/Agentic-SI-in-AM/dataset_1.html">
+    <meta property="og:url" content="https://pages.nist.gov/Agentic-SI-in-AM/dataset_1.html">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
     <link rel="stylesheet" href="style.css">
@@ -110,7 +112,7 @@
     <div class="container">
         <h1>Benchmarking dataset</h1>
         <p>
-            This section provides a collection of diverse AM datasets that can be used for benchmarking AI models. 
+            This section provides a collection of diverse AM datasets that can be used for benchmarking SI models. 
         </p>
         
 
@@ -163,7 +165,7 @@
         <a href="https://github.com/nowrin0102/AM-dataset-for-AI/tree/main" class="button" target="_blank">View Repository</a>
 
         
-        <h1>AI Chatbot</h1>
+        <h1>SI Chatbot</h1>
         <div id="chatbox"></div>
         <div>
             <input id="userInput" type="text">
@@ -181,7 +183,7 @@
                 chatbox.innerHTML += `<div class='message user'>${input}</div>`;
                 document.getElementById("userInput").value = "";
 
-                // Get the AI response
+                // Get the SI response
                 let reply = await getAIResponse(input);
                 chatbox.innerHTML += `<div class='message bot'>${reply}</div>`;
                 chatbox.
@@ -209,7 +211,7 @@
                 });
 
                 if (!response.ok) {
-                    console.error("Error fetching AI response:", response.statusText);
+                    console.error("Error fetching SI response:", response.statusText);
                     return "Sorry, I couldn't process your request.";
                 }
 
