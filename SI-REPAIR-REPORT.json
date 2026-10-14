@@ -1,0 +1,286 @@
+{
+  "html_pages": 32,
+  "text_nodes_changed": 764,
+  "attribute_changes": 58,
+  "links_fixed": 162,
+  "broken_before": [
+    [
+      "sections/tutorials/benchmarking-tools.html",
+      "benchmarking-metrics.html"
+    ],
+    [
+      "sections/tutorials/benchmarking-tools.html",
+      "benchmarking-metrics.html"
+    ],
+    [
+      "sections/tutorials/index.html",
+      "benchmarking-metrics.html"
+    ],
+    [
+      "sections/tutorials/index.html",
+      "benchmarking-metrics.html"
+    ],
+    [
+      "sections/tutorials/prompt-engineering.html",
+      "benchmarking-metrics.html"
+    ],
+    [
+      "sections/AI Agent/index.html",
+      "industry-applications.html"
+    ],
+    [
+      "sections/AI Agent/agent-application-design.html",
+      "genai-agents.html"
+    ],
+    [
+      "sections/resources/index.html",
+      "tools.html"
+    ],
+    [
+      "sections/resources/index.html",
+      "learning-resources.html"
+    ],
+    [
+      "sections/resources/index.html",
+      "tools.html"
+    ],
+    [
+      "sections/resources/index.html",
+      "learning-resources.html"
+    ],
+    [
+      "sections/resources/datasets.html",
+      "../tutorials/benchmarking-metrics.html"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "genai-agents.html"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "industry-applications.html"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "industry-applications.html#aerospace"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "industry-applications.html#medical"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "industry-applications.html#automotive"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "industry-applications.html"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "genai-agents.html"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "genai-agents.html"
+    ],
+    [
+      "sections/case-studies/agent-foundation.html",
+      "genai-agents.html"
+    ],
+    [
+      "sections/case-studies/agent-foundation.html",
+      "genai-agents.html"
+    ],
+    [
+      "sections/case-studies/agent-foundation.html",
+      "genai-agents.html"
+    ],
+    [
+      "sections/AM_dataset/datasets.html",
+      "../tutorials/benchmarking-metrics.html"
+    ],
+    [
+      "sections/AM_dataset/datasets.html",
+      "index.html"
+    ],
+    [
+      "sections/AM_dataset/datasets.html",
+      "tools.html"
+    ],
+    [
+      "sections/Miscellaneous/index.html",
+      "tools.html"
+    ],
+    [
+      "sections/Miscellaneous/index.html",
+      "learning-resources.html"
+    ],
+    [
+      "sections/Miscellaneous/index.html",
+      "datasets.html"
+    ],
+    [
+      "sections/core-technologies/index.html",
+      "sections/intro/index_nowrin.html"
+    ],
+    [
+      "sections/core-technologies/index.html",
+      "sections/core-technologies/index.html"
+    ],
+    [
+      "sections/core-technologies/index.html",
+      "sections/tutorials/index.html"
+    ],
+    [
+      "sections/core-technologies/index.html",
+      "sections/case-studies/index.html"
+    ],
+    [
+      "sections/core-technologies/index.html",
+      "generative-ai-models.html"
+    ],
+    [
+      "sections/core-technologies/index.html",
+      "fine-tuning.html"
+    ],
+    [
+      "sections/core-technologies/index.html",
+      "generative-ai-models.html"
+    ],
+    [
+      "sections/core-technologies/index.html",
+      "fine-tuning.html"
+    ],
+    [
+      "sections/core-technologies/foundation-models.html",
+      "generative-ai-models.html"
+    ],
+    [
+      "sections/core-technologies/foundation-models.html",
+      "fine-tuning.html"
+    ],
+    [
+      "sections/core-technologies/foundation-models.html",
+      "generative-ai-models.html"
+    ],
+    [
+      "sections/Develop AI models/what-is-genai.html",
+      "benefits-in-am.html"
+    ],
+    [
+      "sections/Develop AI models/benchmarking-metrics.html",
+      "benchmarking-tools.html"
+    ],
+    [
+      "sections/Develop AI models/benchmarking-metrics.html",
+      "prompt-engineering.html"
+    ],
+    [
+      "sections/Develop AI models/Fine_tune.html",
+      "foundation-models.html"
+    ],
+    [
+      "sections/Develop AI models/Fine_tune.html",
+      "generative-ai-models.html"
+    ],
+    [
+      "sections/Develop AI models/Fine_tune.html",
+      "fine-tuning.html"
+    ],
+    [
+      "sections/Develop AI models/Fine_tune.html",
+      "fine-tuning.html"
+    ],
+    [
+      "sections/Develop AI models/Fine_tune.html",
+      "foundation-models.html"
+    ],
+    [
+      "sections/Develop AI models/current-landscape.html",
+      "benefits-in-am.html"
+    ],
+    [
+      "sections/Develop AI models/current-landscape.html",
+      "benefits-in-am.html"
+    ]
+  ],
+  "unresolved_after": [],
+  "missing_anchors": [
+    [
+      "sections/tutorials/index.html",
+      "basics",
+      "sections/tutorials/prompt-engineering.html"
+    ],
+    [
+      "sections/tutorials/index.html",
+      "domain",
+      "sections/tutorials/prompt-engineering.html"
+    ],
+    [
+      "sections/tutorials/index.html",
+      "iterative",
+      "sections/tutorials/prompt-engineering.html"
+    ],
+    [
+      "sections/AI Agent/index.html",
+      "agent-foundation",
+      "sections/AI Agent/index.html"
+    ],
+    [
+      "sections/AI Agent/index.html",
+      "agentinam",
+      "sections/AI Agent/index.html"
+    ],
+    [
+      "sections/resources/index.html",
+      "design",
+      "sections/resources/datasets.html"
+    ],
+    [
+      "sections/resources/index.html",
+      "process",
+      "sections/resources/datasets.html"
+    ],
+    [
+      "sections/resources/index.html",
+      "quality",
+      "sections/resources/datasets.html"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "aerospace",
+      "sections/case-studies/index.html"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "medical",
+      "sections/case-studies/index.html"
+    ],
+    [
+      "sections/case-studies/index.html",
+      "automotive",
+      "sections/case-studies/index.html"
+    ],
+    [
+      "sections/AM_dataset/datasets.html",
+      "golden-dataset",
+      "sections/AM_dataset/datasets.html"
+    ],
+    [
+      "sections/AM_dataset/datasets.html",
+      "contribute",
+      "sections/AM_dataset/datasets.html"
+    ]
+  ],
+  "remaining_ai_pages": [
+    "sections/tutorials/benchmarking-tools.html"
+  ],
+  "missing_anchor_targets_replaced": 13,
+  "empty_anchor_links_fixed": 13,
+  "remaining_visible_ai_pages": [],
+  "preserved_code_identifiers": [
+    "genai_am_bench"
+  ],
+  "notes": "Original filenames containing AI are retained for URL compatibility. Text in code examples and official third-party URLs remains unchanged. The static link audit does not establish browser interactivity."
+}
