@@ -1,0 +1,19 @@
+{
+  "build": "SI-SUBPAGES-20261014-v2",
+  "html_pages": 32,
+  "visible_ai_pages": [],
+  "example_pages": {
+    "sections/Develop AI models/index_nowrin.html": {
+      "visible_ai_count": 0,
+      "sha256": "51d1670b06320bde0cbe4661e67bc12e29436e1d1dfffcf7448fbe5ddf747f73"
+    },
+    "sections/AI Agent/index.html": {
+      "visible_ai_count": 0,
+      "sha256": "efd69025e7bc92a33c994409103b81c6f4780018cfd0f0dacf8b348f2cc596c6"
+    },
+    "sections/AM_dataset/datasets.html": {
+      "visible_ai_count": 0,
+      "sha256": "9c0bc87e1ea430a375c971e343999b48ce709d4277356ef54b41493e5571e96f"
+    }
+  }
+}
