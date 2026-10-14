@@ -1,182 +1,158 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-        <link rel="canonical" href="https://pages.nist.gov/Agentic-SI-in-AM/">
-    <meta property="og:url" content="https://pages.nist.gov/Agentic-SI-in-AM/">
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore SI in Additive Manufacturing - Educational resources for understanding and implementing SI in manufacturing and 3D printing">
-    <title>Agentic SI for AM</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet">
+<link href="https://pages.nist.gov/Agentic-SI-in-AM/" rel="canonical"/>
+<meta content="https://pages.nist.gov/Agentic-SI-in-AM/" property="og:url"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore SI in Additive Manufacturing - Educational resources for understanding and implementing SI in manufacturing and 3D printing" name="description"/>
+<title>Agentic SI for AM</title>
+<!-- Stylesheets -->
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/components.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <span>SI in AM</span>
-            </a>
-            
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-            
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="sections/Agentic SI/index.html">Agentic SI for AM</a></li>
-                    <li><a href="sections/Develop SI models/index_nowrin.html">SI Models Development</a></li>
-                    <li><a href="sections/SI Agent/index.html">SI Agent</a></li>
-                    <li><a href="sections/AM_dataset/datasets.html">Data For SI</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Super Intelligence (SI) in Additive Manufacturing (AM)</h1>
-                        <p>Explore the intersection of SI and 3D printing technologies. Learn how SI is revolutionizing design, optimization, and production in AM.</p>
-                        <div class="hero-buttons">
-                            <a href="sections/intro/index.html" class="btn btn-lg">Get Started</a>
-                            <!-- <a href="sections/resources/index.html" class="btn btn-outline btn-lg">Explore Resources</a> -->
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <img src="images/header-image_new.png" alt="SI in Additive Manufacturing" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Introduction Overview (Basic Level) -->
-        <section class="container content-section" data-level="basic">
-            <h2>Overview</h2>
-            <p>SI models are rapidly evolving fields with transformative potential for AM. This educational platform provides structured resources to help you understand, implement, and benefit from these technologies.</p>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">What is SI?</h3>
-                        <p class="card-text">Learn about Super Intelligence models, including generative SI, their capabilities, and fundamental principles that drive this technology.</p>
-                        <a href="sections/Develop SI models/what-is-gensi.html" class="btn">Learn More</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Benefits in AM</h3>
-                        <p class="card-text">Discover how SI can enhance additive manufacturing through improved design, optimization, and production processes.</p>
-                        <a href="sections/Develop SI models/benefits-in-am_new.html" class="btn">Explore Benefits</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Current Landscape</h3>
-                        <p class="card-text">Get a comprehensive overview of the current state of SI applications in the additive manufacturing industry.</p>
-                        <a href="sections/intro/current-landscape.html" class="btn">View Landscape</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Understanding SI Concepts in AM -->
-        <section class="container content-section" data-level="intermediate">
-            <h2>Understanding SI Concepts in AM</h2>
-            <p>To effectively apply SI in additive manufacturing, it's important to understand how different SI concepts relate to each other:</p>
-
-            <div class="card-grid">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Foundation Models</h3>
-                        <p class="card-text">A large-scale, general-purpose SI model pre-trained on massive and diverse datasets using heavy computing resources. It serves as a foundation that can be adapted or fine-tuned for many downstream tasks (generation, classification, search, reasoning). Includes LLMs, vision, audio, and multimodal models.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Generative SI Models</h3>
-                        <p class="card-text">An SI model that creates new content — text, images, audio, video, or code — rather than only classifying or predicting. Most modern generative SI is built on top of foundation models, but smaller standalone generative models (e.g., early GANs) also exist.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Agentic SI</h3>
-                        <p class="card-text">An SI system that autonomously plans, reasons, and executes multi-step tasks to achieve goals. It uses a generative/foundation model as its reasoning engine, but adds tool use, memory, and decision-making loops so it can act in real environments, not just produce content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <p><strong>How They Work Together:</strong> Foundation models provide the underlying capabilities. Generative SI models build upon these to create new AM-specific content. Agentic SI systems use both foundation and generative models to autonomously perform complex manufacturing tasks.</p>
-        </section>
-
-        <!-- Main Areas of Focus (Intermediate Level) -->
-        <section class="container content-section" data-level="intermediate">
-            <h2>Main Areas of Focus</h2>
-            <p>Our content is structured into four comprehensive sections, each addressing different aspects of SI in AM:</p>
-
-            <div class="card-grid">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Agentic SI for AM</h3>
-                        <p class="card-text">Explore autonomous SI systems that can plan, reason, and execute complex manufacturing tasks in additive manufacturing.</p>
-                        <a href="sections/Agentic SI/index.html" class="btn">Explore</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">SI Models Development</h3>
-                        <p class="card-text">Explore foundation models and other SI models for additive manufacturing applications.</p>
-                        <a href="sections/Develop SI models/index_nowrin.html" class="btn">Explore</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">SI Agent</h3>
-                        <p class="card-text">Learn about SI agent components, architectures, and control mechanisms for manufacturing systems.</p>
-                        <a href="sections/SI Agent/index.html" class="btn">Explore</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Data For SI</h3>
-                        <p class="card-text">Access essential datasets, benchmarks, and evaluation metrics for SI in additive manufacturing.</p>
-                        <a href="sections/AM_dataset/datasets.html" class="btn">Explore</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Details (Advanced Level) -->
-        <!-- <section class="container content-section" data-level="advanced">
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav><ul class="nav-links"><li><a href="sections/Agentic%20SI/index.html">Agentic SI for AM</a></li><li><a href="sections/Develop%20SI%20models/index_nowrin.html">SI Models Development</a></li><li><a href="sections/SI%20Agent/index.html">SI Agent</a></li><li><a href="sections/AM_dataset/datasets.html">Data for SI</a></li></ul></nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Super Intelligence (SI) in Additive Manufacturing (AM)</h1>
+<p>Explore the intersection of SI and 3D printing technologies. Learn how SI is revolutionizing design, optimization, and production in AM.</p>
+<div class="hero-buttons">
+<a class="btn btn-lg" href="sections/intro/index.html">Get Started</a>
+<!-- <a href="sections/resources/index.html" class="btn btn-outline btn-lg">Explore Resources</a> -->
+</div>
+</div>
+<div class="hero-image">
+<img alt="SI in Additive Manufacturing" height="300" src="images/header-image_new.png" width="500"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Introduction Overview (Basic Level) -->
+<section class="container content-section" data-level="basic">
+<h2>Overview</h2>
+<p>SI models are rapidly evolving fields with transformative potential for AM. This educational platform provides structured resources to help you understand, implement, and benefit from these technologies.</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">What is SI?</h3>
+<p class="card-text">Learn about Super Intelligence models, including generative SI, their capabilities, and fundamental principles that drive this technology.</p>
+<a class="btn" href="sections/Develop%20SI%20models/what-is-gensi.html">Learn More</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Benefits in AM</h3>
+<p class="card-text">Discover how SI can enhance additive manufacturing through improved design, optimization, and production processes.</p>
+<a class="btn" href="sections/Develop%20SI%20models/benefits-in-am_new.html">Explore Benefits</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Current Landscape</h3>
+<p class="card-text">Get a comprehensive overview of the current state of SI applications in the additive manufacturing industry.</p>
+<a class="btn" href="sections/intro/current-landscape.html">View Landscape</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Understanding SI Concepts in AM -->
+<section class="container content-section" data-level="intermediate">
+<h2>Understanding SI Concepts in AM</h2>
+<p>To effectively apply SI in additive manufacturing, it's important to understand how different SI concepts relate to each other:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Foundation Models</h3>
+<p class="card-text">A large-scale, general-purpose SI model pre-trained on massive and diverse datasets using heavy computing resources. It serves as a foundation that can be adapted or fine-tuned for many downstream tasks (generation, classification, search, reasoning). Includes LLMs, vision, audio, and multimodal models.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Generative SI Models</h3>
+<p class="card-text">An SI model that creates new content — text, images, audio, video, or code — rather than only classifying or predicting. Most modern generative SI is built on top of foundation models, but smaller standalone generative models (e.g., early GANs) also exist.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Agentic SI</h3>
+<p class="card-text">An SI system that autonomously plans, reasons, and executes multi-step tasks to achieve goals. It uses a generative/foundation model as its reasoning engine, but adds tool use, memory, and decision-making loops so it can act in real environments, not just produce content.</p>
+</div>
+</div>
+</div>
+<p><strong>How They Work Together:</strong> Foundation models provide the underlying capabilities. Generative SI models build upon these to create new AM-specific content. Agentic SI systems use both foundation and generative models to autonomously perform complex manufacturing tasks.</p>
+</section>
+<!-- Main Areas of Focus (Intermediate Level) -->
+<section class="container content-section" data-level="intermediate">
+<h2>Main Areas of Focus</h2>
+<p>Our content is structured into four comprehensive sections, each addressing different aspects of SI in AM:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Agentic SI for AM</h3>
+<p class="card-text">Explore autonomous SI systems that can plan, reason, and execute complex manufacturing tasks in additive manufacturing.</p>
+<a class="btn" href="sections/Agentic%20SI/index.html">Explore</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">SI Models Development</h3>
+<p class="card-text">Explore foundation models and other SI models for additive manufacturing applications.</p>
+<a class="btn" href="sections/Develop%20SI%20models/index_nowrin.html">Explore</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">SI Agent</h3>
+<p class="card-text">Learn about SI agent components, architectures, and control mechanisms for manufacturing systems.</p>
+<a class="btn" href="sections/SI%20Agent/index.html">Explore</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Data For SI</h3>
+<p class="card-text">Access essential datasets, benchmarks, and evaluation metrics for SI in additive manufacturing.</p>
+<a class="btn" href="sections/AM_dataset/datasets.html">Explore</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Details (Advanced Level) -->
+<!-- <section class="container content-section" data-level="advanced">
             <h2>Developing SI Models for AM</h2>
             <p>To explore and develop foundation models for AM, researchers should follow a structured approach. Below are the key steps in this journey:</p>
             
@@ -200,54 +176,47 @@
                     <p>When prompt engineering is insufficient, model fine-tuning with AM-specific datasets is required for improved accuracy and domain adaptation.</p>
                 </div>
             </div> -->
-            
-            <!-- <div class="text-center mt-5">
+<!-- <div class="text-center mt-5">
                 <a href="sections/core-technologies/foundation-models.html" class="btn btn-lg">Explore Foundation Models</a>
             </div>
         </section> -->
-        
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>SI in AM</h3>
-                    <p>An educational resource designed to introduce and guide users into SI applications within the additive manufacturing.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="sections/Agentic SI/index.html">Agentic SI for AM</a></li>
-                        <li><a href="sections/Develop SI models/index_nowrin.html">SI Models Development</a></li>
-                        <li><a href="sections/SI Agent/index.html">SI Agent</a></li>
-                        <li><a href="sections/AM_dataset/datasets.html">Data For SI</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> SI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/search.js"></script>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-section">
+<h3>SI in AM</h3>
+<p>An educational resource designed to introduce and guide users into SI applications within the additive manufacturing.</p>
+</div>
+<div class="footer-section">
+<h3>Quick Links</h3>
+<ul class="footer-links">
+<li><a href="sections/Agentic%20SI/index.html">Agentic SI for AM</a></li>
+<li><a href="sections/Develop%20SI%20models/index_nowrin.html">SI Models Development</a></li>
+<li><a href="sections/SI%20Agent/index.html">SI Agent</a></li>
+<li><a href="sections/AM_dataset/datasets.html">Data For SI</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>References</h3>
+<ul class="footer-links">
+<li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+<p>© <script>document.write(new Date().getFullYear())</script> SI in Additive Manufacturing. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Scripts -->
+<script src="js/main.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/search.js"></script>
 </body>
 </html>
