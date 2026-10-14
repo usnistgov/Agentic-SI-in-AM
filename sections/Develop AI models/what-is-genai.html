@@ -1,143 +1,128 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Understanding what is Generative AI (AI) and its fundamental concepts in the context of additive manufacturing">
-    <title>What is AI? | Introduction to AI in Additive Manufacturing</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Understanding what is Generative SI (SI) and its fundamental concepts in the context of additive manufacturing" name="description"/>
+<title>What is SI? | Introduction to SI in Additive Manufacturing</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
-            
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-            
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../Develop AI models/index_nowrin.html">Develop AI model</a></li>
-                    <li><a href="../AI Agent/index.html">AI Agent</a></li>
-                    <li><a href="../AM_dataset/datasets.html">Resources</a></li>
-                    <li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <!-- <li><a href="index.html">Introduction</a></li> -->
-                    <li><span class="current">What is AI?</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section (Basic Introduction) -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>What is Generative AI?</h1>
-                        <p>Understanding the foundations of generative artificial intelligence and how it differs from traditional AI approaches.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/general.jpg" alt="Generative AI Concept" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">On This Page</h2>
-                    <ul class="toc-list">
-                        <li><a href="#definition">Definition & Overview</a></li>
-                        <li><a href="#vs-traditional">AI vs. Traditional AI</a></li>
-                        <li><a href="#types">Types of Generative AI</a></li>
-                        <li><a href="#foundation-models">Foundation Models</a></li>
-                        <li><a href="#am-applications">Applications in AM</a></li>
-                        <li><a href="#technical-details">Technical Details</a></li>
-                    </ul>
-                </div>
-                
-                <div class="section-navigation">
-                    <h3>Related Topics</h3>
-                    <ul class="toc-list">
-                        <li><a href="benefits-in-am.html">Benefits in AM</a></li>
-                        <li><a href="current-landscape.html">Current Landscape</a></li>
-                        <li><a href="../core-technologies/foundation-models.html">Foundation Models</a></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Definition (Basic Level) -->
-                <section class="content-section" data-level="basic" id="definition">
-                    <h2>Definition & Overview</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>Generative Artificial Intelligence (AI) refers to a category of AI systems designed to create new content, rather than simply analyze or categorize existing data. These systems can generate various types of media, including text, images, 3D models, music, and more.</p>
-                    
-                    <p>At its core, generative AI works by learning patterns from existing data and then using those patterns to create new, original content that has similar characteristics to the training data but isn't simply copying it.</p>
-                    
-                    <div class="key-points">
-                        <h3>Key Characteristics of AI:</h3>
-                        <ul>
-                            <li><strong>Content Creation:</strong> Generates new content that didn't exist before</li>
-                            <li><strong>Pattern Recognition:</strong> Identifies and learns patterns from training data</li>
-                            <li><strong>Probabilistic Approach:</strong> Creates content based on probability distributions</li>
-                            <li><strong>Creativity:</strong> Can produce innovative and unexpected results</li>
-                            <li><strong>Adaptability:</strong> Can be fine-tuned for specific domains or applications</li>
-                        </ul>
-                    </div>
-                </section>
-                
-                <!-- AI vs Traditional AI (Basic Level) -->
-                <section class="content-section" data-level="basic" id="vs-traditional">
-                    <h2>AI vs. Traditional AI</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>To understand generative AI, it's helpful to compare it with traditional AI approaches:</p>
-                    
-                    <div class="table-responsive" style="max-width: 100%; overflow-x: auto; font-family: Arial, sans-serif;">
-                        <style>
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav>
+<ul class="nav-links">
+<li><a href="../Develop AI models/index_nowrin.html">Develop SI model</a></li>
+<li><a href="../AI Agent/index.html">SI Agent</a></li>
+<li><a href="../AM_dataset/datasets.html">Resources</a></li>
+<li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<!-- <li><a href="index.html">Introduction</a></li> -->
+<li><span class="current">What is SI?</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section (Basic Introduction) -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>What is Generative SI?</h1>
+<p>Understanding the foundations of generative super intelligence and how it differs from traditional SI approaches.</p>
+</div>
+<div class="hero-image">
+<img alt="Generative SI Concept" height="300" src="../../images/general.jpg" width="500"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">On This Page</h2>
+<ul class="toc-list">
+<li><a href="#definition">Definition &amp; Overview</a></li>
+<li><a href="#vs-traditional">SI vs. Traditional SI</a></li>
+<li><a href="#types">Types of Generative SI</a></li>
+<li><a href="#foundation-models">Foundation Models</a></li>
+<li><a href="#am-applications">Applications in AM</a></li>
+<li><a href="#technical-details">Technical Details</a></li>
+</ul>
+</div>
+<div class="section-navigation">
+<h3>Related Topics</h3>
+<ul class="toc-list">
+<li><a href="../intro/benefits-in-am.html">Benefits in AM</a></li>
+<li><a href="current-landscape.html">Current Landscape</a></li>
+<li><a href="../core-technologies/foundation-models.html">Foundation Models</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Definition (Basic Level) -->
+<section class="content-section" data-level="basic" id="definition">
+<h2>Definition &amp; Overview</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>Generative Super Intelligence (SI) refers to a category of SI systems designed to create new content, rather than simply analyze or categorize existing data. These systems can generate various types of media, including text, images, 3D models, music, and more.</p>
+<p>At its core, generative SI works by learning patterns from existing data and then using those patterns to create new, original content that has similar characteristics to the training data but isn't simply copying it.</p>
+<div class="key-points">
+<h3>Key Characteristics of SI:</h3>
+<ul>
+<li><strong>Content Creation:</strong> Generates new content that didn't exist before</li>
+<li><strong>Pattern Recognition:</strong> Identifies and learns patterns from training data</li>
+<li><strong>Probabilistic Approach:</strong> Creates content based on probability distributions</li>
+<li><strong>Creativity:</strong> Can produce innovative and unexpected results</li>
+<li><strong>Adaptability:</strong> Can be fine-tuned for specific domains or applications</li>
+</ul>
+</div>
+</section>
+<!-- AI vs Traditional AI (Basic Level) -->
+<section class="content-section" data-level="basic" id="vs-traditional">
+<h2>SI vs. Traditional SI</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>To understand generative SI, it's helpful to compare it with traditional SI approaches:</p>
+<div class="table-responsive" style="max-width: 100%; overflow-x: auto; font-family: Arial, sans-serif;">
+<style>
                             table {
                                 width: 100%;
                                 border-collapse: separate;
@@ -160,192 +145,161 @@
                                 margin-bottom: 5px;
                             }
                         </style>
-                    
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Aspect</th>
-                                    <th>Traditional AI</th>
-                                    <th>Generative AI</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Primary Function</strong></td>
-                                    <td>Analysis, prediction, classification of existing data</td>
-                                    <td>Creation of new content based on patterns</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Output</strong></td>
-                                    <td>Decisions, predictions, categories</td>
-                                    <td>New text, images, designs, 3D models, etc.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Common Applications</strong></td>
-                                    <td>Fraud detection, recommendation systems, diagnostics</td>
-                                    <td>Design creation, content generation, simulation</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Training Approach</strong></td>
-                                    <td>Often supervised learning with labeled data</td>
-                                    <td>Self-supervised or unsupervised learning on large datasets</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Model Architecture</strong></td>
-                                    <td>Varies widely (decision trees, neural networks, etc.)</td>
-                                    <td>Often based on complex architectures like transformers, GANs, diffusion models</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    
-                    <p>Both approaches have value in additive manufacturing, but generative AI opens up new possibilities for design and optimization that weren't previously possible.</p>
-                </section>
-                
-                <!-- Types of Generative AI (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="types">
-                    <h2>Types of Generative AI</h2>
-                    <!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
-                    
-                    <p>Generative AI encompasses several model architectures and approaches, each with distinct characteristics and applications in additive manufacturing:</p>
-                    
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Large Language Models (LLMs)</h3>
-                                <p class="card-text">Text-focused AI systems like GPT-4 that can generate natural language, code, and even CAD descriptions. In AM, these can help with documentation, process planning, and even generating design specifications.</p>
-                                <p class="card-text"><strong>Examples:</strong> GPT-4, Claude, LLaMA</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Diffusion Models</h3>
-                                <p class="card-text">Models that gradually add and then remove noise from data to generate high-quality images. In AM, these can be adapted to generate 3D designs or optimized part topologies.</p>
-                                <p class="card-text"><strong>Examples:</strong> Stable Diffusion, DALL-E</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Generative Adversarial Networks (GANs)</h3>
-                                <p class="card-text">Two-network systems where one generates content and another evaluates it. Useful for creating realistic simulations of AM processes or generating new material structures.</p>
-                                <p class="card-text"><strong>Examples:</strong> StyleGAN, 3D-GAN</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Variational Autoencoders (VAEs)</h3>
-                                <p class="card-text">Neural networks that learn to encode data into a compressed representation and then decode it. Valuable for generating new designs that share characteristics with existing ones.</p>
-                                <p class="card-text"><strong>Examples:</strong> 3D-VAE, PointFlow</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Foundation Models (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="foundation-models">
-                    <h2>Foundation Models</h2>
-                    <!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
-                    
-                    <p>Foundation models are large-scale AI models trained on vast amounts of data using self-supervised learning techniques. They serve as the basis for many generative AI applications and can be fine-tuned for specific tasks.</p>
-                    
-                    <h3>Characteristics of Foundation Models:</h3>
-                    <ul>
-                        <li><strong>Scale:</strong> Trained on extremely large datasets with billions of parameters</li>
-                        <li><strong>Self-Supervised Learning:</strong> Learn without extensive labeled data</li>
-                        <li><strong>Transferability:</strong> Can be adapted to multiple downstream tasks</li>
-                        <li><strong>Emergence:</strong> Exhibit capabilities that weren't explicitly programmed</li>
-                    </ul>
-                    
-                    <h3>From Foundation Models to AM Applications:</h3>
-                    <p>Foundation models provide a starting point that can be adapted to additive manufacturing through several approaches:</p>
-                    
-                    <div class="two-column">
-                        <div>
-                            <h4>Zero-Shot Learning</h4>
-                            <p>Using the model directly without additional training, relying on its existing knowledge to perform AM-related tasks.</p>
-                            
-                            <h4>Few-Shot Learning</h4>
-                            <p>Providing a few examples in the prompt to guide the model toward the desired output format or style for AM applications.</p>
-                        </div>
-                        
-                        <div>
-                            <h4>Fine-Tuning</h4>
-                            <p>Additional training on AM-specific datasets to adapt the model to the manufacturing domain.</p>
-                            
-                            <h4>Retrieval-Augmented Generation (RAG)</h4>
-                            <p>Combining the model with a knowledge base of AM information to improve accuracy and relevance.</p>
-                        </div>
-                    </div>
-                    
-                    <a href="../core-technologies/foundation-models.html" class="btn">Explore Foundation Models in Detail</a>
-                </section>
-                
-                <!-- Applications in AM (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="am-applications">
-                    <h2>Applications in Additive Manufacturing</h2>
-                    <!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
-                    
-                    <p>Generative AI is finding numerous applications throughout the additive manufacturing workflow:</p>
-                    
-                    <div class="application-timeline">
-                        <div class="timeline-item">
-                            <h3>Design Generation</h3>
-                            <p>Creating new 3D designs from text descriptions, reference images, or functional requirements. AI can generate multiple design alternatives that meet specified constraints.</p>
-                            <p><strong>Example:</strong> Generating lightweight bracket designs based on load requirements and material constraints.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h3>Topology Optimization</h3>
-                            <p>Optimizing part designs for specific manufacturing processes, material usage, and performance criteria.</p>
-                            <p><strong>Example:</strong> Creating lattice structures that minimize material while maintaining structural integrity.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h3>Process Parameter Prediction</h3>
-                            <p>Recommending optimal printing parameters based on part geometry, material properties, and quality requirements.</p>
-                            <p><strong>Example:</strong> Determining ideal laser power, speed, and pattern for a metal AM part.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h3>In-Process Monitoring</h3>
-                            <p>Analyzing real-time sensor data to detect anomalies and predict defects during the printing process.</p>
-                            <p><strong>Example:</strong> Identifying potential layer delamination based on thermal camera data.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h3>Post-Processing Optimization</h3>
-                            <p>Generating strategies for finishing operations based on part requirements and current state.</p>
-                            <p><strong>Example:</strong> Determining optimal heat treatment cycles for specific metal alloys.</p>
-                        </div>
-                    </div>
-                    
-                    <a href="../case-studies/index.html" class="btn">Explore Real-World Case Studies</a>
-                </section>
-                
-                <!-- Technical Details (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="technical-details">
-                    <h2>Technical Details</h2>
-                    <!-- <span class="complexity-badge complexity-advanced">Advanced</span> -->
-                    
-                    <p>Understanding the technical foundations of generative AI helps in effectively applying these technologies to additive manufacturing problems:</p>
-                    
-                    <h3>Transformer Architecture</h3>
-                    <p>Many modern generative AI models are built on the transformer architecture, which uses self-attention mechanisms to process sequential data. This allows models to understand context and relationships within the data.</p>
-                    
-                    <h3>Attention Mechanisms</h3>
-                    <p>Attention mechanisms allow models to focus on different parts of the input when generating each element of the output. This is crucial for maintaining coherence in generated content.</p>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Self-Attention Mechanism (Simplified)</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code>def self_attention(query, key, value):
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Traditional SI</th>
+<th>Generative SI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary Function</strong></td>
+<td>Analysis, prediction, classification of existing data</td>
+<td>Creation of new content based on patterns</td>
+</tr>
+<tr>
+<td><strong>Output</strong></td>
+<td>Decisions, predictions, categories</td>
+<td>New text, images, designs, 3D models, etc.</td>
+</tr>
+<tr>
+<td><strong>Common Applications</strong></td>
+<td>Fraud detection, recommendation systems, diagnostics</td>
+<td>Design creation, content generation, simulation</td>
+</tr>
+<tr>
+<td><strong>Training Approach</strong></td>
+<td>Often supervised learning with labeled data</td>
+<td>Self-supervised or unsupervised learning on large datasets</td>
+</tr>
+<tr>
+<td><strong>Model Architecture</strong></td>
+<td>Varies widely (decision trees, neural networks, etc.)</td>
+<td>Often based on complex architectures like transformers, GANs, diffusion models</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Both approaches have value in additive manufacturing, but generative SI opens up new possibilities for design and optimization that weren't previously possible.</p>
+</section>
+<!-- Types of Generative AI (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="types">
+<h2>Types of Generative SI</h2>
+<!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
+<p>Generative SI encompasses several model architectures and approaches, each with distinct characteristics and applications in additive manufacturing:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Large Language Models (LLMs)</h3>
+<p class="card-text">Text-focused SI systems like GPT-4 that can generate natural language, code, and even CAD descriptions. In AM, these can help with documentation, process planning, and even generating design specifications.</p>
+<p class="card-text"><strong>Examples:</strong> GPT-4, Claude, LLaMA</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Diffusion Models</h3>
+<p class="card-text">Models that gradually add and then remove noise from data to generate high-quality images. In AM, these can be adapted to generate 3D designs or optimized part topologies.</p>
+<p class="card-text"><strong>Examples:</strong> Stable Diffusion, DALL-E</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Generative Adversarial Networks (GANs)</h3>
+<p class="card-text">Two-network systems where one generates content and another evaluates it. Useful for creating realistic simulations of AM processes or generating new material structures.</p>
+<p class="card-text"><strong>Examples:</strong> StyleGAN, 3D-GAN</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Variational Autoencoders (VAEs)</h3>
+<p class="card-text">Neural networks that learn to encode data into a compressed representation and then decode it. Valuable for generating new designs that share characteristics with existing ones.</p>
+<p class="card-text"><strong>Examples:</strong> 3D-VAE, PointFlow</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Foundation Models (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="foundation-models">
+<h2>Foundation Models</h2>
+<!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
+<p>Foundation models are large-scale SI models trained on vast amounts of data using self-supervised learning techniques. They serve as the basis for many generative SI applications and can be fine-tuned for specific tasks.</p>
+<h3>Characteristics of Foundation Models:</h3>
+<ul>
+<li><strong>Scale:</strong> Trained on extremely large datasets with billions of parameters</li>
+<li><strong>Self-Supervised Learning:</strong> Learn without extensive labeled data</li>
+<li><strong>Transferability:</strong> Can be adapted to multiple downstream tasks</li>
+<li><strong>Emergence:</strong> Exhibit capabilities that weren't explicitly programmed</li>
+</ul>
+<h3>From Foundation Models to AM Applications:</h3>
+<p>Foundation models provide a starting point that can be adapted to additive manufacturing through several approaches:</p>
+<div class="two-column">
+<div>
+<h4>Zero-Shot Learning</h4>
+<p>Using the model directly without additional training, relying on its existing knowledge to perform AM-related tasks.</p>
+<h4>Few-Shot Learning</h4>
+<p>Providing a few examples in the prompt to guide the model toward the desired output format or style for AM applications.</p>
+</div>
+<div>
+<h4>Fine-Tuning</h4>
+<p>Additional training on AM-specific datasets to adapt the model to the manufacturing domain.</p>
+<h4>Retrieval-Augmented Generation (RAG)</h4>
+<p>Combining the model with a knowledge base of AM information to improve accuracy and relevance.</p>
+</div>
+</div>
+<a class="btn" href="../core-technologies/foundation-models.html">Explore Foundation Models in Detail</a>
+</section>
+<!-- Applications in AM (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="am-applications">
+<h2>Applications in Additive Manufacturing</h2>
+<!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
+<p>Generative SI is finding numerous applications throughout the additive manufacturing workflow:</p>
+<div class="application-timeline">
+<div class="timeline-item">
+<h3>Design Generation</h3>
+<p>Creating new 3D designs from text descriptions, reference images, or functional requirements. SI can generate multiple design alternatives that meet specified constraints.</p>
+<p><strong>Example:</strong> Generating lightweight bracket designs based on load requirements and material constraints.</p>
+</div>
+<div class="timeline-item">
+<h3>Topology Optimization</h3>
+<p>Optimizing part designs for specific manufacturing processes, material usage, and performance criteria.</p>
+<p><strong>Example:</strong> Creating lattice structures that minimize material while maintaining structural integrity.</p>
+</div>
+<div class="timeline-item">
+<h3>Process Parameter Prediction</h3>
+<p>Recommending optimal printing parameters based on part geometry, material properties, and quality requirements.</p>
+<p><strong>Example:</strong> Determining ideal laser power, speed, and pattern for a metal AM part.</p>
+</div>
+<div class="timeline-item">
+<h3>In-Process Monitoring</h3>
+<p>Analyzing real-time sensor data to detect anomalies and predict defects during the printing process.</p>
+<p><strong>Example:</strong> Identifying potential layer delamination based on thermal camera data.</p>
+</div>
+<div class="timeline-item">
+<h3>Post-Processing Optimization</h3>
+<p>Generating strategies for finishing operations based on part requirements and current state.</p>
+<p><strong>Example:</strong> Determining optimal heat treatment cycles for specific metal alloys.</p>
+</div>
+</div>
+<a class="btn" href="../case-studies/index.html">Explore Real-World Case Studies</a>
+</section>
+<!-- Technical Details (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="technical-details">
+<h2>Technical Details</h2>
+<!-- <span class="complexity-badge complexity-advanced">Advanced</span> -->
+<p>Understanding the technical foundations of generative SI helps in effectively applying these technologies to additive manufacturing problems:</p>
+<h3>Transformer Architecture</h3>
+<p>Many modern generative SI models are built on the transformer architecture, which uses self-attention mechanisms to process sequential data. This allows models to understand context and relationships within the data.</p>
+<h3>Attention Mechanisms</h3>
+<p>Attention mechanisms allow models to focus on different parts of the input when generating each element of the output. This is crucial for maintaining coherence in generated content.</p>
+<div class="code-block">
+<div class="code-header">
+<span>Self-Attention Mechanism (Simplified)</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code>def self_attention(query, key, value):
     # Calculate attention scores
     scores = query @ key.transpose(-2, -1)
     
@@ -359,100 +313,88 @@
     output = weights @ value
     
     return output</code></pre>
-                        </div>
-                    </div>
-                    
-                    <h3>Training Strategies</h3>
-                    <p>AI models for AM often require specialized training approaches:</p>
-                    
-                    <ul>
-                        <li><strong>Transfer Learning:</strong> Starting with a general model and adapting it to AM-specific tasks</li>
-                        <li><strong>Domain Adaptation:</strong> Techniques to bridge the gap between general data and AM-specific applications</li>
-                        <li><strong>Data Augmentation:</strong> Generating synthetic training examples to improve model robustness</li>
-                        <li><strong>Multi-modal Training:</strong> Combining different data types (text, images, 3D models) for comprehensive understanding</li>
-                    </ul>
-                    
-                    <h3>Evaluation Metrics</h3>
-                    <p>Assessing the performance of AI models in AM requires specialized metrics:</p>
-                    
-                    <ul>
-                        <li><strong>Geometric Accuracy:</strong> How closely the generated designs match specifications</li>
-                        <li><strong>Functional Performance:</strong> How well the generated designs fulfill their intended function</li>
-                        <li><strong>Manufacturability:</strong> Whether the designs can be successfully printed</li>
-                        <li><strong>Material Efficiency:</strong> Optimization of material usage while maintaining performance</li>
-                        <li><strong>Novelty and Diversity:</strong> The originality and variety of generated designs</li>
-                    </ul>
-                </section>
-                
-                <!-- Pagination -->
-                <div class="pagination">
-                    <a href="../../index.html" class="pagination-item pagination-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                        </svg>
-                        <div>
-                            <div class="pagination-label">Previous</div>
-                            <div class="pagination-title">Home</div>
-                        </div>
-                    </a>
-                    
-                    <a href="benefits-in-am_new.html" class="pagination-item pagination-next">
-                        <div>
-                            <div class="pagination-label">Next</div>
-                            <div class="pagination-title">Benefits in AM</div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="../Develop AI models/index_nowrin.html">Develop AI model</a></li>
-                        <li><a href="../AI Agent/index.html">AI Agent</a></li>
-                        <li><a href="../AM_dataset/datasets.html">Resources</a></li>
-                        <li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+</div>
+</div>
+<h3>Training Strategies</h3>
+<p>SI models for AM often require specialized training approaches:</p>
+<ul>
+<li><strong>Transfer Learning:</strong> Starting with a general model and adapting it to AM-specific tasks</li>
+<li><strong>Domain Adaptation:</strong> Techniques to bridge the gap between general data and AM-specific applications</li>
+<li><strong>Data Augmentation:</strong> Generating synthetic training examples to improve model robustness</li>
+<li><strong>Multi-modal Training:</strong> Combining different data types (text, images, 3D models) for comprehensive understanding</li>
+</ul>
+<h3>Evaluation Metrics</h3>
+<p>Assessing the performance of SI models in AM requires specialized metrics:</p>
+<ul>
+<li><strong>Geometric Accuracy:</strong> How closely the generated designs match specifications</li>
+<li><strong>Functional Performance:</strong> How well the generated designs fulfill their intended function</li>
+<li><strong>Manufacturability:</strong> Whether the designs can be successfully printed</li>
+<li><strong>Material Efficiency:</strong> Optimization of material usage while maintaining performance</li>
+<li><strong>Novelty and Diversity:</strong> The originality and variety of generated designs</li>
+</ul>
+</section>
+<!-- Pagination -->
+<div class="pagination">
+<a class="pagination-item pagination-prev" href="../../index.html">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+<div>
+<div class="pagination-label">Previous</div>
+<div class="pagination-title">Home</div>
+</div>
+</a>
+<a class="pagination-item pagination-next" href="benefits-in-am_new.html">
+<div>
+<div class="pagination-label">Next</div>
+<div class="pagination-title">Benefits in AM</div>
+</div>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-section">
+<h3>SI in Additive Manufacturing</h3>
+<p>An educational resource designed to introduce and guide users into generative SI applications within the additive manufacturing/3D printing industry.</p>
+</div>
+<div class="footer-section">
+<h3>Quick Links</h3>
+<ul class="footer-links">
+<li><a href="../Develop AI models/index_nowrin.html">Develop SI model</a></li>
+<li><a href="../AI Agent/index.html">SI Agent</a></li>
+<li><a href="../AM_dataset/datasets.html">Resources</a></li>
+<li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>References</h3>
+<ul class="footer-links">
+<li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+<p>© <script>document.write(new Date().getFullYear())</script> SI in Additive Manufacturing. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>

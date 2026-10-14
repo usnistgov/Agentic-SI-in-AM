@@ -1,265 +1,235 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prompt Engineering for Additive Manufacturing - Learn effective techniques to craft prompts for AI models in AM applications">
-    <title>Prompt Engineering for Additive Manufacturing | Tutorials</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Prompt Engineering for Additive Manufacturing - Learn effective techniques to craft prompts for SI models in AM applications" name="description"/>
+<title>Prompt Engineering for Additive Manufacturing | Tutorials</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
-            
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-            
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../intro/index.html">Introduction</a></li>
-                    <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                    <li><a href="../tutorials/index.html" class="active">Tutorials</a></li>
-                    <li><a href="../case-studies/index.html">Case Studies</a></li>
-                    <li><a href="../resources/index.html">Resources</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="index.html">Tutorials</a></li>
-                    <li><span class="current">Prompt Engineering</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Prompt Engineering for Additive Manufacturing</h1>
-                        <p>Master the art of crafting effective prompts to get optimal responses from AI models for AM-specific tasks and applications.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/defect.png" alt="Prompt Engineering for AM" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">On This Page</h2>
-                    <ul class="toc-list">
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#importance">Importance in AM</a></li>
-                        <li><a href="#techniques">Prompt Techniques</a></li>
-                        <li><a href="#zero-shot">Zero-Shot Prompting</a></li>
-                        <li><a href="#few-shot">Few-Shot Learning</a></li>
-                        <li><a href="#chain-of-thought">Chain-of-Thought</a></li>
-                        <li><a href="#react">ReAct Prompting</a></li>
-                        <li><a href="#directional">Directional Stimulus</a></li>
-                        <li><a href="#am-applications">AM Applications</a></li>
-                    </ul>
-                </div>
-                
-                <div class="section-navigation">
-                    <h3>Related Topics</h3>
-                    <ul class="toc-list">
-                        <li><a href="benchmarking-metrics.html">Benchmarking Metrics</a></li>
-                        <li><a href="../case-studies/agent-foundation.html">Agent Foundations</a></li>
-                        <li><a href="../resources/datasets.html">AM Datasets</a></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Overview (Basic Level) -->
-                <section class="content-section" data-level="basic" id="overview">
-                    <h2>Understanding Prompt Engineering</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>Prompt engineering is the practice of crafting effective inputs to generative AI models to produce desired outputs. Getting the desired output from AI relies heavily on how prompts are formulated, as incorrect or ineffective prompts can lead to unexpected or suboptimal responses.</p>
-                    
-                    <div class="key-points">
-                        <h3>Key Concepts:</h3>
-                        <ul>
-                            <li><strong>Prompt Design:</strong> Strategies for structuring inputs to elicit optimal responses</li>
-                            <li><strong>Context Setting:</strong> Providing relevant background information to frame the AI's response</li>
-                            <li><strong>Specificity:</strong> Balancing detailed instructions with room for AI creativity</li>
-                            <li><strong>Format Control:</strong> Guiding the format and structure of the AI's output</li>
-                            <li><strong>Domain-Specific Language:</strong> Using AM terminology to improve response relevance</li>
-                        </ul>
-                    </div>
-                    
-                    <p>In this tutorial, we explore five popular prompt engineering techniques: Zero-shot, Few-shot, Chain-of-thought, ReAct, and Directional Stimulus Prompting. We'll demonstrate how these techniques can be applied to address specific AM challenges and tasks.</p>
-                </section>
-                
-                <!-- Importance in AM (Basic Level) -->
-                <section class="content-section" data-level="basic" id="importance">
-                    <h2>Importance of Prompt Engineering in AM</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>Effective prompt engineering is particularly important in additive manufacturing due to the technical complexity, domain-specific terminology, and multi-faceted nature of AM challenges. Well-crafted prompts can dramatically improve the quality, accuracy, and usefulness of AI outputs for AM applications.</p>
-                    
-                    <div class="two-column">
-                        <div>
-                            <h3>Challenges in AM Prompting</h3>
-                            <ul>
-                                <li><strong>Technical Complexity:</strong> AM involves intricate processes, materials, and design considerations</li>
-                                <li><strong>Domain Terminology:</strong> Specialized vocabulary that AI models may not perfectly understand</li>
-                                <li><strong>Multi-Parameter Problems:</strong> AM tasks often involve multiple interrelated variables</li>
-                                <li><strong>Visual Elements:</strong> Many AM issues require understanding of visual information</li>
-                                <li><strong>Precision Requirements:</strong> AM applications often need highly specific, actionable information</li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h3>Benefits of Good Prompting</h3>
-                            <ul>
-                                <li><strong>More Accurate Responses:</strong> Better alignment with AM-specific knowledge</li>
-                                <li><strong>Reduced Iterations:</strong> Getting useful answers with fewer back-and-forth exchanges</li>
-                                <li><strong>Better Problem Solving:</strong> More effective analytical approaches to AM challenges</li>
-                                <li><strong>Clearer Communication:</strong> Well-structured information that's easier to apply</li>
-                                <li><strong>Consistent Results:</strong> More reliable responses across similar queries</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="example-box">
-                        <h4>Example: Impact of Prompt Quality</h4>
-                        <div class="example-content">
-                            <div class="prompt-comparison">
-                                <div class="weak-prompt">
-                                    <h5>Weak Prompt:</h5>
-                                    <p>"Help with LPBF printing."</p>
-                                    <p><strong>Result:</strong> Generic information about Laser Powder Bed Fusion with no specific actionable guidance.</p>
-                                </div>
-                                
-                                <div class="strong-prompt">
-                                    <h5>Strong Prompt:</h5>
-                                    <p>"I'm experiencing warping in my Inconel 718 components printed on an EOS M290 LPBF system. The warping occurs primarily at thin-walled sections (2-3mm) with overhanging features. Current parameters: laser power 285W, scan speed 960mm/s, layer height 40μm, and build plate temperature 80°C. Suggest 3 specific parameter modifications to reduce warping, explaining the physical mechanism for each recommendation."</p>
-                                    <p><strong>Result:</strong> Specific, technically accurate recommendations with clear reasoning and implementation guidance.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Prompt Techniques Overview (Basic Level) -->
-                <section class="content-section" data-level="basic" id="techniques">
-                    <h2>Prompt Engineering Techniques</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>Our research explores five effective prompt engineering techniques and their applications to AM-specific tasks. Each technique has different strengths and is suitable for particular types of challenges.</p>
-                    
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Zero-Shot Prompting</h3>
-                                <p class="card-text">Direct instructions without examples, relying on the model's existing knowledge to generate appropriate responses.</p>
-                                <a href="#zero-shot" class="btn">Learn More</a>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Few-Shot Learning</h3>
-                                <p class="card-text">Providing examples of desired inputs and outputs to help the model understand the expected response pattern.</p>
-                                <a href="#few-shot" class="btn">Learn More</a>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Chain-of-Thought</h3>
-                                <p class="card-text">Guiding the model through a step-by-step reasoning process to arrive at a more thorough and logical conclusion.</p>
-                                <a href="#chain-of-thought" class="btn">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">ReAct Prompting</h3>
-                                <p class="card-text">Combining reasoning and acting in an iterative process, allowing the model to collect information and take actions in sequence.</p>
-                                <a href="#react" class="btn">Learn More</a>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Directional Stimulus</h3>
-                                <p class="card-text">Providing specific contextual cues and guidance to direct the model toward particular types of responses.</p>
-                                <a href="#directional" class="btn">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <p>In our study, we systematically evaluated how these different prompt engineering techniques affect the responses of AI tools in addressing AM-specific tasks, measuring factors such as accuracy, specificity, and actionability of the outputs.</p>
-                </section>
-                
-                <!-- Zero-Shot Prompting (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="zero-shot">
-                    <h2>Zero-Shot Prompting</h2>
-                    <!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
-                    
-                    <p>Zero-shot prompting involves giving instructions to the AI model without providing explicit examples of the desired output. This technique relies on the model's pre-trained knowledge to generate appropriate responses.</p>
-                    
-                    <h3>Key Elements of Zero-Shot Prompts</h3>
-                    <ul>
-                        <li><strong>Clear Task Description:</strong> Explicitly state what you want the model to do</li>
-                        <li><strong>Specific Context:</strong> Provide relevant background information</li>
-                        <li><strong>Output Format Instructions:</strong> Specify how the response should be structured</li>
-                        <li><strong>Constraints and Parameters:</strong> Define any limitations or requirements</li>
-                    </ul>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Zero-Shot Prompt Template for AM</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code>Task: [Specific task description]
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav>
+<ul class="nav-links">
+<li><a href="../intro/index.html">Introduction</a></li>
+<li><a href="../core-technologies/index.html">Core Technologies</a></li>
+<li><a class="active" href="../tutorials/index.html">Tutorials</a></li>
+<li><a href="../case-studies/index.html">Case Studies</a></li>
+<li><a href="../resources/index.html">Resources</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="index.html">Tutorials</a></li>
+<li><span class="current">Prompt Engineering</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Prompt Engineering for Additive Manufacturing</h1>
+<p>Master the art of crafting effective prompts to get optimal responses from SI models for AM-specific tasks and applications.</p>
+</div>
+<div class="hero-image">
+<img alt="Prompt Engineering for AM" height="300" src="../../images/defect.png" width="500"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">On This Page</h2>
+<ul class="toc-list">
+<li><a href="#overview">Overview</a></li>
+<li><a href="#importance">Importance in AM</a></li>
+<li><a href="#techniques">Prompt Techniques</a></li>
+<li><a href="#zero-shot">Zero-Shot Prompting</a></li>
+<li><a href="#few-shot">Few-Shot Learning</a></li>
+<li><a href="#chain-of-thought">Chain-of-Thought</a></li>
+<li><a href="#react">ReAct Prompting</a></li>
+<li><a href="#directional">Directional Stimulus</a></li>
+<li><a href="#am-applications">AM Applications</a></li>
+</ul>
+</div>
+<div class="section-navigation">
+<h3>Related Topics</h3>
+<ul class="toc-list">
+<li><a href="../Develop%20AI%20models/benchmarking-metrics.html">Benchmarking Metrics</a></li>
+<li><a href="../case-studies/agent-foundation.html">Agent Foundations</a></li>
+<li><a href="../resources/datasets.html">AM Datasets</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Overview (Basic Level) -->
+<section class="content-section" data-level="basic" id="overview">
+<h2>Understanding Prompt Engineering</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>Prompt engineering is the practice of crafting effective inputs to generative SI models to produce desired outputs. Getting the desired output from SI relies heavily on how prompts are formulated, as incorrect or ineffective prompts can lead to unexpected or suboptimal responses.</p>
+<div class="key-points">
+<h3>Key Concepts:</h3>
+<ul>
+<li><strong>Prompt Design:</strong> Strategies for structuring inputs to elicit optimal responses</li>
+<li><strong>Context Setting:</strong> Providing relevant background information to frame the SI's response</li>
+<li><strong>Specificity:</strong> Balancing detailed instructions with room for SI creativity</li>
+<li><strong>Format Control:</strong> Guiding the format and structure of the SI's output</li>
+<li><strong>Domain-Specific Language:</strong> Using AM terminology to improve response relevance</li>
+</ul>
+</div>
+<p>In this tutorial, we explore five popular prompt engineering techniques: Zero-shot, Few-shot, Chain-of-thought, ReAct, and Directional Stimulus Prompting. We'll demonstrate how these techniques can be applied to address specific AM challenges and tasks.</p>
+</section>
+<!-- Importance in AM (Basic Level) -->
+<section class="content-section" data-level="basic" id="importance">
+<h2>Importance of Prompt Engineering in AM</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>Effective prompt engineering is particularly important in additive manufacturing due to the technical complexity, domain-specific terminology, and multi-faceted nature of AM challenges. Well-crafted prompts can dramatically improve the quality, accuracy, and usefulness of SI outputs for AM applications.</p>
+<div class="two-column">
+<div>
+<h3>Challenges in AM Prompting</h3>
+<ul>
+<li><strong>Technical Complexity:</strong> AM involves intricate processes, materials, and design considerations</li>
+<li><strong>Domain Terminology:</strong> Specialized vocabulary that SI models may not perfectly understand</li>
+<li><strong>Multi-Parameter Problems:</strong> AM tasks often involve multiple interrelated variables</li>
+<li><strong>Visual Elements:</strong> Many AM issues require understanding of visual information</li>
+<li><strong>Precision Requirements:</strong> AM applications often need highly specific, actionable information</li>
+</ul>
+</div>
+<div>
+<h3>Benefits of Good Prompting</h3>
+<ul>
+<li><strong>More Accurate Responses:</strong> Better alignment with AM-specific knowledge</li>
+<li><strong>Reduced Iterations:</strong> Getting useful answers with fewer back-and-forth exchanges</li>
+<li><strong>Better Problem Solving:</strong> More effective analytical approaches to AM challenges</li>
+<li><strong>Clearer Communication:</strong> Well-structured information that's easier to apply</li>
+<li><strong>Consistent Results:</strong> More reliable responses across similar queries</li>
+</ul>
+</div>
+</div>
+<div class="example-box">
+<h4>Example: Impact of Prompt Quality</h4>
+<div class="example-content">
+<div class="prompt-comparison">
+<div class="weak-prompt">
+<h5>Weak Prompt:</h5>
+<p>"Help with LPBF printing."</p>
+<p><strong>Result:</strong> Generic information about Laser Powder Bed Fusion with no specific actionable guidance.</p>
+</div>
+<div class="strong-prompt">
+<h5>Strong Prompt:</h5>
+<p>"I'm experiencing warping in my Inconel 718 components printed on an EOS M290 LPBF system. The warping occurs primarily at thin-walled sections (2-3mm) with overhanging features. Current parameters: laser power 285W, scan speed 960mm/s, layer height 40μm, and build plate temperature 80°C. Suggest 3 specific parameter modifications to reduce warping, explaining the physical mechanism for each recommendation."</p>
+<p><strong>Result:</strong> Specific, technically accurate recommendations with clear reasoning and implementation guidance.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Prompt Techniques Overview (Basic Level) -->
+<section class="content-section" data-level="basic" id="techniques">
+<h2>Prompt Engineering Techniques</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>Our research explores five effective prompt engineering techniques and their applications to AM-specific tasks. Each technique has different strengths and is suitable for particular types of challenges.</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Zero-Shot Prompting</h3>
+<p class="card-text">Direct instructions without examples, relying on the model's existing knowledge to generate appropriate responses.</p>
+<a class="btn" href="#zero-shot">Learn More</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Few-Shot Learning</h3>
+<p class="card-text">Providing examples of desired inputs and outputs to help the model understand the expected response pattern.</p>
+<a class="btn" href="#few-shot">Learn More</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Chain-of-Thought</h3>
+<p class="card-text">Guiding the model through a step-by-step reasoning process to arrive at a more thorough and logical conclusion.</p>
+<a class="btn" href="#chain-of-thought">Learn More</a>
+</div>
+</div>
+</div>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">ReAct Prompting</h3>
+<p class="card-text">Combining reasoning and acting in an iterative process, allowing the model to collect information and take actions in sequence.</p>
+<a class="btn" href="#react">Learn More</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Directional Stimulus</h3>
+<p class="card-text">Providing specific contextual cues and guidance to direct the model toward particular types of responses.</p>
+<a class="btn" href="#directional">Learn More</a>
+</div>
+</div>
+</div>
+<p>In our study, we systematically evaluated how these different prompt engineering techniques affect the responses of SI tools in addressing AM-specific tasks, measuring factors such as accuracy, specificity, and actionability of the outputs.</p>
+</section>
+<!-- Zero-Shot Prompting (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="zero-shot">
+<h2>Zero-Shot Prompting</h2>
+<!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
+<p>Zero-shot prompting involves giving instructions to the SI model without providing explicit examples of the desired output. This technique relies on the model's pre-trained knowledge to generate appropriate responses.</p>
+<h3>Key Elements of Zero-Shot Prompts</h3>
+<ul>
+<li><strong>Clear Task Description:</strong> Explicitly state what you want the model to do</li>
+<li><strong>Specific Context:</strong> Provide relevant background information</li>
+<li><strong>Output Format Instructions:</strong> Specify how the response should be structured</li>
+<li><strong>Constraints and Parameters:</strong> Define any limitations or requirements</li>
+</ul>
+<div class="code-block">
+<div class="code-header">
+<span>Zero-Shot Prompt Template for AM</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code>Task: [Specific task description]
 
 Context: I am working with [AM process] using [material] on [equipment model]. The current parameters are [list relevant parameters].
 
@@ -268,55 +238,49 @@ Requirements: [List any specific constraints or requirements]
 Please provide [specify exactly what you want: e.g., 3 specific recommendations, a step-by-step troubleshooting guide, etc.]
 
 Format your response as [specify desired format: e.g., numbered list, table, etc.]</code></pre>
-                        </div>
-                    </div>
-                    
-                    <div class="example-box">
-                        <h4>Example: Zero-Shot Prompt for Support Structure Design</h4>
-                        <div class="example-content">
-                            <div class="prompt-example">
-                                <p><strong>Prompt:</strong></p>
-                                <p>Task: Design optimal support structures for a complex aerospace bracket.</p>
-                                <p>Context: I am using Ti6Al4V powder on an EOS M290 LPBF system. The bracket has multiple overhanging features at angles between 25-40 degrees from horizontal. The part has thin walls (1.2-2.5mm) and several internal channels.</p>
-                                <p>Requirements: Minimize material usage while ensuring build success. The part will undergo stress relief heat treatment before support removal.</p>
-                                <p>Please provide 5 specific support structure design strategies for this component, explaining the reasoning behind each recommendation.</p>
-                                <p>Format your response as a numbered list with clear headings for each strategy, followed by a brief explanation of the underlying principle and implementation guidance.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3>When to Use Zero-Shot Prompting</h3>
-                    <p>Zero-shot prompting is most effective when:</p>
-                    <ul>
-                        <li>The task is straightforward and commonly encountered in AM</li>
-                        <li>You need a quick response without investing time in creating examples</li>
-                        <li>The AI model has strong baseline knowledge of the AM domain</li>
-                        <li>The output format is simple and well-defined</li>
-                    </ul>
-                </section>
-                
-                <!-- Few-Shot Learning (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="few-shot">
-                    <h2>Few-Shot Learning</h2>
-                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
-                    
-                    <p>Few-shot learning provides the AI with examples of input-output pairs before asking it to respond to a new query. This helps the model understand the expected pattern and format of responses, particularly useful for specialized or uncommon AM tasks.</p>
-                    
-                    <h3>Key Elements of Few-Shot Prompts</h3>
-                    <ul>
-                        <li><strong>Demonstration Examples:</strong> 2-3 examples of input queries and ideal responses</li>
-                        <li><strong>Pattern Consistency:</strong> Examples should follow the same format and reasoning pattern</li>
-                        <li><strong>Relevant Examples:</strong> Examples should be similar to the actual query</li>
-                        <li><strong>Clear Delineation:</strong> Clearly separate examples from the actual query</li>
-                    </ul>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Few-Shot Prompt Template for AM</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code>I'd like you to analyze additive manufacturing process parameters and suggest optimizations.
+</div>
+</div>
+<div class="example-box">
+<h4>Example: Zero-Shot Prompt for Support Structure Design</h4>
+<div class="example-content">
+<div class="prompt-example">
+<p><strong>Prompt:</strong></p>
+<p>Task: Design optimal support structures for a complex aerospace bracket.</p>
+<p>Context: I am using Ti6Al4V powder on an EOS M290 LPBF system. The bracket has multiple overhanging features at angles between 25-40 degrees from horizontal. The part has thin walls (1.2-2.5mm) and several internal channels.</p>
+<p>Requirements: Minimize material usage while ensuring build success. The part will undergo stress relief heat treatment before support removal.</p>
+<p>Please provide 5 specific support structure design strategies for this component, explaining the reasoning behind each recommendation.</p>
+<p>Format your response as a numbered list with clear headings for each strategy, followed by a brief explanation of the underlying principle and implementation guidance.</p>
+</div>
+</div>
+</div>
+<h3>When to Use Zero-Shot Prompting</h3>
+<p>Zero-shot prompting is most effective when:</p>
+<ul>
+<li>The task is straightforward and commonly encountered in AM</li>
+<li>You need a quick response without investing time in creating examples</li>
+<li>The SI model has strong baseline knowledge of the AM domain</li>
+<li>The output format is simple and well-defined</li>
+</ul>
+</section>
+<!-- Few-Shot Learning (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="few-shot">
+<h2>Few-Shot Learning</h2>
+<span class="complexity-badge complexity-intermediate">Intermediate</span>
+<p>Few-shot learning provides the SI with examples of input-output pairs before asking it to respond to a new query. This helps the model understand the expected pattern and format of responses, particularly useful for specialized or uncommon AM tasks.</p>
+<h3>Key Elements of Few-Shot Prompts</h3>
+<ul>
+<li><strong>Demonstration Examples:</strong> 2-3 examples of input queries and ideal responses</li>
+<li><strong>Pattern Consistency:</strong> Examples should follow the same format and reasoning pattern</li>
+<li><strong>Relevant Examples:</strong> Examples should be similar to the actual query</li>
+<li><strong>Clear Delineation:</strong> Clearly separate examples from the actual query</li>
+</ul>
+<div class="code-block">
+<div class="code-header">
+<span>Few-Shot Prompt Template for AM</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code>I'd like you to analyze additive manufacturing process parameters and suggest optimizations.
 
 Example 1:
 Input: FDM printing with PLA, experiencing layer adhesion issues. Current settings: 210°C nozzle temperature, 60°C bed temperature, 50mm/s print speed, 0.2mm layer height.
@@ -338,86 +302,78 @@ Output:
 
 My query:
 Input: [Your actual AM query here with relevant parameters]</code></pre>
-                        </div>
-                    </div>
-                    
-                    <div class="example-box">
-                        <h4>Example: Few-Shot Prompt for Defect Analysis</h4>
-                        <div class="example-content">
-                            <div class="prompt-example">
-                                <p><strong>Partial Prompt (First Example):</strong></p>
-                                <p>Example 1:</p>
-                                <p>Input: LPBF titanium part showing porosity concentrated in thin-walled sections. Pores are spherical and 50-200μm in diameter. Process parameters: 250W laser power, 1000mm/s scan speed, 30μm layer height, 90μm hatch spacing.</p>
-                                <p>Output:</p>
-                                <p><strong>Defect Type:</strong> Gas porosity</p>
-                                <p><strong>Root Cause:</strong> Trapped gas in the powder feedstock or gas entrapment during melting due to excessive energy density</p>
-                                <p><strong>Evidence:</strong> Spherical pore morphology is characteristic of gas porosity. Concentration in thin walls suggests overheating in these regions.</p>
-                                <p><strong>Corrective Actions:</strong></p>
-                                <ol>
-                                    <li>Reduce energy density by decreasing laser power to 220-230W or increasing scan speed to 1100-1200mm/s specifically for thin-walled sections</li>
-                                    <li>Verify powder quality and storage conditions to minimize moisture absorption</li>
-                                    <li>Consider a powder pre-drying step if humidity conditions are not well controlled</li>
-                                    <li>Optimize thin wall scanning strategies with appropriate contour/infill parameters</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3>When to Use Few-Shot Learning</h3>
-                    <p>Few-shot learning is most effective when:</p>
-                    <ul>
-                        <li>The task requires a specific format or structure in the output</li>
-                        <li>You want to ensure consistent reasoning patterns</li>
-                        <li>The task is specialized or uncommon in AM</li>
-                        <li>You have clear examples of ideal responses</li>
-                        <li>Previous zero-shot attempts did not produce satisfactory results</li>
-                    </ul>
-                </section>
-                
-                <!-- Chain-of-Thought (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="chain-of-thought">
-                    <h2>Chain-of-Thought Prompting</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>Chain-of-Thought (CoT) prompting encourages the AI model to break down complex problems into step-by-step reasoning paths. This technique is particularly useful for AM problems that require multi-step analysis or calculations.</p>
-                    
-                    <h3>Key Elements of Chain-of-Thought Prompts</h3>
-                    <ul>
-                        <li><strong>Explicit Instruction:</strong> Direct the model to "think step by step" or "reason through this problem"</li>
-                        <li><strong>Sequential Structure:</strong> Encourage a logical progression of analysis</li>
-                        <li><strong>Decomposition:</strong> Break complex problems into manageable sub-problems</li>
-                        <li><strong>Interim Conclusions:</strong> Include checks and validations at intermediate steps</li>
-                    </ul>
-                    
-                    <div class="two-column">
-                        <div>
-                            <h3>CoT Approaches</h3>
-                            <ul>
-                                <li><strong>Zero-Shot CoT:</strong> Simply adding "Let's think step by step" to encourage reasoning</li>
-                                <li><strong>Few-Shot CoT:</strong> Providing examples of step-by-step reasoning</li>
-                                <li><strong>Self-Consistency CoT:</strong> Generating multiple reasoning paths and taking the most consistent answer</li>
-                                <li><strong>Tree of Thoughts:</strong> Exploring multiple reasoning branches at each step</li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h3>Benefits for AM Applications</h3>
-                            <ul>
-                                <li><strong>Complex Problem Solving:</strong> Better handling of multi-variable AM optimization</li>
-                                <li><strong>Transparency:</strong> Makes the model's reasoning explicit and verifiable</li>
-                                <li><strong>Error Reduction:</strong> Helps catch logical missteps in analysis</li>
-                                <li><strong>Educational Value:</strong> Provides insight into analytical approaches for AM challenges</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Chain-of-Thought Prompt Example for Support Removal</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code>I need to create a support removal strategy for a complex LPBF-printed Inconel 718 heat exchanger with internal channels. The part has multiple support structures in difficult-to-access internal areas.
+</div>
+</div>
+<div class="example-box">
+<h4>Example: Few-Shot Prompt for Defect Analysis</h4>
+<div class="example-content">
+<div class="prompt-example">
+<p><strong>Partial Prompt (First Example):</strong></p>
+<p>Example 1:</p>
+<p>Input: LPBF titanium part showing porosity concentrated in thin-walled sections. Pores are spherical and 50-200μm in diameter. Process parameters: 250W laser power, 1000mm/s scan speed, 30μm layer height, 90μm hatch spacing.</p>
+<p>Output:</p>
+<p><strong>Defect Type:</strong> Gas porosity</p>
+<p><strong>Root Cause:</strong> Trapped gas in the powder feedstock or gas entrapment during melting due to excessive energy density</p>
+<p><strong>Evidence:</strong> Spherical pore morphology is characteristic of gas porosity. Concentration in thin walls suggests overheating in these regions.</p>
+<p><strong>Corrective Actions:</strong></p>
+<ol>
+<li>Reduce energy density by decreasing laser power to 220-230W or increasing scan speed to 1100-1200mm/s specifically for thin-walled sections</li>
+<li>Verify powder quality and storage conditions to minimize moisture absorption</li>
+<li>Consider a powder pre-drying step if humidity conditions are not well controlled</li>
+<li>Optimize thin wall scanning strategies with appropriate contour/infill parameters</li>
+</ol>
+</div>
+</div>
+</div>
+<h3>When to Use Few-Shot Learning</h3>
+<p>Few-shot learning is most effective when:</p>
+<ul>
+<li>The task requires a specific format or structure in the output</li>
+<li>You want to ensure consistent reasoning patterns</li>
+<li>The task is specialized or uncommon in AM</li>
+<li>You have clear examples of ideal responses</li>
+<li>Previous zero-shot attempts did not produce satisfactory results</li>
+</ul>
+</section>
+<!-- Chain-of-Thought (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="chain-of-thought">
+<h2>Chain-of-Thought Prompting</h2>
+<span class="complexity-badge complexity-advanced">Advanced</span>
+<p>Chain-of-Thought (CoT) prompting encourages the SI model to break down complex problems into step-by-step reasoning paths. This technique is particularly useful for AM problems that require multi-step analysis or calculations.</p>
+<h3>Key Elements of Chain-of-Thought Prompts</h3>
+<ul>
+<li><strong>Explicit Instruction:</strong> Direct the model to "think step by step" or "reason through this problem"</li>
+<li><strong>Sequential Structure:</strong> Encourage a logical progression of analysis</li>
+<li><strong>Decomposition:</strong> Break complex problems into manageable sub-problems</li>
+<li><strong>Interim Conclusions:</strong> Include checks and validations at intermediate steps</li>
+</ul>
+<div class="two-column">
+<div>
+<h3>CoT Approaches</h3>
+<ul>
+<li><strong>Zero-Shot CoT:</strong> Simply adding "Let's think step by step" to encourage reasoning</li>
+<li><strong>Few-Shot CoT:</strong> Providing examples of step-by-step reasoning</li>
+<li><strong>Self-Consistency CoT:</strong> Generating multiple reasoning paths and taking the most consistent answer</li>
+<li><strong>Tree of Thoughts:</strong> Exploring multiple reasoning branches at each step</li>
+</ul>
+</div>
+<div>
+<h3>Benefits for AM Applications</h3>
+<ul>
+<li><strong>Complex Problem Solving:</strong> Better handling of multi-variable AM optimization</li>
+<li><strong>Transparency:</strong> Makes the model's reasoning explicit and verifiable</li>
+<li><strong>Error Reduction:</strong> Helps catch logical missteps in analysis</li>
+<li><strong>Educational Value:</strong> Provides insight into analytical approaches for AM challenges</li>
+</ul>
+</div>
+</div>
+<div class="code-block">
+<div class="code-header">
+<span>Chain-of-Thought Prompt Example for Support Removal</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code>I need to create a support removal strategy for a complex LPBF-printed Inconel 718 heat exchanger with internal channels. The part has multiple support structures in difficult-to-access internal areas.
 
 Let's think through this step by step:
 
@@ -440,82 +396,75 @@ Let's think through this step by step:
 5. Finally, let's consider verification methods to ensure all support material has been successfully removed from internal features.
 
 What would be the optimal step-by-step support removal strategy for this component?</code></pre>
-                        </div>
-                    </div>
-                    
-                    <h3>When to Use Chain-of-Thought Prompting</h3>
-                    <p>CoT prompting is most effective for:</p>
-                    <ul>
-                        <li>Complex multi-step AM problems (parameter optimization, defect analysis)</li>
-                        <li>Scenarios requiring calculations or quantitative analysis</li>
-                        <li>Troubleshooting scenarios with multiple potential root causes</li>
-                        <li>Design decisions with competing priorities and constraints</li>
-                        <li>Problems where you need to verify the reasoning process, not just the conclusion</li>
-                    </ul>
-                </section>
-                
-                <!-- ReAct Prompting (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="react">
-                    <h2>ReAct Prompting</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>ReAct (Reasoning + Acting) prompting combines reasoning with simulated actions in an iterative cycle. This technique is particularly useful for complex AM scenarios that require gathering information, making decisions, and executing actions in sequence.</p>
-                    
-                    <h3>Key Elements of ReAct Prompts</h3>
-                    <ul>
-                        <li><strong>Thought-Action-Observation Cycle:</strong> Structured iteration between reasoning and simulated actions</li>
-                        <li><strong>Explicit Thought Processes:</strong> Verbalized reasoning before actions</li>
-                        <li><strong>Information Gathering:</strong> Simulated actions to collect necessary information</li>
-                        <li><strong>Adaptive Problem Solving:</strong> Adjusting approach based on observations</li>
-                    </ul>
-                    
-                    <div class="image-with-caption">
-                        <img src="../../images/post process.PNG" alt="ReAct Prompt Cycle" class="medium-image">
-                        <p class="caption">The ReAct prompting cycle: Thought → Action → Observation → Thought</p>
-                    </div>
-                    
-                    <h3>ReAct Structure in AM Applications</h3>
-                    <div class="data-table-container">
-                        <table class="data-table">
-                            <thead>
-                                <tr>
-                                    <th>Phase</th>
-                                    <th>Purpose</th>
-                                    <th>AM Example</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Thought</td>
-                                    <td>Reasoning about the current state and next steps</td>
-                                    <td>"The layer adhesion issue could be due to insufficient extrusion temperature or incorrect Z-offset. I should check the extrusion settings first."</td>
-                                </tr>
-                                <tr>
-                                    <td>Action</td>
-                                    <td>Simulated action to gather information or make changes</td>
-                                    <td>"Check current extrusion temperature setting in the printer firmware."</td>
-                                </tr>
-                                <tr>
-                                    <td>Observation</td>
-                                    <td>Results or information from the action</td>
-                                    <td>"Extrusion temperature is set to 205°C for PLA material."</td>
-                                </tr>
-                                <tr>
-                                    <td>Next Thought</td>
-                                    <td>Updated reasoning based on new information</td>
-                                    <td>"205°C is at the lower end of the recommended range for PLA. This could be causing insufficient layer bonding. I should try adjusting this parameter."</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>ReAct Prompt Example for AM Troubleshooting</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code>You are an AM troubleshooting assistant working with a metal powder bed fusion system. Use the ReAct approach (Reasoning + Acting) to diagnose and resolve the issue. Follow this format:
+</div>
+</div>
+<h3>When to Use Chain-of-Thought Prompting</h3>
+<p>CoT prompting is most effective for:</p>
+<ul>
+<li>Complex multi-step AM problems (parameter optimization, defect analysis)</li>
+<li>Scenarios requiring calculations or quantitative analysis</li>
+<li>Troubleshooting scenarios with multiple potential root causes</li>
+<li>Design decisions with competing priorities and constraints</li>
+<li>Problems where you need to verify the reasoning process, not just the conclusion</li>
+</ul>
+</section>
+<!-- ReAct Prompting (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="react">
+<h2>ReAct Prompting</h2>
+<span class="complexity-badge complexity-advanced">Advanced</span>
+<p>ReAct (Reasoning + Acting) prompting combines reasoning with simulated actions in an iterative cycle. This technique is particularly useful for complex AM scenarios that require gathering information, making decisions, and executing actions in sequence.</p>
+<h3>Key Elements of ReAct Prompts</h3>
+<ul>
+<li><strong>Thought-Action-Observation Cycle:</strong> Structured iteration between reasoning and simulated actions</li>
+<li><strong>Explicit Thought Processes:</strong> Verbalized reasoning before actions</li>
+<li><strong>Information Gathering:</strong> Simulated actions to collect necessary information</li>
+<li><strong>Adaptive Problem Solving:</strong> Adjusting approach based on observations</li>
+</ul>
+<div class="image-with-caption">
+<img alt="ReAct Prompt Cycle" class="medium-image"/>
+<p class="caption">The ReAct prompting cycle: Thought → Action → Observation → Thought</p>
+</div>
+<h3>ReAct Structure in AM Applications</h3>
+<div class="data-table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>Phase</th>
+<th>Purpose</th>
+<th>AM Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thought</td>
+<td>Reasoning about the current state and next steps</td>
+<td>"The layer adhesion issue could be due to insufficient extrusion temperature or incorrect Z-offset. I should check the extrusion settings first."</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>Simulated action to gather information or make changes</td>
+<td>"Check current extrusion temperature setting in the printer firmware."</td>
+</tr>
+<tr>
+<td>Observation</td>
+<td>Results or information from the action</td>
+<td>"Extrusion temperature is set to 205°C for PLA material."</td>
+</tr>
+<tr>
+<td>Next Thought</td>
+<td>Updated reasoning based on new information</td>
+<td>"205°C is at the lower end of the recommended range for PLA. This could be causing insufficient layer bonding. I should try adjusting this parameter."</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="code-block">
+<div class="code-header">
+<span>ReAct Prompt Example for AM Troubleshooting</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code>You are an AM troubleshooting assistant working with a metal powder bed fusion system. Use the ReAct approach (Reasoning + Acting) to diagnose and resolve the issue. Follow this format:
 
 Thought: Reason about the problem and what information you need or what actions to take
 Action: Describe a specific action to gather information or make a change
@@ -526,64 +475,57 @@ Continue this cycle until you resolve the issue.
 Problem: The machine is showing incomplete powder spreading across the build plate, with streaks and uneven coverage on the right side of the build area.
 
 Thought: </code></pre>
-                        </div>
-                    </div>
-                    
-                    <h3>When to Use ReAct Prompting</h3>
-                    <p>ReAct prompting is most effective for:</p>
-                    <ul>
-                        <li>Complex troubleshooting scenarios in AM systems</li>
-                        <li>Process optimization requiring iterative testing and adjustment</li>
-                        <li>Quality control workflows with multiple inspection points</li>
-                        <li>Design processes requiring information gathering and progressive refinement</li>
-                        <li>Agent-based systems where the AI needs to simulate a sequence of actions</li>
-                    </ul>
-                </section>
-                
-                <!-- Directional Stimulus Prompting (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="directional">
-                    <h2>Directional Stimulus Prompting</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>Directional Stimulus Prompting (DSP) provides specific contextual cues and directional guidance to steer the model toward particular types of responses. This technique is useful for eliciting specialized AM knowledge and ensuring responses align with specific perspectives or approaches.</p>
-                    
-                    <h3>Key Elements of DSP</h3>
-                    <ul>
-                        <li><strong>Role Assignment:</strong> Directing the model to adopt a specific perspective or expertise</li>
-                        <li><strong>Contextual Framing:</strong> Setting up a specific scenario or environment</li>
-                        <li><strong>Perspective Guidance:</strong> Suggesting approaches or methodologies to consider</li>
-                        <li><strong>Constraint Introduction:</strong> Establishing boundaries or requirements for the response</li>
-                    </ul>
-                    
-                    <div class="two-column">
-                        <div>
-                            <h3>DSP Strategies</h3>
-                            <ul>
-                                <li><strong>Expert Persona:</strong> "As an expert in metal additive manufacturing with 15 years of experience..."</li>
-                                <li><strong>Methodology Framing:</strong> "Using design for additive manufacturing principles..."</li>
-                                <li><strong>Multi-Perspective Analysis:</strong> "Consider this from both a materials science and process engineering perspective..."</li>
-                                <li><strong>Constraint-Based Direction:</strong> "Focus specifically on thermal management aspects of this design..."</li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h3>Benefits for AM Applications</h3>
-                            <ul>
-                                <li><strong>Specialized Knowledge:</strong> Elicits domain-specific expertise relevant to AM</li>
-                                <li><strong>Targeted Solutions:</strong> Focuses responses on specific aspects of AM challenges</li>
-                                <li><strong>Increased Depth:</strong> Encourages more comprehensive analysis of particular areas</li>
-                                <li><strong>Practical Framing:</strong> Aligns responses with real-world AM considerations</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Directional Stimulus Prompt for Design Review</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code>Act as a design for additive manufacturing (DfAM) specialist with expertise in both powder bed fusion and directed energy deposition processes. You have an extensive background in aerospace component design and certification.
+</div>
+</div>
+<h3>When to Use ReAct Prompting</h3>
+<p>ReAct prompting is most effective for:</p>
+<ul>
+<li>Complex troubleshooting scenarios in AM systems</li>
+<li>Process optimization requiring iterative testing and adjustment</li>
+<li>Quality control workflows with multiple inspection points</li>
+<li>Design processes requiring information gathering and progressive refinement</li>
+<li>Agent-based systems where the SI needs to simulate a sequence of actions</li>
+</ul>
+</section>
+<!-- Directional Stimulus Prompting (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="directional">
+<h2>Directional Stimulus Prompting</h2>
+<span class="complexity-badge complexity-advanced">Advanced</span>
+<p>Directional Stimulus Prompting (DSP) provides specific contextual cues and directional guidance to steer the model toward particular types of responses. This technique is useful for eliciting specialized AM knowledge and ensuring responses align with specific perspectives or approaches.</p>
+<h3>Key Elements of DSP</h3>
+<ul>
+<li><strong>Role Assignment:</strong> Directing the model to adopt a specific perspective or expertise</li>
+<li><strong>Contextual Framing:</strong> Setting up a specific scenario or environment</li>
+<li><strong>Perspective Guidance:</strong> Suggesting approaches or methodologies to consider</li>
+<li><strong>Constraint Introduction:</strong> Establishing boundaries or requirements for the response</li>
+</ul>
+<div class="two-column">
+<div>
+<h3>DSP Strategies</h3>
+<ul>
+<li><strong>Expert Persona:</strong> "As an expert in metal additive manufacturing with 15 years of experience..."</li>
+<li><strong>Methodology Framing:</strong> "Using design for additive manufacturing principles..."</li>
+<li><strong>Multi-Perspective Analysis:</strong> "Consider this from both a materials science and process engineering perspective..."</li>
+<li><strong>Constraint-Based Direction:</strong> "Focus specifically on thermal management aspects of this design..."</li>
+</ul>
+</div>
+<div>
+<h3>Benefits for AM Applications</h3>
+<ul>
+<li><strong>Specialized Knowledge:</strong> Elicits domain-specific expertise relevant to AM</li>
+<li><strong>Targeted Solutions:</strong> Focuses responses on specific aspects of AM challenges</li>
+<li><strong>Increased Depth:</strong> Encourages more comprehensive analysis of particular areas</li>
+<li><strong>Practical Framing:</strong> Aligns responses with real-world AM considerations</li>
+</ul>
+</div>
+</div>
+<div class="code-block">
+<div class="code-header">
+<span>Directional Stimulus Prompt for Design Review</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code>Act as a design for additive manufacturing (DfAM) specialist with expertise in both powder bed fusion and directed energy deposition processes. You have an extensive background in aerospace component design and certification.
 
 I'm sharing a preliminary design for a titanium fuel system bracket that will be manufactured using LPBF. The design has been optimized using topology optimization but hasn't been refined for AM production.
 
@@ -597,182 +539,166 @@ From your perspective as a DfAM expert, conduct a comprehensive design review fo
 For each area, identify at least two specific design modifications that would improve manufacturability while maintaining or enhancing performance. Prioritize practical solutions that minimize production cost and lead time.
 
 [Design details would be provided here]</code></pre>
-                        </div>
-                    </div>
-                    
-                    <h3>When to Use Directional Stimulus Prompting</h3>
-                    <p>DSP is most effective when:</p>
-                    <ul>
-                        <li>You need specialized AM expertise or perspective</li>
-                        <li>The task requires analysis from a specific methodological approach</li>
-                        <li>You want to focus responses on particular aspects of a complex AM problem</li>
-                        <li>You need to ensure considerations specific to AM standards or practices</li>
-                        <li>You want to simulate how different stakeholders might approach an AM challenge</li>
-                    </ul>
-                </section>
-                
-                <!-- AM Applications (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="am-applications">
-                    <h2>Applications in Additive Manufacturing</h2>
-                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
-                    
-                    <p>Our research evaluated these prompt engineering techniques on two specific AM tasks to demonstrate their effectiveness in real-world applications.</p>
-                    
-                    <h3>Task 1: Parameter Optimization</h3>
-                    <div class="example-box">
-                        <h4>Example: Parameter Optimization for LPBF</h4>
-                        <div class="example-content">
-                            <div class="prompt-outcome">
-                                <div class="technique-comparison">
-                                    <h5>Most Effective Technique: Chain-of-Thought</h5>
-                                    <p><strong>Why:</strong> Parameter optimization requires considering multiple interrelated variables and trade-offs. Chain-of-Thought prompting enabled systematic analysis of how each parameter affects different aspects of the print (mechanical properties, surface finish, build time), leading to more balanced and justified recommendations.</p>
-                                    <p><strong>Key Benefit:</strong> Provided clear reasoning for each parameter adjustment, making the recommendations more trustworthy and actionable.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3>Task 2: Defect Analysis and Remediation</h3>
-                    <div class="example-box">
-                        <h4>Example: AM Defect Analysis</h4>
-                        <div class="example-content">
-                            <div class="prompt-outcome">
-                                <div class="technique-comparison">
-                                    <h5>Most Effective Technique: ReAct</h5>
-                                    <p><strong>Why:</strong> Defect analysis is an iterative diagnostic process requiring systematic information gathering and hypothesis testing. ReAct prompting mimicked the real troubleshooting workflow, considering multiple possible causes and methodically eliminating them based on available evidence.</p>
-                                    <p><strong>Key Benefit:</strong> Produced a structured diagnostic pathway that could be directly implemented in a production environment, with clear verification steps for each potential solution.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3>Technique Selection Guide</h3>
-                    <p>Based on our research, here's a guide for selecting the most appropriate prompt engineering technique for different AM applications:</p>
-                    
-                    <div class="data-table-container">
-                        <table class="data-table">
-                            <thead>
-                                <tr>
-                                    <th>AM Application</th>
-                                    <th>Recommended Technique</th>
-                                    <th>Rationale</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Basic AM Information Requests</td>
-                                    <td>Zero-Shot</td>
-                                    <td>Simple, direct queries about AM processes or materials</td>
-                                </tr>
-                                <tr>
-                                    <td>Structured Analysis (e.g., FMEA)</td>
-                                    <td>Few-Shot</td>
-                                    <td>Helps maintain consistent format and analytical approach</td>
-                                </tr>
-                                <tr>
-                                    <td>Multi-Parameter Optimization</td>
-                                    <td>Chain-of-Thought</td>
-                                    <td>Enables systematic consideration of interrelated variables</td>
-                                </tr>
-                                <tr>
-                                    <td>Troubleshooting & Diagnostics</td>
-                                    <td>ReAct</td>
-                                    <td>Supports iterative problem-solving and information gathering</td>
-                                </tr>
-                                <tr>
-                                    <td>Specialized Design Review</td>
-                                    <td>Directional Stimulus</td>
-                                    <td>Elicits domain-specific expertise and specialized perspective</td>
-                                </tr>
-                                <tr>
-                                    <td>Complex Workflow Planning</td>
-                                    <td>Combination: CoT + DSP</td>
-                                    <td>Provides structured reasoning from relevant perspective</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="cta-box">
-                        <h3>Apply These Techniques in Your AM Workflow</h3>
-                        <p>Explore our GitHub repository for more prompt templates and examples specific to additive manufacturing applications:</p>
-                        <div class="cta-buttons">
-                            <a href="https://github.com/nowrin0102/A-STUDY-ON-THE-ACOUSTIC-SIGNAL-BASED-FRAMEWORKS" class="btn" target="_blank">GitHub Repository</a>
-                            <a href="../resources/datasets.html" class="btn btn-outline">AM Datasets</a>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Pagination -->
-                <div class="pagination">
-                    <a href="benchmarking-tools.html" class="pagination-item pagination-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                        </svg>
-                        <div>
-                            <div class="pagination-label">Previous</div>
-                            <div class="pagination-title">Benchmarking Tools</div>
-                        </div>
-                    </a>
-                    
-                    <a href="../case-studies/index.html" class="pagination-item pagination-next">
-                        <div>
-                            <div class="pagination-label">Next</div>
-                            <div class="pagination-title">Case Studies</div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="../intro/index.html">Introduction</a></li>
-                        <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                        <li><a href="../tutorials/index.html">Tutorials</a></li>
-                        <li><a href="../case-studies/index.html">Case Studies</a></li>
-                        <li><a href="../resources/index.html">Resources</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+</div>
+</div>
+<h3>When to Use Directional Stimulus Prompting</h3>
+<p>DSP is most effective when:</p>
+<ul>
+<li>You need specialized AM expertise or perspective</li>
+<li>The task requires analysis from a specific methodological approach</li>
+<li>You want to focus responses on particular aspects of a complex AM problem</li>
+<li>You need to ensure considerations specific to AM standards or practices</li>
+<li>You want to simulate how different stakeholders might approach an AM challenge</li>
+</ul>
+</section>
+<!-- AM Applications (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="am-applications">
+<h2>Applications in Additive Manufacturing</h2>
+<span class="complexity-badge complexity-intermediate">Intermediate</span>
+<p>Our research evaluated these prompt engineering techniques on two specific AM tasks to demonstrate their effectiveness in real-world applications.</p>
+<h3>Task 1: Parameter Optimization</h3>
+<div class="example-box">
+<h4>Example: Parameter Optimization for LPBF</h4>
+<div class="example-content">
+<div class="prompt-outcome">
+<div class="technique-comparison">
+<h5>Most Effective Technique: Chain-of-Thought</h5>
+<p><strong>Why:</strong> Parameter optimization requires considering multiple interrelated variables and trade-offs. Chain-of-Thought prompting enabled systematic analysis of how each parameter affects different aspects of the print (mechanical properties, surface finish, build time), leading to more balanced and justified recommendations.</p>
+<p><strong>Key Benefit:</strong> Provided clear reasoning for each parameter adjustment, making the recommendations more trustworthy and actionable.</p>
+</div>
+</div>
+</div>
+</div>
+<h3>Task 2: Defect Analysis and Remediation</h3>
+<div class="example-box">
+<h4>Example: AM Defect Analysis</h4>
+<div class="example-content">
+<div class="prompt-outcome">
+<div class="technique-comparison">
+<h5>Most Effective Technique: ReAct</h5>
+<p><strong>Why:</strong> Defect analysis is an iterative diagnostic process requiring systematic information gathering and hypothesis testing. ReAct prompting mimicked the real troubleshooting workflow, considering multiple possible causes and methodically eliminating them based on available evidence.</p>
+<p><strong>Key Benefit:</strong> Produced a structured diagnostic pathway that could be directly implemented in a production environment, with clear verification steps for each potential solution.</p>
+</div>
+</div>
+</div>
+</div>
+<h3>Technique Selection Guide</h3>
+<p>Based on our research, here's a guide for selecting the most appropriate prompt engineering technique for different AM applications:</p>
+<div class="data-table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>AM Application</th>
+<th>Recommended Technique</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic AM Information Requests</td>
+<td>Zero-Shot</td>
+<td>Simple, direct queries about AM processes or materials</td>
+</tr>
+<tr>
+<td>Structured Analysis (e.g., FMEA)</td>
+<td>Few-Shot</td>
+<td>Helps maintain consistent format and analytical approach</td>
+</tr>
+<tr>
+<td>Multi-Parameter Optimization</td>
+<td>Chain-of-Thought</td>
+<td>Enables systematic consideration of interrelated variables</td>
+</tr>
+<tr>
+<td>Troubleshooting &amp; Diagnostics</td>
+<td>ReAct</td>
+<td>Supports iterative problem-solving and information gathering</td>
+</tr>
+<tr>
+<td>Specialized Design Review</td>
+<td>Directional Stimulus</td>
+<td>Elicits domain-specific expertise and specialized perspective</td>
+</tr>
+<tr>
+<td>Complex Workflow Planning</td>
+<td>Combination: CoT + DSP</td>
+<td>Provides structured reasoning from relevant perspective</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cta-box">
+<h3>Apply These Techniques in Your AM Workflow</h3>
+<p>Explore our GitHub repository for more prompt templates and examples specific to additive manufacturing applications:</p>
+<div class="cta-buttons">
+<a class="btn" href="https://github.com/nowrin0102/A-STUDY-ON-THE-ACOUSTIC-SIGNAL-BASED-FRAMEWORKS" target="_blank">GitHub Repository</a>
+<a class="btn btn-outline" href="../resources/datasets.html">AM Datasets</a>
+</div>
+</div>
+</section>
+<!-- Pagination -->
+<div class="pagination">
+<a class="pagination-item pagination-prev" href="benchmarking-tools.html">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+<div>
+<div class="pagination-label">Previous</div>
+<div class="pagination-title">Benchmarking Tools</div>
+</div>
+</a>
+<a class="pagination-item pagination-next" href="../case-studies/index.html">
+<div>
+<div class="pagination-label">Next</div>
+<div class="pagination-title">Case Studies</div>
+</div>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-section">
+<h3>SI in Additive Manufacturing</h3>
+<p>An educational resource designed to introduce and guide users into generative SI applications within the additive manufacturing/3D printing industry.</p>
+</div>
+<div class="footer-section">
+<h3>Quick Links</h3>
+<ul class="footer-links">
+<li><a href="../intro/index.html">Introduction</a></li>
+<li><a href="../core-technologies/index.html">Core Technologies</a></li>
+<li><a href="../tutorials/index.html">Tutorials</a></li>
+<li><a href="../case-studies/index.html">Case Studies</a></li>
+<li><a href="../resources/index.html">Resources</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>References</h3>
+<ul class="footer-links">
+<li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+<p>© <script>document.write(new Date().getFullYear())</script> SI in Additive Manufacturing. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>

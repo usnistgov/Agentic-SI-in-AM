@@ -1,315 +1,270 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Understanding what is AI and its fundamental concepts in the context of additive manufacturing">
-    <title>What is AI? | Introduction to AI in Additive Manufacturing</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Understanding what is SI and its fundamental concepts in the context of additive manufacturing" name="description"/>
+<title>What is SI? | Introduction to SI in Additive Manufacturing</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
-            
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-            
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../intro/index.html" class="active">Introduction</a></li>
-                    <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                    <li><a href="../tutorials/index.html">Tutorials</a></li>
-                    <li><a href="../case-studies/index.html">Case Studies</a></li>
-                    <li><a href="../resources/index.html">Resources</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="index.html">Introduction</a></li>
-                    <li><span class="current">What is AI?</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section (Basic Introduction) -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>What is AI?</h1>
-                        <p>Understanding the foundations of artificial intelligence and its various approaches in the context of additive manufacturing.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/general.jpg" alt="AI Concept" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">On This Page</h2>
-                    <ul class="toc-list">
-                        <li><a href="#definition">Definition & Overview</a></li>
-                        <li><a href="#ai-approaches">AI Learning Approaches</a></li>
-                        <li><a href="#types">Types of AI</a></li>
-                        <li><a href="#foundation-models">Foundation Models</a></li>
-                        <li><a href="#am-applications">Applications in AM</a></li>
-                        <li><a href="#technical-details">Technical Details</a></li>
-                    </ul>
-                </div>
-                
-                <div class="section-navigation">
-                    <h3>Related Topics</h3>
-                    <ul class="toc-list">
-                        <li><a href="benefits-in-am.html">Benefits in AM</a></li>
-                        <li><a href="current-landscape.html">Current Landscape</a></li>
-                        <li><a href="../core-technologies/foundation-models.html">Foundation Models</a></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Definition (Basic Level) -->
-                <section class="content-section" data-level="basic" id="definition">
-                    <h2>Definition & Overview</h2>
-
-                    <p>Understanding the core concepts of AI models is essential before exploring their specialized types. Below are the key definitions:</p>
-
-                    <div class="key-points">
-                        <h3>AI Model</h3>
-                        <p class="card-text">A mathematical representation or algorithm that learns patterns from data to make predictions, decisions, or perform tasks. AI models range from simple linear regressions to complex neural networks.</p>
-
-                        <h3>Foundation Model</h3>
-                        <p class="card-text">A large-scale, general-purpose AI model pre-trained on massive and diverse datasets using significant computing resources. It serves as a foundation that can be adapted or fine-tuned for many downstream tasks. Includes LLMs, vision, audio, and multimodal models.</p>
-
-                        <h3>Industrial Foundation Model</h3>
-                        <p class="card-text">A foundation model specifically tailored for industrial applications, incorporating domain-specific knowledge from manufacturing, engineering, materials science, and related fields. These models understand technical drawings, process parameters, material properties, and production constraints, enabling them to assist in design optimization, predictive maintenance, and quality control.</p>
-
-                        <h3>Generative AI Model</h3>
-                        <p class="card-text">A subset of AI models that creates new content — text, images, audio, video, 3D designs, or code — rather than only classifying or predicting. Most modern generative AI is built on top of foundation models, but smaller standalone generative models (e.g., early GANs) also exist.</p>
-                    </div>
-                </section>
-                
-                <!-- AI Learning Approaches (Basic Level) -->
-                <section class="content-section" data-level="basic" id="ai-approaches">
-                    <h2>AI Learning Approaches</h2>
-
-                    <p>AI systems can be categorized by how they learn and process information. Understanding these approaches helps in selecting the right AI technique for different additive manufacturing applications:</p>
-
-                    <div class="table-responsive">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Learning Approach</th>
-                                    <th>Description</th>
-                                    <th>Common Applications in AM</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Supervised Learning</strong></td>
-                                    <td>Models learn from labeled training data to make predictions or decisions.</td>
-                                    <td>Quality prediction, process optimization, defect classification</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Unsupervised Learning</strong></td>
-                                    <td>Models find patterns in data without explicit labels.</td>
-                                    <td>Process clustering, anomaly detection, material discovery</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Reinforcement Learning</strong></td>
-                                    <td>Models learn through interaction with an environment to maximize rewards.</td>
-                                    <td>Process control, parameter optimization, robotic assembly</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Self-Supervised Learning</strong></td>
-                                    <td>Models generate their own labels from input data, bridging supervised and unsupervised learning.</td>
-                                    <td>Foundation model pretraining, process monitoring, design generation</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <p>Different AM applications may benefit from different learning approaches, and many modern AI systems combine multiple approaches for optimal performance.</p>
-                </section>
-                
-                <!-- Types of AI (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="types">
-                    <h2>Types of AI</h2>
-
-                    <p>AI encompasses several model architectures and approaches, each with distinct characteristics and applications in additive manufacturing:</p>
-                    
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Large Language Models (LLMs)</h3>
-                                <p class="card-text">Text-focused AI systems like GPT-4 that can generate natural language, code, and even CAD descriptions. In AM, these can help with documentation, process planning, and even generating design specifications.</p>
-                                <p class="card-text"><strong>Examples:</strong> GPT-4, Claude, LLaMA</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Diffusion Models</h3>
-                                <p class="card-text">Models that gradually add and then remove noise from data to generate high-quality images. In AM, these can be adapted to generate 3D designs or optimized part topologies.</p>
-                                <p class="card-text"><strong>Examples:</strong> Stable Diffusion, DALL-E</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Generative Adversarial Networks (GANs)</h3>
-                                <p class="card-text">Two-network systems where one generates content and another evaluates it. Useful for creating realistic simulations of AM processes or generating new material structures.</p>
-                                <p class="card-text"><strong>Examples:</strong> StyleGAN, 3D-GAN</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Variational Autoencoders (VAEs)</h3>
-                                <p class="card-text">Neural networks that learn to encode data into a compressed representation and then decode it. Valuable for generating new designs that share characteristics with existing ones.</p>
-                                <p class="card-text"><strong>Examples:</strong> 3D-VAE, PointFlow</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Foundation Models (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="foundation-models">
-                    <h2>Foundation Models in Additive Manufacturing</h2>
-
-                    <p>Foundation models provide powerful starting points for AM applications due to their broad knowledge and adaptability. In the context of additive manufacturing, they can be specialized to understand engineering designs, process simulations, and material behaviors.</p>
-
-                    <h3>How Foundation Models Enable AM Innovation:</h3>
-                    <ul>
-                        <li><strong>Design Interpretation:</strong> Vision-language models can read CAD drawings and generate textual descriptions or suggest improvements.</li>
-                        <li><strong>Process Optimization:</strong> Models trained on sensor data can predict optimal printing parameters for new geometries.</li>
-                        <li><strong>Material Discovery:</strong> By learning from vast materials databases, foundation models can propose new alloy compositions with desired properties.</li>
-                        <li><strong>Quality Prediction:</strong> Analyzing layer-by-layer images to detect defects before they propagate.</li>
-                    </ul>
-
-                    <h3>Adaptation Strategies for AM:</h3>
-                    <div class="two-column">
-                        <div>
-                            <h4>Zero-Shot Learning</h4>
-                            <p>Using the model directly without additional training, relying on its existing knowledge to perform AM-related tasks.</p>
-
-                            <h4>Few-Shot Learning</h4>
-                            <p>Providing a few examples in the prompt to guide the model toward the desired output format or style for AM applications.</p>
-                        </div>
-
-                        <div>
-                            <h4>Fine-Tuning</h4>
-                            <p>Additional training on AM-specific datasets (e.g., part designs, print logs, material test results) to adapt the model to the manufacturing domain.</p>
-
-                            <h4>Retrieval-Augmented Generation (RAG)</h4>
-                            <p>Combining the model with a knowledge base of AM information (standards, papers, process guides) to improve accuracy and relevance.</p>
-                        </div>
-                    </div>
-
-                    <a href="../core-technologies/foundation-models.html" class="btn">Explore Foundation Models in Detail</a>
-                </section>
-                
-                <!-- Applications in AM (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="am-applications">
-                    <h2>Applications in Additive Manufacturing</h2>
-
-                    <p>AI is finding numerous applications throughout the additive manufacturing workflow, ranging from design and optimization to monitoring and control:</p>
-                    
-                    <div class="application-timeline">
-                        <div class="timeline-item">
-                            <h3>Design Generation</h3>
-                            <p>Creating new 3D designs from text descriptions, reference images, or functional requirements. AI can generate multiple design alternatives that meet specified constraints.</p>
-                            <p><strong>Example:</strong> Generating lightweight bracket designs based on load requirements and material constraints.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h3>Topology Optimization</h3>
-                            <p>Optimizing part designs for specific manufacturing processes, material usage, and performance criteria.</p>
-                            <p><strong>Example:</strong> Creating lattice structures that minimize material while maintaining structural integrity.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h3>Process Parameter Prediction</h3>
-                            <p>Recommending optimal printing parameters based on part geometry, material properties, and quality requirements.</p>
-                            <p><strong>Example:</strong> Determining ideal laser power, speed, and pattern for a metal AM part.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h3>In-Process Monitoring</h3>
-                            <p>Analyzing real-time sensor data to detect anomalies and predict defects during the printing process.</p>
-                            <p><strong>Example:</strong> Identifying potential layer delamination based on thermal camera data.</p>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <h3>Post-Processing Optimization</h3>
-                            <p>Generating strategies for finishing operations based on part requirements and current state.</p>
-                            <p><strong>Example:</strong> Determining optimal heat treatment cycles for specific metal alloys.</p>
-                        </div>
-                    </div>
-                    
-                    <a href="../case-studies/index.html" class="btn">Explore Real-World Case Studies</a>
-                </section>
-                
-                <!-- Technical Details (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="technical-details">
-                    <h2>Technical Details</h2>
-                    
-                    <p>Understanding the technical foundations of AI helps in effectively applying these technologies to additive manufacturing problems:</p>
-                    
-                    <h3>Transformer Architecture</h3>
-                    <p>Many modern AI models are built on the transformer architecture, which uses self-attention mechanisms to process sequential data. This allows models to understand context and relationships within the data.</p>
-                    
-                    <h3>Attention Mechanisms</h3>
-                    <p>Attention mechanisms allow models to focus on different parts of the input when generating each element of the output. This is crucial for maintaining coherence in generated content.</p>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Self-Attention Mechanism (Simplified)</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code>def self_attention(query, key, value):
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav>
+<ul class="nav-links">
+<li><a class="active" href="../intro/index.html">Introduction</a></li>
+<li><a href="../core-technologies/index.html">Core Technologies</a></li>
+<li><a href="../tutorials/index.html">Tutorials</a></li>
+<li><a href="../case-studies/index.html">Case Studies</a></li>
+<li><a href="../resources/index.html">Resources</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="index.html">Introduction</a></li>
+<li><span class="current">What is SI?</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section (Basic Introduction) -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>What is SI?</h1>
+<p>Understanding the foundations of super intelligence and its various approaches in the context of additive manufacturing.</p>
+</div>
+<div class="hero-image">
+<img alt="SI Concept" height="300" src="../../images/general.jpg" width="500"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">On This Page</h2>
+<ul class="toc-list">
+<li><a href="#definition">Definition &amp; Overview</a></li>
+<li><a href="#ai-approaches">SI Learning Approaches</a></li>
+<li><a href="#types">Types of SI</a></li>
+<li><a href="#foundation-models">Foundation Models</a></li>
+<li><a href="#am-applications">Applications in AM</a></li>
+<li><a href="#technical-details">Technical Details</a></li>
+</ul>
+</div>
+<div class="section-navigation">
+<h3>Related Topics</h3>
+<ul class="toc-list">
+<li><a href="benefits-in-am.html">Benefits in AM</a></li>
+<li><a href="current-landscape.html">Current Landscape</a></li>
+<li><a href="../core-technologies/foundation-models.html">Foundation Models</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Definition (Basic Level) -->
+<section class="content-section" data-level="basic" id="definition">
+<h2>Definition &amp; Overview</h2>
+<p>Understanding the core concepts of SI models is essential before exploring their specialized types. Below are the key definitions:</p>
+<div class="key-points">
+<h3>SI Model</h3>
+<p class="card-text">A mathematical representation or algorithm that learns patterns from data to make predictions, decisions, or perform tasks. SI models range from simple linear regressions to complex neural networks.</p>
+<h3>Foundation Model</h3>
+<p class="card-text">A large-scale, general-purpose SI model pre-trained on massive and diverse datasets using significant computing resources. It serves as a foundation that can be adapted or fine-tuned for many downstream tasks. Includes LLMs, vision, audio, and multimodal models.</p>
+<h3>Industrial Foundation Model</h3>
+<p class="card-text">A foundation model specifically tailored for industrial applications, incorporating domain-specific knowledge from manufacturing, engineering, materials science, and related fields. These models understand technical drawings, process parameters, material properties, and production constraints, enabling them to assist in design optimization, predictive maintenance, and quality control.</p>
+<h3>Generative SI Model</h3>
+<p class="card-text">A subset of SI models that creates new content — text, images, audio, video, 3D designs, or code — rather than only classifying or predicting. Most modern generative SI is built on top of foundation models, but smaller standalone generative models (e.g., early GANs) also exist.</p>
+</div>
+</section>
+<!-- AI Learning Approaches (Basic Level) -->
+<section class="content-section" data-level="basic" id="ai-approaches">
+<h2>SI Learning Approaches</h2>
+<p>SI systems can be categorized by how they learn and process information. Understanding these approaches helps in selecting the right SI technique for different additive manufacturing applications:</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Learning Approach</th>
+<th>Description</th>
+<th>Common Applications in AM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Supervised Learning</strong></td>
+<td>Models learn from labeled training data to make predictions or decisions.</td>
+<td>Quality prediction, process optimization, defect classification</td>
+</tr>
+<tr>
+<td><strong>Unsupervised Learning</strong></td>
+<td>Models find patterns in data without explicit labels.</td>
+<td>Process clustering, anomaly detection, material discovery</td>
+</tr>
+<tr>
+<td><strong>Reinforcement Learning</strong></td>
+<td>Models learn through interaction with an environment to maximize rewards.</td>
+<td>Process control, parameter optimization, robotic assembly</td>
+</tr>
+<tr>
+<td><strong>Self-Supervised Learning</strong></td>
+<td>Models generate their own labels from input data, bridging supervised and unsupervised learning.</td>
+<td>Foundation model pretraining, process monitoring, design generation</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Different AM applications may benefit from different learning approaches, and many modern SI systems combine multiple approaches for optimal performance.</p>
+</section>
+<!-- Types of AI (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="types">
+<h2>Types of SI</h2>
+<p>SI encompasses several model architectures and approaches, each with distinct characteristics and applications in additive manufacturing:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Large Language Models (LLMs)</h3>
+<p class="card-text">Text-focused SI systems like GPT-4 that can generate natural language, code, and even CAD descriptions. In AM, these can help with documentation, process planning, and even generating design specifications.</p>
+<p class="card-text"><strong>Examples:</strong> GPT-4, Claude, LLaMA</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Diffusion Models</h3>
+<p class="card-text">Models that gradually add and then remove noise from data to generate high-quality images. In AM, these can be adapted to generate 3D designs or optimized part topologies.</p>
+<p class="card-text"><strong>Examples:</strong> Stable Diffusion, DALL-E</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Generative Adversarial Networks (GANs)</h3>
+<p class="card-text">Two-network systems where one generates content and another evaluates it. Useful for creating realistic simulations of AM processes or generating new material structures.</p>
+<p class="card-text"><strong>Examples:</strong> StyleGAN, 3D-GAN</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Variational Autoencoders (VAEs)</h3>
+<p class="card-text">Neural networks that learn to encode data into a compressed representation and then decode it. Valuable for generating new designs that share characteristics with existing ones.</p>
+<p class="card-text"><strong>Examples:</strong> 3D-VAE, PointFlow</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Foundation Models (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="foundation-models">
+<h2>Foundation Models in Additive Manufacturing</h2>
+<p>Foundation models provide powerful starting points for AM applications due to their broad knowledge and adaptability. In the context of additive manufacturing, they can be specialized to understand engineering designs, process simulations, and material behaviors.</p>
+<h3>How Foundation Models Enable AM Innovation:</h3>
+<ul>
+<li><strong>Design Interpretation:</strong> Vision-language models can read CAD drawings and generate textual descriptions or suggest improvements.</li>
+<li><strong>Process Optimization:</strong> Models trained on sensor data can predict optimal printing parameters for new geometries.</li>
+<li><strong>Material Discovery:</strong> By learning from vast materials databases, foundation models can propose new alloy compositions with desired properties.</li>
+<li><strong>Quality Prediction:</strong> Analyzing layer-by-layer images to detect defects before they propagate.</li>
+</ul>
+<h3>Adaptation Strategies for AM:</h3>
+<div class="two-column">
+<div>
+<h4>Zero-Shot Learning</h4>
+<p>Using the model directly without additional training, relying on its existing knowledge to perform AM-related tasks.</p>
+<h4>Few-Shot Learning</h4>
+<p>Providing a few examples in the prompt to guide the model toward the desired output format or style for AM applications.</p>
+</div>
+<div>
+<h4>Fine-Tuning</h4>
+<p>Additional training on AM-specific datasets (e.g., part designs, print logs, material test results) to adapt the model to the manufacturing domain.</p>
+<h4>Retrieval-Augmented Generation (RAG)</h4>
+<p>Combining the model with a knowledge base of AM information (standards, papers, process guides) to improve accuracy and relevance.</p>
+</div>
+</div>
+<a class="btn" href="../core-technologies/foundation-models.html">Explore Foundation Models in Detail</a>
+</section>
+<!-- Applications in AM (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="am-applications">
+<h2>Applications in Additive Manufacturing</h2>
+<p>SI is finding numerous applications throughout the additive manufacturing workflow, ranging from design and optimization to monitoring and control:</p>
+<div class="application-timeline">
+<div class="timeline-item">
+<h3>Design Generation</h3>
+<p>Creating new 3D designs from text descriptions, reference images, or functional requirements. SI can generate multiple design alternatives that meet specified constraints.</p>
+<p><strong>Example:</strong> Generating lightweight bracket designs based on load requirements and material constraints.</p>
+</div>
+<div class="timeline-item">
+<h3>Topology Optimization</h3>
+<p>Optimizing part designs for specific manufacturing processes, material usage, and performance criteria.</p>
+<p><strong>Example:</strong> Creating lattice structures that minimize material while maintaining structural integrity.</p>
+</div>
+<div class="timeline-item">
+<h3>Process Parameter Prediction</h3>
+<p>Recommending optimal printing parameters based on part geometry, material properties, and quality requirements.</p>
+<p><strong>Example:</strong> Determining ideal laser power, speed, and pattern for a metal AM part.</p>
+</div>
+<div class="timeline-item">
+<h3>In-Process Monitoring</h3>
+<p>Analyzing real-time sensor data to detect anomalies and predict defects during the printing process.</p>
+<p><strong>Example:</strong> Identifying potential layer delamination based on thermal camera data.</p>
+</div>
+<div class="timeline-item">
+<h3>Post-Processing Optimization</h3>
+<p>Generating strategies for finishing operations based on part requirements and current state.</p>
+<p><strong>Example:</strong> Determining optimal heat treatment cycles for specific metal alloys.</p>
+</div>
+</div>
+<a class="btn" href="../case-studies/index.html">Explore Real-World Case Studies</a>
+</section>
+<!-- Technical Details (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="technical-details">
+<h2>Technical Details</h2>
+<p>Understanding the technical foundations of SI helps in effectively applying these technologies to additive manufacturing problems:</p>
+<h3>Transformer Architecture</h3>
+<p>Many modern SI models are built on the transformer architecture, which uses self-attention mechanisms to process sequential data. This allows models to understand context and relationships within the data.</p>
+<h3>Attention Mechanisms</h3>
+<p>Attention mechanisms allow models to focus on different parts of the input when generating each element of the output. This is crucial for maintaining coherence in generated content.</p>
+<div class="code-block">
+<div class="code-header">
+<span>Self-Attention Mechanism (Simplified)</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code>def self_attention(query, key, value):
     # Calculate attention scores
     scores = query @ key.transpose(-2, -1)
     
@@ -323,101 +278,89 @@
     output = weights @ value
     
     return output</code></pre>
-                        </div>
-                    </div>
-                    
-                    <h3>Training Strategies</h3>
-                    <p>AI models for AM often require specialized training approaches:</p>
-                    
-                    <ul>
-                        <li><strong>Transfer Learning:</strong> Starting with a general model and adapting it to AM-specific tasks</li>
-                        <li><strong>Domain Adaptation:</strong> Techniques to bridge the gap between general data and AM-specific applications</li>
-                        <li><strong>Data Augmentation:</strong> Generating synthetic training examples to improve model robustness</li>
-                        <li><strong>Multi-modal Training:</strong> Combining different data types (text, images, 3D models) for comprehensive understanding</li>
-                    </ul>
-                    
-                    <h3>Evaluation Metrics</h3>
-                    <p>Assessing the performance of AI models in AM requires specialized metrics:</p>
-                    
-                    <ul>
-                        <li><strong>Geometric Accuracy:</strong> How closely AI-generated or AI-assisted designs match specifications</li>
-                        <li><strong>Functional Performance:</strong> How well AI-generated or AI-assisted designs fulfill their intended function</li>
-                        <li><strong>Manufacturability:</strong> Whether the designs can be successfully printed</li>
-                        <li><strong>Material Efficiency:</strong> Optimization of material usage while maintaining performance</li>
-                        <li><strong>Novelty and Diversity:</strong> The novelty, originality, and practical value of AI-generated or AI-assisted designs</li>
-                    </ul>
-                </section>
-                
-                <!-- Pagination -->
-                <div class="pagination">
-                    <a href="index.html" class="pagination-item pagination-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                        </svg>
-                        <div>
-                            <div class="pagination-label">Previous</div>
-                            <div class="pagination-title">Introduction</div>
-                        </div>
-                    </a>
-                    
-                    <a href="benefits-in-am.html" class="pagination-item pagination-next">
-                        <div>
-                            <div class="pagination-label">Next</div>
-                            <div class="pagination-title">Benefits in AM</div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into AI applications within the additive manufacturing/3D printing industry.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="../intro/index.html">Introduction</a></li>
-                        <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                        <li><a href="../tutorials/index.html">Tutorials</a></li>
-                        <li><a href="../case-studies/index.html">Case Studies</a></li>
-                        <li><a href="../resources/index.html">Resources</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+</div>
+</div>
+<h3>Training Strategies</h3>
+<p>SI models for AM often require specialized training approaches:</p>
+<ul>
+<li><strong>Transfer Learning:</strong> Starting with a general model and adapting it to AM-specific tasks</li>
+<li><strong>Domain Adaptation:</strong> Techniques to bridge the gap between general data and AM-specific applications</li>
+<li><strong>Data Augmentation:</strong> Generating synthetic training examples to improve model robustness</li>
+<li><strong>Multi-modal Training:</strong> Combining different data types (text, images, 3D models) for comprehensive understanding</li>
+</ul>
+<h3>Evaluation Metrics</h3>
+<p>Assessing the performance of SI models in AM requires specialized metrics:</p>
+<ul>
+<li><strong>Geometric Accuracy:</strong> How closely SI-generated or SI-assisted designs match specifications</li>
+<li><strong>Functional Performance:</strong> How well SI-generated or SI-assisted designs fulfill their intended function</li>
+<li><strong>Manufacturability:</strong> Whether the designs can be successfully printed</li>
+<li><strong>Material Efficiency:</strong> Optimization of material usage while maintaining performance</li>
+<li><strong>Novelty and Diversity:</strong> The novelty, originality, and practical value of SI-generated or SI-assisted designs</li>
+</ul>
+</section>
+<!-- Pagination -->
+<div class="pagination">
+<a class="pagination-item pagination-prev" href="index.html">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+<div>
+<div class="pagination-label">Previous</div>
+<div class="pagination-title">Introduction</div>
+</div>
+</a>
+<a class="pagination-item pagination-next" href="benefits-in-am.html">
+<div>
+<div class="pagination-label">Next</div>
+<div class="pagination-title">Benefits in AM</div>
+</div>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-section">
+<h3>SI in Additive Manufacturing</h3>
+<p>An educational resource designed to introduce and guide users into SI applications within the additive manufacturing/3D printing industry.</p>
+</div>
+<div class="footer-section">
+<h3>Quick Links</h3>
+<ul class="footer-links">
+<li><a href="../intro/index.html">Introduction</a></li>
+<li><a href="../core-technologies/index.html">Core Technologies</a></li>
+<li><a href="../tutorials/index.html">Tutorials</a></li>
+<li><a href="../case-studies/index.html">Case Studies</a></li>
+<li><a href="../resources/index.html">Resources</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>References</h3>
+<ul class="footer-links">
+<li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+<p>© <script>document.write(new Date().getFullYear())</script> SI in Additive Manufacturing. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>
