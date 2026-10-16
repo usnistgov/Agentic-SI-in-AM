@@ -1,200 +1,247 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="SI Agent | SI in AM" name="description"/>
-<title>SI Agent | SI in AM</title>
-<!-- Stylesheets -->
-<link href="../../css/style.css" rel="stylesheet"/>
-<link href="../../css/components.css" rel="stylesheet"/>
-<link href="../../css/responsive.css" rel="stylesheet"/>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Agent | AI in AM">
+    <title>AI Agent | AI in AM</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <!-- Official NIST site-wide header and footer -->
     <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
     <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
 </head>
 <body>
-<!-- Header & Navigation -->
-<header class="navbar">
-<div class="container">
-<a class="logo" href="../../index.html">
-<span>SI in AM</span>
-</a>
-<div class="search-container">
-<form class="search-form" role="search">
-<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
-<circle cx="11" cy="11" r="8"></circle>
-<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
-</svg>
-<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
-</form>
-<div class="search-results"></div>
-</div>
-<button aria-label="Toggle menu" class="hamburger-menu">
-<div></div>
-<div></div>
-<div></div>
-</button>
-<nav>
-<ul class="nav-links">
-<li><a href="../Agentic AI/index.html">Agentic SI For AM</a></li>
-<li><a href="../Develop AI models/index_nowrin.html">SI Models Development</a></li>
-<li><a href="../AI Agent/index.html">SI agent</a></li>
-<li><a href="../AM_dataset/datasets.html">Data for SI</a></li>
-</ul>
-</nav>
-</div>
-</header>
-<!-- Main Content -->
-<main>
-<!-- Breadcrumbs -->
-<div class="container">
-<div class="breadcrumbs">
-<ul>
-<li><a href="../../index.html">Home</a></li>
-<li><span class="current">SI agent</span></li>
-</ul>
-</div>
-</div>
-<!-- Hero Section -->
-<section class="hero">
-<div class="container">
-<div class="hero-content">
-<div class="hero-text">
-<h1>SI Agents: Application in AM and Manufacturing</h1>
-<p>Discover how intelligent SI agents are transforming additive manufacturing and industrial production through autonomous decision-making, real-time process optimization, and adaptive learning capabilities that enhance efficiency, quality, and innovation across the manufacturing lifecycle.</p>
-</div>
-<div class="hero-image">
-<img alt="SI Applications in Additive Manufacturing" height="300" src="../../images/knobs.png" width="500"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Content with Sidebar -->
-<div class="container with-sidebar">
-<aside class="sidebar">
-<div class="toc">
-<h2 class="toc-title">In This Section</h2>
-<ul class="toc-list">
-<!-- <li><a href="#industry-applications">Industry Applications</a></li> -->
-<li><a href="#main-content">Agent Foundations</a></li>
-<li><a href="#main-content">SI Agents in AM</a></li>
-<!-- <li><a href="#future-directions">Future Directions</a></li> -->
-</ul>
-</div>
-<div class="section-navigation">
-<h3>Explore This Topic</h3>
-<ul class="toc-list">
-<li><a href="agent-foundation.html">Agent Foundations</a></li>
-<li><a href="../case-studies/index.html">Industry Applications</a></li>
-</ul>
-</div>
-</aside>
-<!-- Main Content Area -->
-<div class="content">
-<section class="content-section" data-level="intermediate" id="integrating-development-approaches">
-<h2>Integrating Development Approaches for AM</h2>
-<p>To build effective agentic SI systems for additive manufacturing, combine various development techniques to address domain‑specific challenges.</p>
-<div class="two-column">
-<div>
-<h3>🎯 Domain‑Specific Prompt Engineering</h3>
-<p>Craft prompts that incorporate AM‑specific terminology, process knowledge, and manufacturing constraints so the model generates outputs aligned with AM workflows, material properties, and production requirements.</p>
-</div>
-<div>
-<h3>🔧 AM‑Focused Fine‑Tuning</h3>
-<p>Adapt models using manufacturing datasets that include print parameters, material behaviors, quality metrics, and failure patterns. This ensures the SI understands the nuances of different AM technologies (FDM, SLA, SLS, etc.) and materials.</p>
-</div>
-</div>
-<div class="two-column">
-<div>
-<h3>🔌 AM Toolchain Integration</h3>
-<p>Connect SI models with AM‑specific tools such as slicing software (Cura, PrusaSlicer), simulation tools (ANSYS, Simcenter), CAD systems, and printer APIs to create seamless workflows from design to production.</p>
-</div>
-<div>
-<h3>⚙️ Process‑Optimized Hyperparameters</h3>
-<p>Tune parameters like temperature, learning rate, and batch size based on AM‑specific requirements such as print time constraints, material thermal properties, and quality‑assurance needs.</p>
-</div>
-</div>
-<div class="two-column">
-<div>
-<h3>📚 AM‑Specific RAG Implementation</h3>
-<p>Enhance model responses with access to AM‑specific knowledge bases including material data sheets, process guidelines, design rules for AM, and quality standards (ASTM, ISO) relevant to additive manufacturing.</p>
-</div>
-<div>
-<h3>🧠 Artificial Narrow Intelligence (ANI)</h3>
-<p>Most effective agentic SI systems in AM leverage ANI principles by focusing on specific manufacturing tasks rather than pursuing general intelligence. This yields specialized expertise, predictable performance, efficient resource use, and easier regulatory compliance.</p>
-</div>
-</div>
-</section>
-<section class="content-section" data-level="intermediate" id="domain-specific-framework">
-<h2>Domain‑Specific Implementation Framework</h2>
-<p>Follow this step‑by‑step framework to develop agentic SI solutions for your specific AM use case.</p>
-<ol class="agent-framework">
-<li><strong>Analyze Your AM Workflow:</strong> Map out your specific additive manufacturing process from design to post‑processing, identifying decision points where SI can add value.</li>
-<li><strong>Define AM‑Specific Objectives:</strong> Establish clear goals such as reducing print failures, optimizing material usage, decreasing production time, or improving part quality.</li>
-<li><strong>Select AM‑Aligned Techniques:</strong> Choose which development approaches (prompt engineering, fine‑tuning, toolchain integration, hyperparameter optimization, RAG, etc.) best address your specific challenges.</li>
-<li><strong>Build AM Knowledge Base:</strong> Curate datasets, process guides, and material information specific to your AM operations.</li>
-<li><strong>Develop Integrated Agent:</strong> Combine the selected techniques into a cohesive system that interacts with your AM equipment and software.</li>
-<li><strong>Validate in AM Context:</strong> Test the agent with actual print jobs, material samples, and production scenarios.</li>
-<li><strong>Iterate Based on AM Feedback:</strong> Continuously improve based on print results, quality measurements, and operator feedback.</li>
-</ol>
-</section>
-<section class="content-section" data-level="advanced" id="ai-agents-in-am">
-<h2>SI Agents in AM</h2>
-<p>Examining successful SI implementations in additive manufacturing reveals practical technical approaches, integration methods, and measurable outcomes.</p>
-<ul>
-<li><strong>Process Optimization:</strong> SI agents predict optimal laser power, scan speed, and layer thickness to minimize defects and maximize build rate.</li>
-<li><strong>Real‑Time Defect Detection:</strong> Vision‑based models identify porosity, cracking, or warping during the build and trigger corrective actions.</li>
-<li><strong>Material Behavior Modeling:</strong> SI forecasts how powders will melt and solidify, enabling proactive parameter adjustments.</li>
-<li><strong>Quality Prediction:</strong> Models estimate final part mechanical properties and surface finish from in‑process sensor data.</li>
-</ul>
-<p>These examples illustrate how integrating the development approaches and framework above yields tangible benefits in AM workflows.</p>
-</section>
-<div class="project-list">
-<a class="project-button" href="agent-application-design.html">
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">
+                <span>AI in AM</span>
+            </a>
+
+            <div class="search-container">
+                <form class="search-form" role="search">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="search-results"></div>
+            </div>
+
+            <button class="hamburger-menu" aria-label="Toggle menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../Agentic AI/index.html">Agentic AI For AM</a></li>
+                    <li><a href="../Develop AI models/index_nowrin.html">AI Models Development</a></li>
+                    <li><a href="../AI Agent/index.html">AI agent</a></li>
+                    <li><a href="../AM_dataset/datasets.html">Data for AI</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumbs -->
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><span class="current">AI agent</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>AI Agents: Application in AM and Manufacturing</h1>
+                        <p>Discover how intelligent AI agents are transforming additive manufacturing and industrial production through autonomous decision-making, real-time process optimization, and adaptive learning capabilities that enhance efficiency, quality, and innovation across the manufacturing lifecycle.</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="../../images/knobs.png" alt="AI Applications in Additive Manufacturing" width="500" height="300">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content with Sidebar -->
+        <div class="container with-sidebar">
+            <aside class="sidebar">
+                <div class="toc">
+                    <h2 class="toc-title">In This Section</h2>
+                    <ul class="toc-list">
+                        <!-- <li><a href="#industry-applications">Industry Applications</a></li> -->
+                        <li><a href="#agent-foundation">Agent Foundations</a></li>
+                        <li><a href="#agentinam">AI Agents in AM</a></li>
+                        <!-- <li><a href="#future-directions">Future Directions</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="section-navigation">
+                    <h3>Explore This Topic</h3>
+                    <ul class="toc-list">
+                        <li><a href="agent-foundation.html">Agent Foundations</a></li>
+                        <li><span class="nist-link-unavailable">Industry Applications (link unavailable)</span></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Content Area -->
+            <div class="content">
+                <section class="content-section" data-level="intermediate" id="integrating-development-approaches">
+                    <h2>Integrating Development Approaches for AM</h2>
+                    <p>To build effective agentic AI systems for additive manufacturing, combine various development techniques to address domain‑specific challenges.</p>
+                    <div class="two-column">
+                        <div>
+                            <h3>🎯 Domain‑Specific Prompt Engineering</h3>
+                            <p>Craft prompts that incorporate AM‑specific terminology, process knowledge, and manufacturing constraints so the model generates outputs aligned with AM workflows, material properties, and production requirements.</p>
+                        </div>
+                        <div>
+                            <h3>🔧 AM‑Focused Fine‑Tuning</h3>
+                            <p>Adapt models using manufacturing datasets that include print parameters, material behaviors, quality metrics, and failure patterns. This ensures the AI understands the nuances of different AM technologies (FDM, SLA, SLS, etc.) and materials.</p>
+                        </div>
+                    </div>
+                    <div class="two-column">
+                        <div>
+                            <h3>🔌 AM Toolchain Integration</h3>
+                            <p>Connect AI models with AM‑specific tools such as slicing software (Cura, PrusaSlicer), simulation tools (ANSYS, Simcenter), CAD systems, and printer APIs to create seamless workflows from design to production.</p>
+                        </div>
+                        <div>
+                            <h3>⚙️ Process‑Optimized Hyperparameters</h3>
+                            <p>Tune parameters like temperature, learning rate, and batch size based on AM‑specific requirements such as print time constraints, material thermal properties, and quality‑assurance needs.</p>
+                        </div>
+                    </div>
+                    <div class="two-column">
+                        <div>
+                            <h3>📚 AM‑Specific RAG Implementation</h3>
+                            <p>Enhance model responses with access to AM‑specific knowledge bases including material data sheets, process guidelines, design rules for AM, and quality standards (ASTM, ISO) relevant to additive manufacturing.</p>
+                        </div>
+                        <div>
+                            <h3>🧠 Artificial Narrow Intelligence (ANI)</h3>
+                            <p>Most effective agentic AI systems in AM leverage ANI principles by focusing on specific manufacturing tasks rather than pursuing general intelligence. This yields specialized expertise, predictable performance, efficient resource use, and easier regulatory compliance.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section" data-level="intermediate" id="domain-specific-framework">
+                    <h2>Domain‑Specific Implementation Framework</h2>
+                    <p>Follow this step‑by‑step framework to develop agentic AI solutions for your specific AM use case.</p>
+                    <ol class="agent-framework">
+                        <li><strong>Analyze Your AM Workflow:</strong> Map out your specific additive manufacturing process from design to post‑processing, identifying decision points where AI can add value.</li>
+                        <li><strong>Define AM‑Specific Objectives:</strong> Establish clear goals such as reducing print failures, optimizing material usage, decreasing production time, or improving part quality.</li>
+                        <li><strong>Select AM‑Aligned Techniques:</strong> Choose which development approaches (prompt engineering, fine‑tuning, toolchain integration, hyperparameter optimization, RAG, etc.) best address your specific challenges.</li>
+                        <li><strong>Build AM Knowledge Base:</strong> Curate datasets, process guides, and material information specific to your AM operations.</li>
+                        <li><strong>Develop Integrated Agent:</strong> Combine the selected techniques into a cohesive system that interacts with your AM equipment and software.</li>
+                        <li><strong>Validate in AM Context:</strong> Test the agent with actual print jobs, material samples, and production scenarios.</li>
+                        <li><strong>Iterate Based on AM Feedback:</strong> Continuously improve based on print results, quality measurements, and operator feedback.</li>
+                    </ol>
+                </section>
+
+                <section class="content-section" data-level="advanced" id="ai-agents-in-am">
+                    <h2>AI Agents in AM</h2>
+                    <p>Examining successful AI implementations in additive manufacturing reveals practical technical approaches, integration methods, and measurable outcomes.</p>
+                    <ul>
+                        <li><strong>Process Optimization:</strong> AI agents predict optimal laser power, scan speed, and layer thickness to minimize defects and maximize build rate.</li>
+                        <li><strong>Real‑Time Defect Detection:</strong> Vision‑based models identify porosity, cracking, or warping during the build and trigger corrective actions.</li>
+                        <li><strong>Material Behavior Modeling:</strong> AI forecasts how powders will melt and solidify, enabling proactive parameter adjustments.</li>
+                        <li><strong>Quality Prediction:</strong> Models estimate final part mechanical properties and surface finish from in‑process sensor data.</li>
+                    </ul>
+                    <p>These examples illustrate how integrating the development approaches and framework above yields tangible benefits in AM workflows.</p>
+                </section>
+
+                <div class="project-list">
+                    <a href="agent-application-design.html" class="project-button">
                         Application
                     </a>
-</div>
-<!-- Pagination -->
-<div class="pagination">
-<a class="pagination-item pagination-prev" href="../tutorials/index.html">
-<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
-<line x1="19" x2="5" y1="12" y2="12"></line>
-<polyline points="12 19 5 12 12 5"></polyline>
-</svg>
-<div>
-<div class="pagination-label">Previous</div>
-<div class="pagination-title">Tutorials</div>
-</div>
-</a>
-<a class="pagination-item pagination-next" href="agent-foundation.html">
-<div>
-<div class="pagination-label">Next</div>
-<div class="pagination-title">Agent Foundations</div>
-</div>
-<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
-<line x1="5" x2="19" y1="12" y2="12"></line>
-<polyline points="12 5 19 12 12 19"></polyline>
-</svg>
-</a>
-</div>
-</div>
-</div>
-<!-- Content Depth Indicator -->
-<div class="content-depth-indicator">
-<!-- Markers will be generated by JavaScript -->
-</div>
-</main>
-<!-- Footer -->
+                </div>
 
-<!-- Scripts -->
-<script src="../../js/main.js"></script>
-<script src="../../js/navigation.js"></script>
-<script src="../../js/search.js"></script>
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="../tutorials/index.html" class="pagination-item pagination-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        <div>
+                            <div class="pagination-label">Previous</div>
+                            <div class="pagination-title">Tutorials</div>
+                        </div>
+                    </a>
+
+                    <a href="agent-foundation.html" class="pagination-item pagination-next">
+                        <div>
+                            <div class="pagination-label">Next</div>
+                            <div class="pagination-title">Agent Foundations</div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Depth Indicator -->
+        <div class="content-depth-indicator">
+            <!-- Markers will be generated by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI in Additive Manufacturing</h3>
+                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../Agentic AI/index.html">Agentic AI For AM</a></li>
+                        <li><a href="../Develop AI models/index_nowrin.html">AI Models Development</a></li>
+                        <li><a href="../AI Agent/index.html">AI agent</a></li>
+                        <li><a href="../AM_dataset/datasets.html">Data for AI</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>References</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/search.js"></script>
 </body>
 </html>

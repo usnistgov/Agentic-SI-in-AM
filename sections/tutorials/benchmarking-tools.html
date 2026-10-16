@@ -1,273 +1,305 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Benchmarking Tools for SI in Additive Manufacturing - Learn about quantitative methods and tools for evaluating generative SI models in AM" name="description"/>
-<title>Benchmarking Tools for SI in AM | Tutorials</title>
-<!-- Stylesheets -->
-<link href="../../css/style.css" rel="stylesheet"/>
-<link href="../../css/components.css" rel="stylesheet"/>
-<link href="../../css/responsive.css" rel="stylesheet"/>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benchmarking Tools for AI in Additive Manufacturing - Learn about quantitative methods and tools for evaluating generative AI models in AM">
+    <title>Benchmarking Tools for AI in AM | Tutorials</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <!-- Official NIST site-wide header and footer -->
     <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
     <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
 </head>
 <body>
-<!-- Header & Navigation -->
-<header class="navbar">
-<div class="container">
-<a class="logo" href="../../index.html">
-<span>SI in AM</span>
-</a>
-<div class="search-container">
-<form class="search-form" role="search">
-<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
-<circle cx="11" cy="11" r="8"></circle>
-<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
-</svg>
-<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
-</form>
-<div class="search-results"></div>
-</div>
-<button aria-label="Toggle menu" class="hamburger-menu">
-<div></div>
-<div></div>
-<div></div>
-</button>
-<nav>
-<ul class="nav-links">
-<li><a href="../intro/index.html">Introduction</a></li>
-<li><a href="../core-technologies/index.html">Core Technologies</a></li>
-<li><a class="active" href="../tutorials/index.html">Tutorials</a></li>
-<li><a href="../case-studies/index.html">Case Studies</a></li>
-<li><a href="../resources/index.html">Resources</a></li>
-</ul>
-</nav>
-</div>
-</header>
-<!-- Main Content -->
-<main>
-<!-- Breadcrumbs -->
-<div class="container">
-<div class="breadcrumbs">
-<ul>
-<li><a href="../../index.html">Home</a></li>
-<li><a href="index.html">Tutorials</a></li>
-<li><span class="current">Benchmarking Tools</span></li>
-</ul>
-</div>
-</div>
-<!-- Hero Section -->
-<section class="hero">
-<div class="container">
-<div class="hero-content">
-<div class="hero-text">
-<h1>Benchmarking Tools for SI in AM</h1>
-<p>A comprehensive framework and practical tools for quantitatively evaluating and comparing different generative SI models for additive manufacturing applications.</p>
-</div>
-<div class="hero-image">
-<img alt="SI Benchmarking Tools" height="300" src="../../images/general-project2.jpg" width="500"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Content with Sidebar -->
-<div class="container with-sidebar">
-<!-- Sidebar with Table of Contents -->
-<aside class="sidebar">
-<div class="toc">
-<h2 class="toc-title">On This Page</h2>
-<ul class="toc-list">
-<li><a href="#overview">Overview</a></li>
-<li><a href="#quantitative-metrics">Quantitative Metrics</a></li>
-<li><a href="#evaluation-framework">Evaluation Framework</a></li>
-<li><a href="#tools">Benchmarking Tools</a></li>
-<li><a href="#implementation">Implementation Guide</a></li>
-<li><a href="#case-study">Case Study</a></li>
-<li><a href="#resources">Additional Resources</a></li>
-</ul>
-</div>
-<div class="section-navigation">
-<h3>Related Topics</h3>
-<ul class="toc-list">
-<li><a href="../Develop%20AI%20models/benchmarking-metrics.html">Benchmarking Metrics</a></li>
-<li><a href="prompt-engineering.html">Prompt Engineering</a></li>
-<li><a href="../resources/datasets.html">AM Datasets</a></li>
-</ul>
-</div>
-</aside>
-<!-- Main Content Area -->
-<div class="content">
-<!-- Overview (Basic Level) -->
-<section class="content-section" data-level="basic" id="overview">
-<h2>Benchmarking Tools Overview</h2>
-<span class="complexity-badge complexity-beginner">Beginner</span>
-<p>Building on our qualitative benchmarking framework, this tutorial presents a comprehensive methodology and toolset for quantitatively evaluating various SI tools in addressing diverse AM-related tasks.</p>
-<div class="key-points">
-<h3>Key Concepts:</h3>
-<ul>
-<li><strong>Quantitative Evaluation:</strong> Measurable metrics for objective assessment of SI model performance</li>
-<li><strong>Comprehensive Framework:</strong> Tools that evaluate across agnostic, domain-specific, and problem-specific dimensions</li>
-<li><strong>Comparative Analysis:</strong> Methods to systematically benchmark leading SI models including GPT-4o, GPT-4 turbo, o1, o-3 mini, Gemini, and Llama 3</li>
-<li><strong>Practical Tools:</strong> Software implementations to streamline the evaluation process</li>
-</ul>
-</div>
-<p>This tutorial will guide you through the process of setting up and using our benchmarking tools to evaluate different SI models for your specific AM applications, helping you make informed decisions about which models best suit your needs.</p>
-</section>
-<!-- Quantitative Metrics (Basic Level) -->
-<section class="content-section" data-level="basic" id="quantitative-metrics">
-<h2>Quantitative Metrics for Evaluation</h2>
-<span class="complexity-badge complexity-beginner">Beginner</span>
-<p>Our benchmarking approach uses quantitative metrics across three categories to provide objective measurements of SI performance in AM contexts. These metrics are designed to be reproducible and comparable across different evaluations.</p>
-<div class="image-with-caption">
-<img alt="Quantitative Metrics Categories" class="medium-image" src="../../images/general-project2.jpg"/>
-<p class="caption">The three categories of quantitative metrics used in our benchmarking framework</p>
-</div>
-<h3>Metric Categories</h3>
-<div class="card-grid">
-<div class="card">
-<div class="card-body">
-<h3 class="card-title">Agnostic Metrics</h3>
-<p class="card-text">Model-independent metrics like response time, token efficiency, and consistency across multiple queries.</p>
-<ul class="card-list">
-<li>Response Time (ms)</li>
-<li>Token Efficiency Ratio</li>
-<li>Consistency Score (0-1)</li>
-<li>Hallucination Rate (%)</li>
-</ul>
-</div>
-</div>
-<div class="card">
-<div class="card-body">
-<h3 class="card-title">Domain Metrics</h3>
-<p class="card-text">AM-specific metrics measuring knowledge accuracy, terminology precision, and domain understanding.</p>
-<ul class="card-list">
-<li>Domain Knowledge Score (0-100)</li>
-<li>Terminology Precision (%)</li>
-<li>Technical Accuracy Rate (%)</li>
-<li>Reference Accuracy Score</li>
-</ul>
-</div>
-</div>
-<div class="card">
-<div class="card-body">
-<h3 class="card-title">Problem Metrics</h3>
-<p class="card-text">Task-specific metrics evaluating performance on particular AM challenges like design optimization or defect detection.</p>
-<ul class="card-list">
-<li>Solution Quality Score (0-100)</li>
-<li>Design Feasibility Rating</li>
-<li>Parameter Optimization Score</li>
-<li>Defect Recognition Accuracy (%)</li>
-</ul>
-</div>
-</div>
-</div>
-<p>Each metric is defined with specific calculation methods and normalization procedures to ensure consistency across evaluations. The metrics can be weighted according to your specific priorities when evaluating models for particular applications.</p>
-</section>
-<!-- Evaluation Framework (Intermediate Level) -->
-<section class="content-section" data-level="intermediate" id="evaluation-framework">
-<h2>Evaluation Framework Architecture</h2>
-<span class="complexity-badge complexity-intermediate">Intermediate</span>
-<p>Our benchmarking framework provides a structured approach to model evaluation that can be consistently applied across different SI models and AM applications.</p>
-<div class="two-column">
-<div>
-<h3>Framework Components</h3>
-<ul>
-<li><strong>Test Suite Generator:</strong> Creates standardized test cases for AM tasks</li>
-<li><strong>Model Interface Layer:</strong> Provides consistent interaction with different SI models</li>
-<li><strong>Response Analyzer:</strong> Extracts and processes model outputs</li>
-<li><strong>Metrics Calculator:</strong> Computes quantitative metrics from responses</li>
-<li><strong>Visualization Engine:</strong> Generates comparative visualizations of results</li>
-<li><strong>Reporting Module:</strong> Produces detailed evaluation reports</li>
-</ul>
-</div>
-<div>
-<h3>Evaluation Process</h3>
-<ol>
-<li><strong>Definition Phase:</strong> Set evaluation objectives and select relevant metrics</li>
-<li><strong>Test Generation:</strong> Create standardized test cases for AM tasks</li>
-<li><strong>Model Testing:</strong> Run tests across all models in consistent environment</li>
-<li><strong>Data Collection:</strong> Gather responses and performance measurements</li>
-<li><strong>Analysis:</strong> Calculate metrics and comparative statistics</li>
-<li><strong>Visualization:</strong> Generate charts and tables for analysis</li>
-<li><strong>Reporting:</strong> Create comprehensive evaluation reports</li>
-</ol>
-</div>
-</div>
-<h3>Evaluation Dimensions</h3>
-<p>Our framework evaluates models along multiple dimensions to provide a comprehensive assessment:</p>
-<ul>
-<li><strong>Performance:</strong> How well the model handles different AM tasks</li>
-<li><strong>Efficiency:</strong> Computational resources required and response times</li>
-<li><strong>Knowledge:</strong> Depth and accuracy of AM-specific information</li>
-<li><strong>Adaptability:</strong> Ability to handle variations in queries and problems</li>
-<li><strong>Usability:</strong> Ease of integration and practical application</li>
-</ul>
-</section>
-<!-- Benchmarking Tools (Advanced Level) -->
-<section class="content-section" data-level="advanced" id="tools">
-<h2>Benchmarking Tools Implementation</h2>
-<span class="complexity-badge complexity-advanced">Advanced</span>
-<p>We've developed a suite of tools to implement the benchmarking framework and streamline the evaluation process. These tools automate many aspects of the evaluation, from test case generation to results analysis.</p>
-<h3>Tool Components</h3>
-<div class="tool-components">
-<div class="tool-component">
-<h4>SI-AM-Bench Suite</h4>
-<p>Core benchmarking framework and coordination tools.</p>
-<div class="component-details">
-<span class="detail-item"><strong>Language:</strong> Python</span>
-<span class="detail-item"><strong>Dependencies:</strong> pandas, numpy, matplotlib, API clients</span>
-<span class="detail-item"><strong>Features:</strong> Test coordination, data collection, metric calculation</span>
-</div>
-</div>
-<div class="tool-component">
-<h4>Test Case Generator</h4>
-<p>Creates standardized AM test cases with expected responses.</p>
-<div class="component-details">
-<span class="detail-item"><strong>Input:</strong> Task specifications, complexity levels</span>
-<span class="detail-item"><strong>Output:</strong> Structured test cases in JSON format</span>
-<span class="detail-item"><strong>Features:</strong> Parameterized generation, validation checks</span>
-</div>
-</div>
-<div class="tool-component">
-<h4>Model API Wrapper</h4>
-<p>Provides uniform interface to different SI models.</p>
-<div class="component-details">
-<span class="detail-item"><strong>Supported Models:</strong> GPT-4o, GPT-4 turbo, o1, o-3 mini, Gemini, Llama 3</span>
-<span class="detail-item"><strong>Features:</strong> Rate limiting, error handling, response standardization</span>
-</div>
-</div>
-<div class="tool-component">
-<h4>Metrics Analyzer</h4>
-<p>Calculates and aggregates quantitative metrics from model responses.</p>
-<div class="component-details">
-<span class="detail-item"><strong>Input:</strong> Model responses, test case expectations</span>
-<span class="detail-item"><strong>Output:</strong> Calculated metrics with confidence intervals</span>
-<span class="detail-item"><strong>Features:</strong> Custom scoring functions, statistical analysis</span>
-</div>
-</div>
-<div class="tool-component">
-<h4>Visualization Dashboard</h4>
-<p>Interactive visualization of benchmarking results.</p>
-<div class="component-details">
-<span class="detail-item"><strong>Technologies:</strong> Plotly, Dash</span>
-<span class="detail-item"><strong>Features:</strong> Comparative charts, detailed drill-downs, metric filtering</span>
-</div>
-</div>
-</div>
-<div class="code-block">
-<div class="code-header">
-<span>Benchmark Runner Example</span>
-<button class="copy-button">Copy</button>
-</div>
-<div class="code-content">
-<pre><code>from genai_am_bench import BenchmarkRunner, ModelRegistry, TestSuite
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">
+                <span>AI in AM</span>
+            </a>
+            
+            <div class="search-container">
+                <form class="search-form" role="search">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="search-results"></div>
+            </div>
+            
+            <button class="hamburger-menu" aria-label="Toggle menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../intro/index.html">Introduction</a></li>
+                    <li><a href="../core-technologies/index.html">Core Technologies</a></li>
+                    <li><a href="../tutorials/index.html" class="active">Tutorials</a></li>
+                    <li><a href="../case-studies/index.html">Case Studies</a></li>
+                    <li><a href="../resources/index.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumbs -->
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="index.html">Tutorials</a></li>
+                    <li><span class="current">Benchmarking Tools</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Benchmarking Tools for AI in AM</h1>
+                        <p>A comprehensive framework and practical tools for quantitatively evaluating and comparing different generative AI models for additive manufacturing applications.</p>
+                    </div>
+                    <div class="hero-image">
+                        <img src="../../images/general-project2.jpg" alt="AI Benchmarking Tools" width="500" height="300">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content with Sidebar -->
+        <div class="container with-sidebar">
+            <!-- Sidebar with Table of Contents -->
+            <aside class="sidebar">
+                <div class="toc">
+                    <h2 class="toc-title">On This Page</h2>
+                    <ul class="toc-list">
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#quantitative-metrics">Quantitative Metrics</a></li>
+                        <li><a href="#evaluation-framework">Evaluation Framework</a></li>
+                        <li><a href="#tools">Benchmarking Tools</a></li>
+                        <li><a href="#implementation">Implementation Guide</a></li>
+                        <li><a href="#case-study">Case Study</a></li>
+                        <li><a href="#resources">Additional Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="section-navigation">
+                    <h3>Related Topics</h3>
+                    <ul class="toc-list">
+                        <li><span class="nist-link-unavailable">Benchmarking Metrics (link unavailable)</span></li>
+                        <li><a href="prompt-engineering.html">Prompt Engineering</a></li>
+                        <li><a href="../resources/datasets.html">AM Datasets</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Content Area -->
+            <div class="content">
+                <!-- Overview (Basic Level) -->
+                <section class="content-section" data-level="basic" id="overview">
+                    <h2>Benchmarking Tools Overview</h2>
+                    <span class="complexity-badge complexity-beginner">Beginner</span>
+                    
+                    <p>Building on our qualitative benchmarking framework, this tutorial presents a comprehensive methodology and toolset for quantitatively evaluating various AI tools in addressing diverse AM-related tasks.</p>
+                    
+                    <div class="key-points">
+                        <h3>Key Concepts:</h3>
+                        <ul>
+                            <li><strong>Quantitative Evaluation:</strong> Measurable metrics for objective assessment of AI model performance</li>
+                            <li><strong>Comprehensive Framework:</strong> Tools that evaluate across agnostic, domain-specific, and problem-specific dimensions</li>
+                            <li><strong>Comparative Analysis:</strong> Methods to systematically benchmark leading AI models including GPT-4o, GPT-4 turbo, o1, o-3 mini, Gemini, and Llama 3</li>
+                            <li><strong>Practical Tools:</strong> Software implementations to streamline the evaluation process</li>
+                        </ul>
+                    </div>
+                    
+                    <p>This tutorial will guide you through the process of setting up and using our benchmarking tools to evaluate different AI models for your specific AM applications, helping you make informed decisions about which models best suit your needs.</p>
+                </section>
+                
+                <!-- Quantitative Metrics (Basic Level) -->
+                <section class="content-section" data-level="basic" id="quantitative-metrics">
+                    <h2>Quantitative Metrics for Evaluation</h2>
+                    <span class="complexity-badge complexity-beginner">Beginner</span>
+                    
+                    <p>Our benchmarking approach uses quantitative metrics across three categories to provide objective measurements of AI performance in AM contexts. These metrics are designed to be reproducible and comparable across different evaluations.</p>
+                    
+                    <div class="image-with-caption">
+                        <img src="../../images/general-project2.jpg" alt="Quantitative Metrics Categories" class="medium-image">
+                        <p class="caption">The three categories of quantitative metrics used in our benchmarking framework</p>
+                    </div>
+                    
+                    <h3>Metric Categories</h3>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Agnostic Metrics</h3>
+                                <p class="card-text">Model-independent metrics like response time, token efficiency, and consistency across multiple queries.</p>
+                                <ul class="card-list">
+                                    <li>Response Time (ms)</li>
+                                    <li>Token Efficiency Ratio</li>
+                                    <li>Consistency Score (0-1)</li>
+                                    <li>Hallucination Rate (%)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Domain Metrics</h3>
+                                <p class="card-text">AM-specific metrics measuring knowledge accuracy, terminology precision, and domain understanding.</p>
+                                <ul class="card-list">
+                                    <li>Domain Knowledge Score (0-100)</li>
+                                    <li>Terminology Precision (%)</li>
+                                    <li>Technical Accuracy Rate (%)</li>
+                                    <li>Reference Accuracy Score</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Problem Metrics</h3>
+                                <p class="card-text">Task-specific metrics evaluating performance on particular AM challenges like design optimization or defect detection.</p>
+                                <ul class="card-list">
+                                    <li>Solution Quality Score (0-100)</li>
+                                    <li>Design Feasibility Rating</li>
+                                    <li>Parameter Optimization Score</li>
+                                    <li>Defect Recognition Accuracy (%)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>Each metric is defined with specific calculation methods and normalization procedures to ensure consistency across evaluations. The metrics can be weighted according to your specific priorities when evaluating models for particular applications.</p>
+                </section>
+                
+                <!-- Evaluation Framework (Intermediate Level) -->
+                <section class="content-section" data-level="intermediate" id="evaluation-framework">
+                    <h2>Evaluation Framework Architecture</h2>
+                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
+                    
+                    <p>Our benchmarking framework provides a structured approach to model evaluation that can be consistently applied across different AI models and AM applications.</p>
+                    
+                    <div class="two-column">
+                        <div>
+                            <h3>Framework Components</h3>
+                            <ul>
+                                <li><strong>Test Suite Generator:</strong> Creates standardized test cases for AM tasks</li>
+                                <li><strong>Model Interface Layer:</strong> Provides consistent interaction with different AI models</li>
+                                <li><strong>Response Analyzer:</strong> Extracts and processes model outputs</li>
+                                <li><strong>Metrics Calculator:</strong> Computes quantitative metrics from responses</li>
+                                <li><strong>Visualization Engine:</strong> Generates comparative visualizations of results</li>
+                                <li><strong>Reporting Module:</strong> Produces detailed evaluation reports</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3>Evaluation Process</h3>
+                            <ol>
+                                <li><strong>Definition Phase:</strong> Set evaluation objectives and select relevant metrics</li>
+                                <li><strong>Test Generation:</strong> Create standardized test cases for AM tasks</li>
+                                <li><strong>Model Testing:</strong> Run tests across all models in consistent environment</li>
+                                <li><strong>Data Collection:</strong> Gather responses and performance measurements</li>
+                                <li><strong>Analysis:</strong> Calculate metrics and comparative statistics</li>
+                                <li><strong>Visualization:</strong> Generate charts and tables for analysis</li>
+                                <li><strong>Reporting:</strong> Create comprehensive evaluation reports</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <h3>Evaluation Dimensions</h3>
+                    <p>Our framework evaluates models along multiple dimensions to provide a comprehensive assessment:</p>
+                    <ul>
+                        <li><strong>Performance:</strong> How well the model handles different AM tasks</li>
+                        <li><strong>Efficiency:</strong> Computational resources required and response times</li>
+                        <li><strong>Knowledge:</strong> Depth and accuracy of AM-specific information</li>
+                        <li><strong>Adaptability:</strong> Ability to handle variations in queries and problems</li>
+                        <li><strong>Usability:</strong> Ease of integration and practical application</li>
+                    </ul>
+                </section>
+                
+                <!-- Benchmarking Tools (Advanced Level) -->
+                <section class="content-section" data-level="advanced" id="tools">
+                    <h2>Benchmarking Tools Implementation</h2>
+                    <span class="complexity-badge complexity-advanced">Advanced</span>
+                    
+                    <p>We've developed a suite of tools to implement the benchmarking framework and streamline the evaluation process. These tools automate many aspects of the evaluation, from test case generation to results analysis.</p>
+                    
+                    <h3>Tool Components</h3>
+                    <div class="tool-components">
+                        <div class="tool-component">
+                            <h4>AI-AM-Bench Suite</h4>
+                            <p>Core benchmarking framework and coordination tools.</p>
+                            <div class="component-details">
+                                <span class="detail-item"><strong>Language:</strong> Python</span>
+                                <span class="detail-item"><strong>Dependencies:</strong> pandas, numpy, matplotlib, API clients</span>
+                                <span class="detail-item"><strong>Features:</strong> Test coordination, data collection, metric calculation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-component">
+                            <h4>Test Case Generator</h4>
+                            <p>Creates standardized AM test cases with expected responses.</p>
+                            <div class="component-details">
+                                <span class="detail-item"><strong>Input:</strong> Task specifications, complexity levels</span>
+                                <span class="detail-item"><strong>Output:</strong> Structured test cases in JSON format</span>
+                                <span class="detail-item"><strong>Features:</strong> Parameterized generation, validation checks</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-component">
+                            <h4>Model API Wrapper</h4>
+                            <p>Provides uniform interface to different AI models.</p>
+                            <div class="component-details">
+                                <span class="detail-item"><strong>Supported Models:</strong> GPT-4o, GPT-4 turbo, o1, o-3 mini, Gemini, Llama 3</span>
+                                <span class="detail-item"><strong>Features:</strong> Rate limiting, error handling, response standardization</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-component">
+                            <h4>Metrics Analyzer</h4>
+                            <p>Calculates and aggregates quantitative metrics from model responses.</p>
+                            <div class="component-details">
+                                <span class="detail-item"><strong>Input:</strong> Model responses, test case expectations</span>
+                                <span class="detail-item"><strong>Output:</strong> Calculated metrics with confidence intervals</span>
+                                <span class="detail-item"><strong>Features:</strong> Custom scoring functions, statistical analysis</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-component">
+                            <h4>Visualization Dashboard</h4>
+                            <p>Interactive visualization of benchmarking results.</p>
+                            <div class="component-details">
+                                <span class="detail-item"><strong>Technologies:</strong> Plotly, Dash</span>
+                                <span class="detail-item"><strong>Features:</strong> Comparative charts, detailed drill-downs, metric filtering</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Benchmark Runner Example</span>
+                            <button class="copy-button">Copy</button>
+                        </div>
+                        <div class="code-content">
+                            <pre><code>from genai_am_bench import BenchmarkRunner, ModelRegistry, TestSuite
 from genai_am_bench.metrics import MetricsCalculator
 from genai_am_bench.visualization import ResultsVisualizer
 
@@ -305,182 +337,232 @@ visualizer.generate_radar_chart(aggregated_results, "Model Capability Profile")
 # Export results
 results.to_csv("benchmark_results.csv")
 visualizer.save_charts("benchmark_visuals.html")</code></pre>
-</div>
-</div>
-</section>
-<!-- Implementation Guide (Intermediate Level) -->
-<section class="content-section" data-level="intermediate" id="implementation">
-<h2>Implementation Guide</h2>
-<span class="complexity-badge complexity-intermediate">Intermediate</span>
-<p>Follow these steps to implement the benchmarking tools and evaluate SI models for your AM applications:</p>
-<div class="implementation-stages">
-<div class="stage">
-<h4>Step 1: Set Up Environment</h4>
-<ul>
-<li>Clone the repository: <code>git clone https://github.com/nowrin0102/AI-Metrics-for-Additive-Manufacturing</code></li>
-<li>Install dependencies: <code>pip install -r requirements.txt</code></li>
-<li>Configure API keys for models in <code>config.py</code></li>
-<li>Install any model-specific dependencies (e.g., Llama requires specific packages)</li>
-</ul>
-</div>
-<div class="stage">
-<h4>Step 2: Define Evaluation Objectives</h4>
-<ul>
-<li>Identify specific AM tasks you want to evaluate (e.g., design optimization, process parameter selection)</li>
-<li>Select relevant metrics based on your priorities</li>
-<li>Determine evaluation scale (how many test cases, repetitions, etc.)</li>
-<li>Define acceptable performance thresholds</li>
-</ul>
-</div>
-<div class="stage">
-<h4>Step 3: Prepare Test Cases</h4>
-<ul>
-<li>Use provided test case templates or create your own</li>
-<li>Ensure consistent format across all test cases</li>
-<li>Include a mix of difficulty levels</li>
-<li>Provide reference solutions or evaluation criteria</li>
-</ul>
-</div>
-<div class="stage">
-<h4>Step 4: Run Benchmarks</h4>
-<ul>
-<li>Configure the benchmark runner with your models and settings</li>
-<li>Execute the benchmark suite</li>
-<li>Monitor for any API rate limiting or errors</li>
-<li>Store raw results for detailed analysis</li>
-</ul>
-</div>
-<div class="stage">
-<h4>Step 5: Analyze &amp; Visualize Results</h4>
-<ul>
-<li>Calculate aggregate metrics using the provided tools</li>
-<li>Generate comparative visualizations</li>
-<li>Identify strengths and weaknesses of each model</li>
-<li>Consider statistical significance of differences</li>
-</ul>
-</div>
-</div>
-<h3>Common Implementation Challenges</h3>
-<div class="two-column">
-<div>
-<h4>API Rate Limits</h4>
-<p>Many SI APIs have rate limits that can impact testing at scale.</p>
-<p><strong>Solution:</strong> Implement rate limiting, batch processing, and exponential backoff in your test runner. The provided tools include these features by default.</p>
-</div>
-<div>
-<h4>Response Variability</h4>
-<p>SI models may produce different responses to the same query.</p>
-<p><strong>Solution:</strong> Run multiple trials of each test case and use statistical methods to analyze the distribution of results. Our framework includes tools for handling this variability.</p>
-</div>
-</div>
-</section>
-<!-- Case Study (Basic Level) -->
-<section class="content-section" data-level="basic" id="case-study">
-<h2>Benchmarking Case Study</h2>
-<span class="complexity-badge complexity-beginner">Beginner</span>
-<p>To demonstrate the application of our benchmarking tools, we conducted a comprehensive evaluation of six leading SI models on AM-specific tasks.</p>
-<h3>Evaluation Setup</h3>
-<ul>
-<li><strong>Models Evaluated:</strong> GPT-4o, GPT-4 turbo, o1, o-3 mini, Gemini, Llama 3</li>
-<li><strong>Test Cases:</strong> 25 AM-specific scenarios across design, process, and quality domains</li>
-<li><strong>Metrics:</strong> Full suite of agnostic, domain, and problem metrics</li>
-<li><strong>Trials:</strong> 3 repetitions per test case for statistical robustness</li>
-</ul>
-<h3>Key Findings</h3>
-<div class="findings-grid">
-<div class="finding-item">
-<h4>Response Quality</h4>
-<p>GPT-4o and o1 consistently produced the highest quality responses for AM-specific tasks, with particular strength in design optimization scenarios.</p>
-</div>
-<div class="finding-item">
-<h4>Domain Knowledge</h4>
-<p>All models showed reasonable AM knowledge, but GPT-4o demonstrated superior understanding of process-specific details and technical terminology.</p>
-</div>
-<div class="finding-item">
-<h4>Efficiency Tradeoffs</h4>
-<p>Smaller models like o-3 mini offered significantly faster response times with only moderate reduction in quality for simpler tasks.</p>
-</div>
-<div class="finding-item">
-<h4>Task Specialization</h4>
-<p>Different models excelled at different tasks: Gemini performed exceptionally well on material selection tasks, while Llama 3 showed strengths in parameter optimization.</p>
-</div>
-</div>
-<div class="cta-box">
-<h3>Run Your Own Benchmarks</h3>
-<p>Explore our benchmarking tools and conduct your own evaluations using the GitHub repository and documentation:</p>
-<div class="cta-buttons">
-<a class="btn" href="https://github.com/nowrin0102/AI-Metrics-for-Additive-Manufacturing" target="_blank">GitHub Repository</a>
-<a class="btn btn-outline" href="../resources/datasets.html">AM Datasets</a>
-</div>
-</div>
-</section>
-<!-- Additional Resources (Basic Level) -->
-<section class="content-section" data-level="basic" id="resources">
-<h2>Additional Resources</h2>
-<span class="complexity-badge complexity-beginner">Beginner</span>
-<p>To help you implement effective benchmarking for SI models in your AM workflows, we've compiled these additional resources:</p>
-<h3>Documentation and Guides</h3>
-<ul>
-<li><a href="#">Comprehensive API Documentation</a> for all benchmarking tools</li>
-<li><a href="#">Test Case Creation Guide</a> for developing effective AM-specific test scenarios</li>
-<li><a href="#">Model Integration Tutorials</a> for connecting to various SI APIs</li>
-<li><a href="#">Results Interpretation Guide</a> for making sense of benchmarking data</li>
-</ul>
-<h3>Supplementary Tools</h3>
-<ul>
-<li><a href="#">Test Case Generator</a> with templates for common AM tasks</li>
-<li><a href="#">Results Visualizer</a> for creating advanced custom visualizations</li>
-<li><a href="#">API Cost Calculator</a> for estimating expenses of large-scale benchmarking</li>
-<li><a href="#">Benchmark Scheduler</a> for distributed testing across timeframes</li>
-</ul>
-<div class="resource-grid">
-<div class="resource-item">
-<h4>Model Evaluation Datasets</h4>
-<p>Standardized datasets specifically designed for benchmarking SI models on AM tasks.</p>
-<a class="btn" href="../resources/datasets.html">Access Datasets</a>
-</div>
-<div class="resource-item">
-<h4>Prompt Engineering Techniques</h4>
-<p>Learn how different prompting approaches can affect benchmarking results.</p>
-<a class="btn" href="prompt-engineering.html">Explore Techniques</a>
-</div>
-</div>
-</section>
-<!-- Pagination -->
-<div class="pagination">
-<a class="pagination-item pagination-prev" href="../Develop%20AI%20models/benchmarking-metrics.html">
-<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
-<line x1="19" x2="5" y1="12" y2="12"></line>
-<polyline points="12 19 5 12 12 5"></polyline>
-</svg>
-<div>
-<div class="pagination-label">Previous</div>
-<div class="pagination-title">Benchmarking Metrics</div>
-</div>
-</a>
-<a class="pagination-item pagination-next" href="prompt-engineering.html">
-<div>
-<div class="pagination-label">Next</div>
-<div class="pagination-title">Prompt Engineering</div>
-</div>
-<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
-<line x1="5" x2="19" y1="12" y2="12"></line>
-<polyline points="12 5 19 12 12 19"></polyline>
-</svg>
-</a>
-</div>
-</div>
-</div>
-<!-- Content Depth Indicator -->
-<div class="content-depth-indicator">
-<!-- Markers will be generated by JavaScript -->
-</div>
-</main>
-<!-- Footer -->
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Implementation Guide (Intermediate Level) -->
+                <section class="content-section" data-level="intermediate" id="implementation">
+                    <h2>Implementation Guide</h2>
+                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
+                    
+                    <p>Follow these steps to implement the benchmarking tools and evaluate AI models for your AM applications:</p>
+                    
+                    <div class="implementation-stages">
+                        <div class="stage">
+                            <h4>Step 1: Set Up Environment</h4>
+                            <ul>
+                                <li>Clone the repository: <code>git clone https://github.com/nowrin0102/AI-Metrics-for-Additive-Manufacturing</code></li>
+                                <li>Install dependencies: <code>pip install -r requirements.txt</code></li>
+                                <li>Configure API keys for models in <code>config.py</code></li>
+                                <li>Install any model-specific dependencies (e.g., Llama requires specific packages)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="stage">
+                            <h4>Step 2: Define Evaluation Objectives</h4>
+                            <ul>
+                                <li>Identify specific AM tasks you want to evaluate (e.g., design optimization, process parameter selection)</li>
+                                <li>Select relevant metrics based on your priorities</li>
+                                <li>Determine evaluation scale (how many test cases, repetitions, etc.)</li>
+                                <li>Define acceptable performance thresholds</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="stage">
+                            <h4>Step 3: Prepare Test Cases</h4>
+                            <ul>
+                                <li>Use provided test case templates or create your own</li>
+                                <li>Ensure consistent format across all test cases</li>
+                                <li>Include a mix of difficulty levels</li>
+                                <li>Provide reference solutions or evaluation criteria</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="stage">
+                            <h4>Step 4: Run Benchmarks</h4>
+                            <ul>
+                                <li>Configure the benchmark runner with your models and settings</li>
+                                <li>Execute the benchmark suite</li>
+                                <li>Monitor for any API rate limiting or errors</li>
+                                <li>Store raw results for detailed analysis</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="stage">
+                            <h4>Step 5: Analyze & Visualize Results</h4>
+                            <ul>
+                                <li>Calculate aggregate metrics using the provided tools</li>
+                                <li>Generate comparative visualizations</li>
+                                <li>Identify strengths and weaknesses of each model</li>
+                                <li>Consider statistical significance of differences</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <h3>Common Implementation Challenges</h3>
+                    <div class="two-column">
+                        <div>
+                            <h4>API Rate Limits</h4>
+                            <p>Many AI APIs have rate limits that can impact testing at scale.</p>
+                            <p><strong>Solution:</strong> Implement rate limiting, batch processing, and exponential backoff in your test runner. The provided tools include these features by default.</p>
+                        </div>
+                        
+                        <div>
+                            <h4>Response Variability</h4>
+                            <p>AI models may produce different responses to the same query.</p>
+                            <p><strong>Solution:</strong> Run multiple trials of each test case and use statistical methods to analyze the distribution of results. Our framework includes tools for handling this variability.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Case Study (Basic Level) -->
+                <section class="content-section" data-level="basic" id="case-study">
+                    <h2>Benchmarking Case Study</h2>
+                    <span class="complexity-badge complexity-beginner">Beginner</span>
+                    
+                    <p>To demonstrate the application of our benchmarking tools, we conducted a comprehensive evaluation of six leading AI models on AM-specific tasks.</p>
+                    
+                    <h3>Evaluation Setup</h3>
+                    <ul>
+                        <li><strong>Models Evaluated:</strong> GPT-4o, GPT-4 turbo, o1, o-3 mini, Gemini, Llama 3</li>
+                        <li><strong>Test Cases:</strong> 25 AM-specific scenarios across design, process, and quality domains</li>
+                        <li><strong>Metrics:</strong> Full suite of agnostic, domain, and problem metrics</li>
+                        <li><strong>Trials:</strong> 3 repetitions per test case for statistical robustness</li>
+                    </ul>
+                    
+                    <h3>Key Findings</h3>
+                    <div class="findings-grid">
+                        <div class="finding-item">
+                            <h4>Response Quality</h4>
+                            <p>GPT-4o and o1 consistently produced the highest quality responses for AM-specific tasks, with particular strength in design optimization scenarios.</p>
+                        </div>
+                        
+                        <div class="finding-item">
+                            <h4>Domain Knowledge</h4>
+                            <p>All models showed reasonable AM knowledge, but GPT-4o demonstrated superior understanding of process-specific details and technical terminology.</p>
+                        </div>
+                        
+                        <div class="finding-item">
+                            <h4>Efficiency Tradeoffs</h4>
+                            <p>Smaller models like o-3 mini offered significantly faster response times with only moderate reduction in quality for simpler tasks.</p>
+                        </div>
+                        
+                        <div class="finding-item">
+                            <h4>Task Specialization</h4>
+                            <p>Different models excelled at different tasks: Gemini performed exceptionally well on material selection tasks, while Llama 3 showed strengths in parameter optimization.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-box">
+                        <h3>Run Your Own Benchmarks</h3>
+                        <p>Explore our benchmarking tools and conduct your own evaluations using the GitHub repository and documentation:</p>
+                        <div class="cta-buttons">
+                            <span class="nist-dataset-pending">Dataset access pending NIST review and publication</span>
+                            <a href="../resources/datasets.html" class="btn btn-outline">AM Datasets</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Additional Resources (Basic Level) -->
+                <section class="content-section" data-level="basic" id="resources">
+                    <h2>Additional Resources</h2>
+                    <span class="complexity-badge complexity-beginner">Beginner</span>
+                    
+                    <p>To help you implement effective benchmarking for AI models in your AM workflows, we've compiled these additional resources:</p>
+                    
+                    <h3>Documentation and Guides</h3>
+                    <ul>
+                        <li><a href="#">Comprehensive API Documentation</a> for all benchmarking tools</li>
+                        <li><a href="#">Test Case Creation Guide</a> for developing effective AM-specific test scenarios</li>
+                        <li><a href="#">Model Integration Tutorials</a> for connecting to various AI APIs</li>
+                        <li><a href="#">Results Interpretation Guide</a> for making sense of benchmarking data</li>
+                    </ul>
+                    
+                    <h3>Supplementary Tools</h3>
+                    <ul>
+                        <li><a href="#">Test Case Generator</a> with templates for common AM tasks</li>
+                        <li><a href="#">Results Visualizer</a> for creating advanced custom visualizations</li>
+                        <li><a href="#">API Cost Calculator</a> for estimating expenses of large-scale benchmarking</li>
+                        <li><a href="#">Benchmark Scheduler</a> for distributed testing across timeframes</li>
+                    </ul>
+                    
+                    <div class="resource-grid">
+                        <div class="resource-item">
+                            <h4>Model Evaluation Datasets</h4>
+                            <p>Standardized datasets specifically designed for benchmarking AI models on AM tasks.</p>
+                            <a href="../resources/datasets.html" class="btn">Access Datasets</a>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <h4>Prompt Engineering Techniques</h4>
+                            <p>Learn how different prompting approaches can affect benchmarking results.</p>
+                            <a href="prompt-engineering.html" class="btn">Explore Techniques</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Pagination -->
+                <div class="pagination">
+                    <span class="nist-link-unavailable">Previous Benchmarking Metrics (link unavailable)</span>
+                    
+                    <a href="prompt-engineering.html" class="pagination-item pagination-next">
+                        <div>
+                            <div class="pagination-label">Next</div>
+                            <div class="pagination-title">Prompt Engineering</div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content Depth Indicator -->
+        <div class="content-depth-indicator">
+            <!-- Markers will be generated by JavaScript -->
+        </div>
+    </main>
 
-<!-- Scripts -->
-<script src="../../js/main.js"></script>
-<script src="../../js/navigation.js"></script>
-<script src="../../js/search.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI in Additive Manufacturing</h3>
+                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../intro/index.html">Introduction</a></li>
+                        <li><a href="../core-technologies/index.html">Core Technologies</a></li>
+                        <li><a href="../tutorials/index.html">Tutorials</a></li>
+                        <li><a href="../case-studies/index.html">Case Studies</a></li>
+                        <li><a href="../resources/index.html">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>References</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/search.js"></script>
 </body>
 </html>
