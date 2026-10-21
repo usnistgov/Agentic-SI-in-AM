@@ -1,403 +1,344 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Case Studies & Applications of Generative AI in Additive Manufacturing - Real-world examples and success stories">
-    <title>Case Studies & Applications | AI in Additive Manufacturing</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- Official NIST site-wide header and footer -->
-    <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-    <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Case Studies &amp; Applications of Generative SI in Additive Manufacturing - Real-world examples and success stories" name="description"/>
+<title>Case Studies &amp; Applications | SI in Additive Manufacturing</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
+<!-- Official NIST site-wide header and footer -->
+<link href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" rel="stylesheet"/>
+<script defer="defer" src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"></script>
+<style data-si-disclosure="true">
+.si-image-disclosure {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+}
+.si-image-disclosure strong {
+  color: #333;
+}
+</style></head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
-            
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-            
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            
-            <nav>
-                <ul class="nav-links">
-                    <!-- <li><a href="../intro/index.html">Introduction</a></li>
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav>
+<ul class="nav-links">
+<!-- <li><a href="../intro/index.html">Introduction</a></li>
                     <li><a href="../core-technologies/index.html">Core Technologies</a></li>
                     <li><a href="../tutorials/index.html">Tutorials</a></li>
                     <li><a href="../case-studies/index.html" class="active">Case Studies</a></li>
                     <li><a href="../resources/index.html">AI for Data</a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <!-- <li><a href="../../index.html">Home</a></li> -->
-                    <li><span class="current">Case Studies</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Case Studies & Applications</h1>
-                        <p>Real-world examples of generative AI transforming additive manufacturing processes, products, and possibilities.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/automated.webp" alt="AI Applications in Additive Manufacturing" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">In This Section</h2>
-                    <ul class="toc-list">
-                        <li><a href="#industry-applications">Industry Applications</a></li>
-                        <li><a href="#genai-agents">AI Agents</a></li>
-                        <li><a href="#agent-foundation">Agent Foundations</a></li>
-                        <li><a href="#success-stories">Success Stories</a></li>
-                        <li><a href="#future-directions">Future Directions</a></li>
-                    </ul>
-                </div>
-                
-                <div class="section-navigation">
-                    <h3>Explore This Topic</h3>
-                    <ul class="toc-list">
-                        <li><span class="nist-link-unavailable">AI Agents (link unavailable)</span></li>
-                        <li><a href="agent-foundation.html">Agent Foundations</a></li>
-                        <li><span class="nist-link-unavailable">Industry Applications (link unavailable)</span></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Overview (Basic Level) -->
-                <section class="content-section" data-level="basic" id="overview">
-                    <h2>Real-World Applications & Examples</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>This section showcases real-world applications of generative AI in additive manufacturing, providing concrete examples of how these technologies are being implemented across industries. Through detailed case studies, you'll gain insights into successful implementations, challenges overcome, and measurable results achieved.</p>
-                    
-                    <div class="key-points">
-                        <h3>What You'll Discover:</h3>
-                        <ul>
-                            <li><strong>Industry Applications:</strong> How different sectors are leveraging AI in AM workflows</li>
-                            <li><strong>Implementation Details:</strong> Technical approaches and integration methods used in real projects</li>
-                            <li><strong>Challenges & Solutions:</strong> Common obstacles and how they were addressed</li>
-                            <li><strong>Measurable Outcomes:</strong> Quantifiable benefits and results from AI implementation</li>
-                        </ul>
-                    </div>
-                </section>
-                
-                <!-- Industry Applications (Basic Level) -->
-                <section class="content-section" data-level="basic" id="industry-applications">
-                    <h2>Industry Applications</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>Generative AI is being applied across diverse industries to transform additive manufacturing processes and outcomes. These applications demonstrate the versatility and impact of AI-driven approaches in real-world manufacturing contexts.</p>
-                    
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Aerospace</h3>
-                                <p class="card-text">Applications in lightweight component design, topology optimization, and part consolidation for aircraft and spacecraft components.</p>
-                                <span class="nist-link-unavailable">Explore (link unavailable)</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Medical</h3>
-                                <p class="card-text">Personalized implants, prosthetics, and anatomical models generated using AI to improve patient outcomes and surgical planning.</p>
-                                <span class="nist-link-unavailable">Explore (link unavailable)</span>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Automotive</h3>
-                                <p class="card-text">Applications in rapid prototyping, tooling optimization, and end-use parts for vehicles with complex geometries and improved performance.</p>
-                                <span class="nist-link-unavailable">Explore (link unavailable)</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <span class="nist-link-unavailable">View All Industry Applications (link unavailable)</span>
-                </section>
-                
-                <!-- AI Agents (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="genai-agents">
-                    <h2>AI Agents in Manufacturing</h2>
-                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
-                    
-                    <p>Generative AI agents represent an advanced approach to implementing AI in manufacturing environments. These agents can autonomously perform complex tasks, make decisions, and continuously learn from their interactions with the manufacturing system.</p>
-                    
-                    <div class="two-column">
-                        <div>
-                            <h3>Agent Capabilities</h3>
-                            <p>Modern AI agents in AM environments can perform a wide range of tasks:</p>
-                            <ul>
-                                <li>Autonomous design generation and optimization</li>
-                                <li>Real-time process monitoring and adjustment</li>
-                                <li>Predictive maintenance and quality control</li>
-                                <li>Supply chain optimization and material selection</li>
-                                <li>Multi-objective optimization considering various constraints</li>
-                            </ul>
-                            <img src="../../images/agent.webp" alt="AI Agent Architecture" class="project-image">
-                        </div>
-                        
-                        <div>
-                            <h3>Implementation Examples</h3>
-                            <p>Case studies of AI agents deployed in production environments show significant benefits:</p>
-                            <ul>
-                                <li><strong>Aerospace Component Manufacturing:</strong> 40% reduction in design time, 25% weight reduction in final parts</li>
-                                <li><strong>Medical Device Production:</strong> 65% faster design iterations for custom implants</li>
-                                <li><strong>Industrial Equipment:</strong> 30% reduction in material usage with maintained structural integrity</li>
-                                <li><strong>Consumer Products:</strong> 50% faster time-to-market for customized products</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <span class="nist-link-unavailable">Explore AI Agents in Detail (link unavailable)</span>
-                </section>
-                
-                <!-- Agent Foundation (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="agent-foundation">
-                    <h2>Agent Foundations</h2>
-                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
-                    
-                    <p>The foundation of effective AI agents in additive manufacturing involves several key components that enable autonomous operation, learning, and decision-making in complex manufacturing contexts.</p>
-                    
-                    <h3>Core Components of Agent Architecture</h3>
-                    <p>Successful agent implementations in AM typically include these foundational elements:</p>
-                    <ul>
-                        <li><strong>Perception Systems:</strong> Computer vision and sensor integration for real-time monitoring</li>
-                        <li><strong>Decision Models:</strong> AI frameworks for evaluating options and selecting optimal actions</li>
-                        <li><strong>Knowledge Representation:</strong> Structures for maintaining information about designs, processes, and constraints</li>
-                        <li><strong>Learning Mechanisms:</strong> Approaches for improving performance based on experience and feedback</li>
-                        <li><strong>Communication Interfaces:</strong> Methods for interaction with operators, other systems, and manufacturing equipment</li>
-                    </ul>
-                    
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Single-Task Agents</h3>
-                                <p class="card-text">Specialized agents focused on one aspect of the AM process, such as topology optimization or slicing parameter selection.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Multi-Task Agents</h3>
-                                <p class="card-text">Versatile agents capable of handling multiple aspects of the AM workflow, from design to post-processing.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Collaborative Agent Systems</h3>
-                                <p class="card-text">Networks of specialized agents that work together to optimize the entire AM process chain.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="agent-foundation.html" class="btn">Learn More About Agent Foundations</a>
-                </section>
-                
-                <!-- Success Stories (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="success-stories">
-                    <h2>Success Stories & Implementation Details</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>Detailed examinations of successful AI implementations in additive manufacturing provide valuable insights into technical approaches, integration methods, and achieved outcomes.</p>
-                    
-                    <div class="case-study">
-                        <h3>Case Study: Aerospace Bracket Redesign</h3>
-                        <div class="case-study-content">
-                            <div class="case-study-details">
-                                <h4>Challenge</h4>
-                                <p>Redesign a critical aerospace bracket to reduce weight while maintaining structural integrity and meeting strict certification requirements.</p>
-                                
-                                <h4>AI Approach</h4>
-                                <p>A multi-stage approach combining:</p>
-                                <ul>
-                                    <li>Diffusion model for initial design concept generation</li>
-                                    <li>Transformer-based architecture for constraint handling</li>
-                                    <li>Reinforcement learning for design optimization</li>
-                                    <li>Physics-based simulation integration for validation</li>
-                                </ul>
-                                
-                                <h4>Results</h4>
-                                <ul>
-                                    <li>35% weight reduction in final component</li>
-                                    <li>70% reduction in design iteration time</li>
-                                    <li>Successfully passed all certification tests</li>
-                                    <li>Estimated $1.2M annual savings in fuel costs for fleet implementation</li>
-                                </ul>
-                            </div>
-                            <div class="case-study-image">
-                                <img src="../../images/build.PNG" alt="Aerospace Bracket Redesign Process" class="project-image">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="case-study">
-                        <h3>Case Study: Medical Implant Customization</h3>
-                        <div class="case-study-content">
-                            <div class="case-study-details">
-                                <h4>Challenge</h4>
-                                <p>Develop a system for rapidly creating customized medical implants based on patient-specific anatomical data while ensuring biocompatibility and structural requirements.</p>
-                                
-                                <h4>AI Approach</h4>
-                                <p>An integrated agent-based system featuring:</p>
-                                <ul>
-                                    <li>Medical imaging processing via specialized vision transformers</li>
-                                    <li>Implant design generation using a conditional GAN architecture</li>
-                                    <li>Multi-objective optimization considering biomechanical constraints</li>
-                                    <li>Workflow automation through a collaborative agent system</li>
-                                </ul>
-                                
-                                <h4>Results</h4>
-                                <ul>
-                                    <li>90% reduction in design time (from 2 weeks to 1-2 days)</li>
-                                    <li>Improved implant fit and patient-specific customization</li>
-                                    <li>25% reduction in revision surgeries</li>
-                                    <li>Successfully implemented in three major medical centers</li>
-                                </ul>
-                            </div>
-                            <div class="case-study-image">
-                                <img src="../../images/quality.PNG" alt="Medical Implant Customization Process" class="project-image">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Future Directions (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="future-directions">
-                    <h2>Future Directions</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>Based on current implementations and research trends, several emerging directions for generative AI in additive manufacturing are taking shape. These developments promise to further transform AM workflows and capabilities.</p>
-                    
-                    <h3>Emerging Trends</h3>
-                    <ul>
-                        <li><strong>End-to-End Autonomous Manufacturing:</strong> Fully integrated systems managing the entire process from design to finished part</li>
-                        <li><strong>Multi-Material Design Optimization:</strong> AI systems capable of optimizing designs utilizing multiple materials within a single print</li>
-                        <li><strong>4D Printing Intelligence:</strong> AI approaches for designing time-responsive printed structures</li>
-                        <li><strong>Closed-Loop Learning Systems:</strong> Manufacturing systems that continually improve based on real-world outcomes</li>
-                        <li><strong>Human-AI Collaborative Design:</strong> Advanced interfaces for intuitive cooperation between designers and AI systems</li>
-                    </ul>
-                    
-                    <div class="cta-box">
-                        <h3>Implementing Your Own Case Study?</h3>
-                        <p>Explore our practical tutorials and resources to help you successfully implement AI in your AM workflow:</p>
-                        <div class="cta-buttons">
-                            <a href="../tutorials/index.html" class="btn">Implementation Tutorials</a>
-                            <a href="../resources/index.html" class="btn btn-outline">Access Resources</a>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Pagination -->
-                <div class="pagination">
-                    <a href="../tutorials/index.html" class="pagination-item pagination-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                        </svg>
-                        <div>
-                            <div class="pagination-label">Previous</div>
-                            <div class="pagination-title">Tutorials</div>
-                        </div>
-                    </a>
-                    
-                    <span class="nist-link-unavailable">Next AI Agents (link unavailable)</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <!-- <li><a href="../intro/index.html">Introduction</a></li>
-                        <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                        <li><a href="../tutorials/index.html">Tutorials</a></li>
-                        <li><a href="../case-studies/index.html">Case Studies</a></li>
-                        <li><a href="../resources/index.html">Resources</a></li> -->
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<!-- <li><a href="../../index.html">Home</a></li> -->
+<li><span class="current">Case Studies</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Case Studies &amp; Applications</h1>
+<p>Real-world examples of generative SI transforming additive manufacturing processes, products, and possibilities.</p>
+</div>
+<div class="hero-image">
+<img alt="SI Applications in Additive Manufacturing" height="300" src="../../images/automated.webp" width="500"/><p class="si-image-disclosure"><strong>Disclosure:</strong> This image was generated using SI.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">In This Section</h2>
+<ul class="toc-list">
+<li><a href="#industry-applications">Industry Applications</a></li>
+<li><a href="#genai-agents">SI Agents</a></li>
+<li><a href="#agent-foundation">Agent Foundations</a></li>
+<li><a href="#success-stories">Success Stories</a></li>
+<li><a href="#future-directions">Future Directions</a></li>
+</ul>
+</div>
+<div class="section-navigation">
+<h3>Explore This Topic</h3>
+<ul class="toc-list">
+<li><a href="../AI%20Agent/agent-foundation.html">SI Agents</a></li>
+<li><a href="agent-foundation.html">Agent Foundations</a></li>
+<li><a href="index.html">Industry Applications</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Overview (Basic Level) -->
+<section class="content-section" data-level="basic" id="overview">
+<h2>Real-World Applications &amp; Examples</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>This section showcases real-world applications of generative SI in additive manufacturing, providing concrete examples of how these technologies are being implemented across industries. Through detailed case studies, you'll gain insights into successful implementations, challenges overcome, and measurable results achieved.</p>
+<div class="key-points">
+<h3>What You'll Discover:</h3>
+<ul>
+<li><strong>Industry Applications:</strong> How different sectors are leveraging SI in AM workflows</li>
+<li><strong>Implementation Details:</strong> Technical approaches and integration methods used in real projects</li>
+<li><strong>Challenges &amp; Solutions:</strong> Common obstacles and how they were addressed</li>
+<li><strong>Measurable Outcomes:</strong> Quantifiable benefits and results from SI implementation</li>
+</ul>
+</div>
+</section>
+<!-- Industry Applications (Basic Level) -->
+<section class="content-section" data-level="basic" id="industry-applications">
+<h2>Industry Applications</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>Generative SI is being applied across diverse industries to transform additive manufacturing processes and outcomes. These applications demonstrate the versatility and impact of SI-driven approaches in real-world manufacturing contexts.</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Aerospace</h3>
+<p class="card-text">Applications in lightweight component design, topology optimization, and part consolidation for aircraft and spacecraft components.</p>
+<a class="btn" href="index.html">Explore</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Medical</h3>
+<p class="card-text">Personalized implants, prosthetics, and anatomical models generated using SI to improve patient outcomes and surgical planning.</p>
+<a class="btn" href="index.html">Explore</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Automotive</h3>
+<p class="card-text">Applications in rapid prototyping, tooling optimization, and end-use parts for vehicles with complex geometries and improved performance.</p>
+<a class="btn" href="index.html">Explore</a>
+</div>
+</div>
+</div>
+<a class="btn" href="index.html">View All Industry Applications</a>
+</section>
+<!-- AI Agents (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="genai-agents">
+<h2>SI Agents in Manufacturing</h2>
+<span class="complexity-badge complexity-intermediate">Intermediate</span>
+<p>Generative SI agents represent an advanced approach to implementing SI in manufacturing environments. These agents can autonomously perform complex tasks, make decisions, and continuously learn from their interactions with the manufacturing system.</p>
+<div class="two-column">
+<div>
+<h3>Agent Capabilities</h3>
+<p>Modern SI agents in AM environments can perform a wide range of tasks:</p>
+<ul>
+<li>Autonomous design generation and optimization</li>
+<li>Real-time process monitoring and adjustment</li>
+<li>Predictive maintenance and quality control</li>
+<li>Supply chain optimization and material selection</li>
+<li>Multi-objective optimization considering various constraints</li>
+</ul>
+<img alt="SI Agent Architecture" class="project-image" src="../../images/agent.webp"/><p class="si-image-disclosure"><strong>Disclosure:</strong> This image was generated using SI.</p>
+</div>
+<div>
+<h3>Implementation Examples</h3>
+<p>Case studies of SI agents deployed in production environments show significant benefits:</p>
+<ul>
+<li><strong>Aerospace Component Manufacturing:</strong> 40% reduction in design time, 25% weight reduction in final parts</li>
+<li><strong>Medical Device Production:</strong> 65% faster design iterations for custom implants</li>
+<li><strong>Industrial Equipment:</strong> 30% reduction in material usage with maintained structural integrity</li>
+<li><strong>Consumer Products:</strong> 50% faster time-to-market for customized products</li>
+</ul>
+</div>
+</div>
+<a class="btn" href="../AI%20Agent/agent-foundation.html">Explore SI Agents in Detail</a>
+</section>
+<!-- Agent Foundation (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="agent-foundation">
+<h2>Agent Foundations</h2>
+<span class="complexity-badge complexity-intermediate">Intermediate</span>
+<p>The foundation of effective SI agents in additive manufacturing involves several key components that enable autonomous operation, learning, and decision-making in complex manufacturing contexts.</p>
+<h3>Core Components of Agent Architecture</h3>
+<p>Successful agent implementations in AM typically include these foundational elements:</p>
+<ul>
+<li><strong>Perception Systems:</strong> Computer vision and sensor integration for real-time monitoring</li>
+<li><strong>Decision Models:</strong> SI frameworks for evaluating options and selecting optimal actions</li>
+<li><strong>Knowledge Representation:</strong> Structures for maintaining information about designs, processes, and constraints</li>
+<li><strong>Learning Mechanisms:</strong> Approaches for improving performance based on experience and feedback</li>
+<li><strong>Communication Interfaces:</strong> Methods for interaction with operators, other systems, and manufacturing equipment</li>
+</ul>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Single-Task Agents</h3>
+<p class="card-text">Specialized agents focused on one aspect of the AM process, such as topology optimization or slicing parameter selection.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Multi-Task Agents</h3>
+<p class="card-text">Versatile agents capable of handling multiple aspects of the AM workflow, from design to post-processing.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Collaborative Agent Systems</h3>
+<p class="card-text">Networks of specialized agents that work together to optimize the entire AM process chain.</p>
+</div>
+</div>
+</div>
+<a class="btn" href="agent-foundation.html">Learn More About Agent Foundations</a>
+</section>
+<!-- Success Stories (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="success-stories">
+<h2>Success Stories &amp; Implementation Details</h2>
+<span class="complexity-badge complexity-advanced">Advanced</span>
+<p>Detailed examinations of successful SI implementations in additive manufacturing provide valuable insights into technical approaches, integration methods, and achieved outcomes.</p>
+<div class="case-study">
+<h3>Case Study: Aerospace Bracket Redesign</h3>
+<div class="case-study-content">
+<div class="case-study-details">
+<h4>Challenge</h4>
+<p>Redesign a critical aerospace bracket to reduce weight while maintaining structural integrity and meeting strict certification requirements.</p>
+<h4>SI Approach</h4>
+<p>A multi-stage approach combining:</p>
+<ul>
+<li>Diffusion model for initial design concept generation</li>
+<li>Transformer-based architecture for constraint handling</li>
+<li>Reinforcement learning for design optimization</li>
+<li>Physics-based simulation integration for validation</li>
+</ul>
+<h4>Results</h4>
+<ul>
+<li>35% weight reduction in final component</li>
+<li>70% reduction in design iteration time</li>
+<li>Successfully passed all certification tests</li>
+<li>Estimated $1.2M annual savings in fuel costs for fleet implementation</li>
+</ul>
+</div>
+<div class="case-study-image">
+<img alt="Aerospace Bracket Redesign Process" class="project-image"/>
+</div>
+</div>
+</div>
+<div class="case-study">
+<h3>Case Study: Medical Implant Customization</h3>
+<div class="case-study-content">
+<div class="case-study-details">
+<h4>Challenge</h4>
+<p>Develop a system for rapidly creating customized medical implants based on patient-specific anatomical data while ensuring biocompatibility and structural requirements.</p>
+<h4>SI Approach</h4>
+<p>An integrated agent-based system featuring:</p>
+<ul>
+<li>Medical imaging processing via specialized vision transformers</li>
+<li>Implant design generation using a conditional GAN architecture</li>
+<li>Multi-objective optimization considering biomechanical constraints</li>
+<li>Workflow automation through a collaborative agent system</li>
+</ul>
+<h4>Results</h4>
+<ul>
+<li>90% reduction in design time (from 2 weeks to 1-2 days)</li>
+<li>Improved implant fit and patient-specific customization</li>
+<li>25% reduction in revision surgeries</li>
+<li>Successfully implemented in three major medical centers</li>
+</ul>
+</div>
+<div class="case-study-image">
+<img alt="Medical Implant Customization Process" class="project-image"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Future Directions (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="future-directions">
+<h2>Future Directions</h2>
+<span class="complexity-badge complexity-advanced">Advanced</span>
+<p>Based on current implementations and research trends, several emerging directions for generative SI in additive manufacturing are taking shape. These developments promise to further transform AM workflows and capabilities.</p>
+<h3>Emerging Trends</h3>
+<ul>
+<li><strong>End-to-End Autonomous Manufacturing:</strong> Fully integrated systems managing the entire process from design to finished part</li>
+<li><strong>Multi-Material Design Optimization:</strong> SI systems capable of optimizing designs utilizing multiple materials within a single print</li>
+<li><strong>4D Printing Intelligence:</strong> SI approaches for designing time-responsive printed structures</li>
+<li><strong>Closed-Loop Learning Systems:</strong> Manufacturing systems that continually improve based on real-world outcomes</li>
+<li><strong>Human-SI Collaborative Design:</strong> Advanced interfaces for intuitive cooperation between designers and SI systems</li>
+</ul>
+<div class="cta-box">
+<h3>Implementing Your Own Case Study?</h3>
+<p>Explore our practical tutorials and resources to help you successfully implement SI in your AM workflow:</p>
+<div class="cta-buttons">
+<a class="btn" href="../tutorials/index.html">Implementation Tutorials</a>
+<a class="btn btn-outline" href="../resources/index.html">Access Resources</a>
+</div>
+</div>
+</section>
+<!-- Pagination -->
+<div class="pagination">
+<a class="pagination-item pagination-prev" href="../tutorials/index.html">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+<div>
+<div class="pagination-label">Previous</div>
+<div class="pagination-title">Tutorials</div>
+</div>
+</a>
+<a class="pagination-item pagination-next" href="../AI%20Agent/agent-foundation.html">
+<div>
+<div class="pagination-label">Next</div>
+<div class="pagination-title">SI Agents</div>
+</div>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>

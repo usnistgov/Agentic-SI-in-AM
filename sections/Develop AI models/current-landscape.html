@@ -1,50 +1,56 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Current Landscape of Generative AI in Additive Manufacturing - Overview of existing applications, technologies, and industry adoption">
-    <title>Current Landscape of AI in Additive Manufacturing</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- Official NIST site-wide header and footer -->
-    <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-    <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Current Landscape of Generative SI in Additive Manufacturing - Overview of existing applications, technologies, and industry adoption" name="description"/>
+<title>Current Landscape of SI in Additive Manufacturing</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
+<!-- Official NIST site-wide header and footer -->
+<link href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" rel="stylesheet"/>
+<script defer="defer" src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"></script>
+<style data-si-disclosure="true">
+.si-image-disclosure {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+}
+.si-image-disclosure strong {
+  color: #333;
+}
+</style></head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
-            
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-            
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            
-            <!-- <nav>
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<!-- <nav>
                 <ul class="nav-links">
                     <li><a href="../intro/index.html" class="active">Introduction</a></li>
                     <li><a href="../core-technologies/index.html">Core Technologies</a></li>
@@ -53,378 +59,320 @@
                     <li><a href="../resources/index.html">Resources</a></li>
                 </ul>
             </nav> -->
-        </div>
-    </header>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<!-- <li><a href="index.html">Introduction</a></li> -->
+<li><span class="current">Current Landscape</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Current Landscape of SI in AM</h1>
+<p>A comprehensive overview of the state of generative SI in additive manufacturing today—existing applications, technology adoption, and industry trends.</p>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">On This Page</h2>
+<ul class="toc-list">
+<li><a href="#overview">Industry Overview</a></li>
+<li><a href="#existing-applications">Existing Applications</a></li>
+<li><a href="#technology-adoption">Technology Adoption</a></li>
+<li><a href="#market-trends">Market Trends</a></li>
+<li><a href="#challenges">Current Challenges</a></li>
+<li><a href="#emerging-directions">Emerging Directions</a></li>
+</ul>
+</div>
+<div class="section-navigation">
+<h3>Explore This Topic</h3>
+<ul class="toc-list">
+<li><a href="what-is-genai.html">What is SI?</a></li>
+<li><a href="../intro/benefits-in-am.html">Benefits in AM</a></li>
+<li><a class="active" href="current-landscape.html">Current Landscape</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Industry Overview (Basic Level) -->
+<section class="content-section" data-level="basic" id="overview">
+<h2>Industry Overview</h2>
+<p>Generative SI is rapidly transforming the additive manufacturing industry, though adoption remains in the early to middle stages across most sectors. This emerging landscape is characterized by a mix of experimental applications, early commercial solutions, and a growing ecosystem of tools and platforms.</p>
+<div class="key-points">
+<h3>Current State at a Glance:</h3>
+<ul>
+<li><strong>Adoption Stage:</strong> Early-to-mid adoption with significant growth acceleration since 2022</li>
+<li><strong>Market Size:</strong> The global market for SI in AM is projected to reach $2.1B by 2026, growing at ~45% CAGR</li>
+<li><strong>Industry Leaders:</strong> Aerospace, medical, automotive, and consumer products at the forefront</li>
+<li><strong>Technology Integration:</strong> Increasing integration with traditional AM software platforms and workflows</li>
+<li><strong>Research Activity:</strong> Significant academic and commercial R&amp;D with rapid publication growth</li>
+</ul>
+</div>
+<p>The convergence of generative SI and additive manufacturing is creating new possibilities while addressing longstanding challenges in AM adoption. This section explores the current landscape across applications, technology adoption, market trends, and emerging directions.</p>
+</section>
+<!-- Existing Applications (Basic Level) -->
+<section class="content-section" data-level="basic" id="existing-applications">
+<h2>Existing Applications</h2>
+<p>Generative SI is already being applied across the additive manufacturing workflow, with varying levels of commercial maturity. These applications demonstrate the range of possibilities and current implementation status.</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Design Generation</h3>
+<p class="card-text">SI-driven creation and optimization of 3D models based on functional requirements and design constraints.</p>
+<div class="adoption-indicator">
+<span class="adoption-label">Adoption:</span>
+<span class="adoption-level adoption-moderate">Moderate</span>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Process Optimization</h3>
+<p class="card-text">Intelligent selection and adjustment of printing parameters based on part geometry, material, and quality requirements.</p>
+<div class="adoption-indicator">
+<span class="adoption-label">Adoption:</span>
+<span class="adoption-level adoption-high">High</span>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Quality Control</h3>
+<p class="card-text">Real-time monitoring and defect detection systems using computer vision and predictive analytics.</p>
+<div class="adoption-indicator">
+<span class="adoption-label">Adoption:</span>
+<span class="adoption-level adoption-moderate">Moderate</span>
+</div>
+</div>
+</div>
+</div>
+<h3>Commercial Implementation Examples</h3>
+<div class="two-column">
+<div>
+<h4>Aerospace</h4>
+<ul>
+<li><strong>Topology Optimization:</strong> Lightweight structural components for aircraft with 30-50% weight reduction</li>
+<li><strong>Thermal Management:</strong> Optimized cooling channels for engine components</li>
+<li><strong>Consolidated Assemblies:</strong> Complex multi-part assemblies redesigned as single components</li>
+</ul>
+<h4>Medical</h4>
+<ul>
+<li><strong>Customized Implants:</strong> Patient-specific implants generated from medical imaging data</li>
+<li><strong>Lattice Structures:</strong> Bone-mimicking structures with optimized porosity and mechanical properties</li>
+<li><strong>Surgical Guides:</strong> Personalized tools to improve surgical precision</li>
+</ul>
+</div>
+<div>
+<h4>Automotive</h4>
+<ul>
+<li><strong>Lightweight Components:</strong> Performance-optimized brackets, mounts, and structural parts</li>
+<li><strong>Fluid Systems:</strong> Optimized manifolds and fluid handling components</li>
+<li><strong>Tooling:</strong> SI-designed conformal cooling channels in injection molds</li>
+</ul>
+<h4>Consumer Products</h4>
+<ul>
+<li><strong>Mass Customization:</strong> Personalized products based on individual user data</li>
+<li><strong>Performance Optimization:</strong> Sports equipment with enhanced performance characteristics</li>
+<li><strong>Complex Geometries:</strong> Aesthetically distinctive designs with functional benefits</li>
+</ul>
+</div>
+</div>
+<div class="image-with-caption">
+<img alt="Commercial SI Applications" class="medium-image"/>
+<p class="caption">Examples of commercially deployed SI applications in additive manufacturing</p>
+</div>
+</section>
+<h2>Technology Adoption</h2>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <!-- <li><span class="nist-link-unavailable">Introduction (link unavailable)</span></li> -->
-                    <li><span class="current">Current Landscape</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Current Landscape of AI in AM</h1>
-                        <p>A comprehensive overview of the state of generative AI in additive manufacturing today—existing applications, technology adoption, and industry trends.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/current.png" alt="Current AI Landscape" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">On This Page</h2>
-                    <ul class="toc-list">
-                        <li><a href="#overview">Industry Overview</a></li>
-                        <li><a href="#existing-applications">Existing Applications</a></li>
-                        <li><a href="#technology-adoption">Technology Adoption</a></li>
-                        <li><a href="#market-trends">Market Trends</a></li>
-                        <li><a href="#challenges">Current Challenges</a></li>
-                        <li><a href="#emerging-directions">Emerging Directions</a></li>
-                    </ul>
-                </div>
-                
-                <div class="section-navigation">
-                    <h3>Explore This Topic</h3>
-                    <ul class="toc-list">
-                        <li><a href="what-is-genai.html">What is AI?</a></li>
-                        <li><span class="nist-link-unavailable">Benefits in AM (link unavailable)</span></li>
-                        <li><a href="current-landscape.html" class="active">Current Landscape</a></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Industry Overview (Basic Level) -->
-                <section class="content-section" data-level="basic" id="overview">
-                    <h2>Industry Overview</h2>
-                    <span class="complexity-badge complexity-beginner">Beginner</span>
-                    
-                    <p>Generative AI is rapidly transforming the additive manufacturing industry, though adoption remains in the early to middle stages across most sectors. This emerging landscape is characterized by a mix of experimental applications, early commercial solutions, and a growing ecosystem of tools and platforms.</p>
-                    
-                    <div class="key-points">
-                        <h3>Current State at a Glance:</h3>
-                        <ul>
-                            <li><strong>Adoption Stage:</strong> Early-to-mid adoption with significant growth acceleration since 2022</li>
-                            <li><strong>Market Size:</strong> The global market for AI in AM is projected to reach $2.1B by 2026, growing at ~45% CAGR</li>
-                            <li><strong>Industry Leaders:</strong> Aerospace, medical, automotive, and consumer products at the forefront</li>
-                            <li><strong>Technology Integration:</strong> Increasing integration with traditional AM software platforms and workflows</li>
-                            <li><strong>Research Activity:</strong> Significant academic and commercial R&D with rapid publication growth</li>
-                        </ul>
-                    </div>
-                    
-                    <p>The convergence of generative AI and additive manufacturing is creating new possibilities while addressing longstanding challenges in AM adoption. This section explores the current landscape across applications, technology adoption, market trends, and emerging directions.</p>
-                </section>
-                
-                <!-- Existing Applications (Basic Level) -->
-                <section class="content-section" data-level="basic" id="existing-applications">
-                    <h2>Existing Applications</h2>
-                    <span class="complexity-badge complexity-beginner">Beginner</span>
-                    
-                    <p>Generative AI is already being applied across the additive manufacturing workflow, with varying levels of commercial maturity. These applications demonstrate the range of possibilities and current implementation status.</p>
-                    
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Design Generation</h3>
-                                <p class="card-text">AI-driven creation and optimization of 3D models based on functional requirements and design constraints.</p>
-                                <div class="adoption-indicator">
-                                    <span class="adoption-label">Adoption:</span>
-                                    <span class="adoption-level adoption-moderate">Moderate</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Process Optimization</h3>
-                                <p class="card-text">Intelligent selection and adjustment of printing parameters based on part geometry, material, and quality requirements.</p>
-                                <div class="adoption-indicator">
-                                    <span class="adoption-label">Adoption:</span>
-                                    <span class="adoption-level adoption-high">High</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Quality Control</h3>
-                                <p class="card-text">Real-time monitoring and defect detection systems using computer vision and predictive analytics.</p>
-                                <div class="adoption-indicator">
-                                    <span class="adoption-label">Adoption:</span>
-                                    <span class="adoption-level adoption-moderate">Moderate</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3>Commercial Implementation Examples</h3>
-                    <div class="two-column">
-                        <div>
-                            <h4>Aerospace</h4>
-                            <ul>
-                                <li><strong>Topology Optimization:</strong> Lightweight structural components for aircraft with 30-50% weight reduction</li>
-                                <li><strong>Thermal Management:</strong> Optimized cooling channels for engine components</li>
-                                <li><strong>Consolidated Assemblies:</strong> Complex multi-part assemblies redesigned as single components</li>
-                            </ul>
-                            
-                            <h4>Medical</h4>
-                            <ul>
-                                <li><strong>Customized Implants:</strong> Patient-specific implants generated from medical imaging data</li>
-                                <li><strong>Lattice Structures:</strong> Bone-mimicking structures with optimized porosity and mechanical properties</li>
-                                <li><strong>Surgical Guides:</strong> Personalized tools to improve surgical precision</li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4>Automotive</h4>
-                            <ul>
-                                <li><strong>Lightweight Components:</strong> Performance-optimized brackets, mounts, and structural parts</li>
-                                <li><strong>Fluid Systems:</strong> Optimized manifolds and fluid handling components</li>
-                                <li><strong>Tooling:</strong> AI-designed conformal cooling channels in injection molds</li>
-                            </ul>
-                            
-                            <h4>Consumer Products</h4>
-                            <ul>
-                                <li><strong>Mass Customization:</strong> Personalized products based on individual user data</li>
-                                <li><strong>Performance Optimization:</strong> Sports equipment with enhanced performance characteristics</li>
-                                <li><strong>Complex Geometries:</strong> Aesthetically distinctive designs with functional benefits</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="image-with-caption">
-                        <img src="../../images/build.PNG" alt="Commercial AI Applications" class="medium-image">
-                        <p class="caption">Examples of commercially deployed AI applications in additive manufacturing</p>
-                    </div>
-                </section>
-                
-                <!-- Technology Adoption (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="technology-adoption">
-                    <h2>Technology Adoption</h2>
-                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
-                    
-                    <p>The adoption of generative AI technologies in additive manufacturing is progressing at different rates across various industry segments and application areas. Understanding these adoption patterns provides context for current capabilities and future development.</p>
-                    
-                    <h3>Adoption by Industry Segment</h3>
-                    <div class="data-table-container">
-                        <table class="data-table">
-                            <thead>
-                                <tr>
-                                    <th>Industry</th>
-                                    <th>Adoption Level</th>
-                                    <th>Primary Applications</th>
-                                    <th>Key Drivers</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Aerospace</td>
-                                    <td>High (70-85%)</td>
-                                    <td>Topology optimization, thermal design</td>
-                                    <td>Weight reduction, performance enhancement</td>
-                                </tr>
-                                <tr>
-                                    <td>Medical</td>
-                                    <td>High (65-80%)</td>
-                                    <td>Custom implants, surgical planning</td>
-                                    <td>Patient customization, improved outcomes</td>
-                                </tr>
-                                <tr>
-                                    <td>Automotive</td>
-                                    <td>Moderate (40-60%)</td>
-                                    <td>Lightweighting, tooling optimization</td>
-                                    <td>Cost reduction, production efficiency</td>
-                                </tr>
-                                <tr>
-                                    <td>Consumer Goods</td>
-                                    <td>Moderate (35-55%)</td>
-                                    <td>Customization, novel designs</td>
-                                    <td>Market differentiation, performance</td>
-                                </tr>
-                                <tr>
-                                    <td>General Manufacturing</td>
-                                    <td>Low-Moderate (20-40%)</td>
-                                    <td>Tooling, fixtures, prototyping</td>
-                                    <td>Cost reduction, production flexibility</td>
-                                </tr>
-                                <tr>
-                                    <td>Construction</td>
-                                    <td>Low (10-25%)</td>
-                                    <td>Architectural elements, structural optimization</td>
-                                    <td>Material efficiency, design freedom</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <h3>Adoption by Technology Type</h3>
-                    <p>Different generative AI approaches are being adopted at varying rates in the AM industry:</p>
-                    
-                    <div class="two-column">
-                        <div>
-                            <h4>Widely Adopted (60-80%)</h4>
-                            <ul>
-                                <li><strong>Topology Optimization:</strong> Well-established design approach with clear ROI</li>
-                                <li><strong>Parameter Recommendation Systems:</strong> Improving print success rates and part quality</li>
-                                <li><strong>Computer Vision for Quality Control:</strong> Detecting common defects in production</li>
-                            </ul>
-                            
-                            <h4>Growing Adoption (30-60%)</h4>
-                            <ul>
-                                <li><strong>Generative Design Exploration:</strong> Creating multiple design alternatives</li>
-                                <li><strong>Lattice Structure Optimization:</strong> Balancing weight, strength, and material usage</li>
-                                <li><strong>Process Simulation:</strong> Predicting build outcomes and potential issues</li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4>Early Adoption (10-30%)</h4>
-                            <ul>
-                                <li><strong>Text-to-3D Generation:</strong> Creating initial designs from textual descriptions</li>
-                                <li><strong>Multi-material Optimization:</strong> Designing with multiple materials for optimal properties</li>
-                                <li><strong>Autonomous Manufacturing Agents:</strong> Systems that manage multiple aspects of the AM workflow</li>
-                            </ul>
-                            
-                            <h4>Experimental (5-15%)</h4>
-                            <ul>
-                                <li><strong>4D Printing Design:</strong> AI-designed components that change shape after printing</li>
-                                <li><strong>Microstructure Engineering:</strong> Controlling material properties at the microscale</li>
-                                <li><strong>Closed-Loop Cognitive Manufacturing:</strong> Self-optimizing production systems</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Market Trends (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="market-trends">
-                    <h2>Market Trends</h2>
-                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
-                    
-                    <p>The market for generative AI in additive manufacturing is evolving rapidly, with several key trends shaping the landscape and future direction of the industry.</p>
-                    
-                    <h3>Market Growth and Projections</h3>
-                    <p>The global market for AI solutions in AM is experiencing significant growth:</p>
-                    <ul>
-                        <li>Current estimated market size (2024): ~$650M USD</li>
-                        <li>Projected annual growth rate: 40-50% CAGR through 2030</li>
-                        <li>Projected market size by 2030: $5.8-7.2B USD</li>
-                        <li>Fastest growing segment: Design optimization tools (55% CAGR)</li>
-                        <li>Most established segment: Process parameter optimization (35% CAGR)</li>
-                    </ul>
-                    
-                    <div class="image-with-caption">
-                        <img src="../../images/post process.PNG" alt="Market Growth Chart" class="medium-image">
-                        <p class="caption">Growth projection for AI in AM market segments (2024-2030)</p>
-                    </div>
-                    
-                    <h3>Key Market Trends</h3>
-                    <div class="two-column">
-                        <div>
-                            <h4>Industry Consolidation</h4>
-                            <p>Major AM hardware and software companies are acquiring AI startups to enhance their offerings. This trend is accelerating with:</p>
-                            <ul>
-                                <li>12 significant acquisitions in the past 24 months</li>
-                                <li>Strategic partnerships between AM leaders and AI companies</li>
-                                <li>Integration of AI capabilities into established AM platforms</li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4>Specialized Solution Providers</h4>
-                            <p>Despite consolidation, specialized AI providers are emerging in niche areas:</p>
-                            <ul>
-                                <li>Industry-specific design generation (medical, aerospace)</li>
-                                <li>Material-specific optimization engines</li>
-                                <li>Process-specific monitoring and control systems</li>
-                                <li>Custom LLM implementations for AM knowledge</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <h3>Investment and Funding</h3>
-                    <p>The AI in AM sector is attracting significant investment:</p>
-                    <ul>
-                        <li><strong>Venture Capital:</strong> $450M+ invested in AI-focused AM startups in the past 18 months</li>
-                        <li><strong>Corporate R&D:</strong> Major manufacturers increasing internal AI/AM R&D budgets by 30-45%</li>
-                        <li><strong>Government Funding:</strong> Public research initiatives in US, EU, and Asia totaling $280M+ for AI in manufacturing</li>
-                        <li><strong>Valuation Trends:</strong> AI in AM startups commanding 2-3x higher valuations than traditional AM software companies</li>
-                    </ul>
-                </section>
-                
-                <!-- Current Challenges (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="challenges">
-                    <h2>Current Challenges</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>Despite significant progress, several challenges are currently limiting the full potential of generative AI in additive manufacturing. Understanding these challenges provides context for current limitations and areas requiring further development.</p>
-                    
-                    <div class="two-column">
-                        <div>
-                            <h3>Technical Challenges</h3>
-                            <ul>
-                                <li><strong>Limited Training Data:</strong> Insufficient labeled datasets specific to AM processes and materials</li>
-                                <li><strong>Physics Integration:</strong> Balancing data-driven approaches with physics-based constraints</li>
-                                <li><strong>Computational Requirements:</strong> High resource demands for complex simulations and optimizations</li>
-                                <li><strong>Multi-Scale Optimization:</strong> Addressing micro, meso, and macro scales simultaneously</li>
-                                <li><strong>Process Variability:</strong> Accounting for inherent variability in AM processes when making predictions</li>
-                            </ul>
-                            
-                            <h3>Implementation Challenges</h3>
-                            <ul>
-                                <li><strong>Integration Complexity:</strong> Connecting AI solutions with existing AM software ecosystems</li>
-                                <li><strong>Validation Approaches:</strong> Establishing reliable methods to validate AI-generated designs</li>
-                                <li><strong>Skills Gap:</strong> Shortage of professionals with expertise in both AM and AI</li>
-                                <li><strong>Cost Barriers:</strong> High implementation costs for comprehensive AI solutions</li>
-                                <li><strong>Legacy Systems:</strong> Integration with established manufacturing infrastructure</li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h3>Business Challenges</h3>
-                            <ul>
-                                <li><strong>ROI Demonstration:</strong> Proving concrete return on investment for AI adoption</li>
-                                <li><strong>Intellectual Property:</strong> Unclear frameworks for AI-generated designs and methods</li>
-                                <li><strong>Regulatory Uncertainty:</strong> Evolving compliance requirements for AI in critical applications</li>
-                                <li><strong>Risk Management:</strong> Establishing appropriate oversight and validation for AI systems</li>
-                                <li><strong>Change Management:</strong> Organizational resistance to new design and manufacturing approaches</li>
-                            </ul>
-                            
-                            <h3>Ongoing Research Areas</h3>
-                            <ul>
-                                <li><strong>Explainable AI:</strong> Making AI decisions transparent and interpretable</li>
-                                <li><strong>Transfer Learning:</strong> Applying knowledge from one domain to another with minimal data</li>
-                                <li><strong>Online Learning:</strong> Continuously improving models during the manufacturing process</li>
-                                <li><strong>Uncertainty Quantification:</strong> Reliable confidence metrics for AI predictions</li>
-                                <li><strong>Multi-Objective Optimization:</strong> Balancing competing requirements effectively</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Research Challenge: Multi-Physics Integration</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code># Pseudocode for multi-physics aware AI model
+<p>The adoption of generative SI technologies in additive manufacturing is progressing at different rates across various industry segments and application areas. Understanding these adoption patterns provides context for current capabilities and future development.</p>
+<h3>Adoption by Industry Segment</h3>
+<div class="data-table-container">
+<table class="data-table">
+<thead>
+<tr>
+<th>Industry</th>
+<th>Adoption Level</th>
+<th>Primary Applications</th>
+<th>Key Drivers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aerospace</td>
+<td>High (70-85%)</td>
+<td>Topology optimization, thermal design</td>
+<td>Weight reduction, performance enhancement</td>
+</tr>
+<tr>
+<td>Medical</td>
+<td>High (65-80%)</td>
+<td>Custom implants, surgical planning</td>
+<td>Patient customization, improved outcomes</td>
+</tr>
+<tr>
+<td>Automotive</td>
+<td>Moderate (40-60%)</td>
+<td>Lightweighting, tooling optimization</td>
+<td>Cost reduction, production efficiency</td>
+</tr>
+<tr>
+<td>Consumer Goods</td>
+<td>Moderate (35-55%)</td>
+<td>Customization, novel designs</td>
+<td>Market differentiation, performance</td>
+</tr>
+<tr>
+<td>General Manufacturing</td>
+<td>Low-Moderate (20-40%)</td>
+<td>Tooling, fixtures, prototyping</td>
+<td>Cost reduction, production flexibility</td>
+</tr>
+<tr>
+<td>Construction</td>
+<td>Low (10-25%)</td>
+<td>Architectural elements, structural optimization</td>
+<td>Material efficiency, design freedom</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Adoption by Technology Type</h3>
+<p>Different generative SI approaches are being adopted at varying rates in the AM industry:</p>
+<div class="two-column">
+<div>
+<h4>Widely Adopted (60-80%)</h4>
+<ul>
+<li><strong>Topology Optimization:</strong> Well-established design approach with clear ROI</li>
+<li><strong>Parameter Recommendation Systems:</strong> Improving print success rates and part quality</li>
+<li><strong>Computer Vision for Quality Control:</strong> Detecting common defects in production</li>
+</ul>
+<h4>Growing Adoption (30-60%)</h4>
+<ul>
+<li><strong>Generative Design Exploration:</strong> Creating multiple design alternatives</li>
+<li><strong>Lattice Structure Optimization:</strong> Balancing weight, strength, and material usage</li>
+<li><strong>Process Simulation:</strong> Predicting build outcomes and potential issues</li>
+</ul>
+</div>
+<div>
+<h4>Early Adoption (10-30%)</h4>
+<ul>
+<li><strong>Text-to-3D Generation:</strong> Creating initial designs from textual descriptions</li>
+<li><strong>Multi-material Optimization:</strong> Designing with multiple materials for optimal properties</li>
+<li><strong>Autonomous Manufacturing Agents:</strong> Systems that manage multiple aspects of the AM workflow</li>
+</ul>
+<h4>Experimental (5-15%)</h4>
+<ul>
+<li><strong>4D Printing Design:</strong> SI-designed components that change shape after printing</li>
+<li><strong>Microstructure Engineering:</strong> Controlling material properties at the microscale</li>
+<li><strong>Closed-Loop Cognitive Manufacturing:</strong> Self-optimizing production systems</li>
+</ul>
+</div>
+</div>
+</section>
+<h2>Market Trends</h2>
+<p>The market for generative SI in additive manufacturing is evolving rapidly, with several key trends shaping the landscape and future direction of the industry.</p>
+<h3>Market Growth and Projections</h3>
+<p>The global market for SI solutions in AM is experiencing significant growth:</p>
+<ul>
+<li>Current estimated market size (2024): ~$650M USD</li>
+<li>Projected annual growth rate: 40-50% CAGR through 2030</li>
+<li>Projected market size by 2030: $5.8-7.2B USD</li>
+<li>Fastest growing segment: Design optimization tools (55% CAGR)</li>
+<li>Most established segment: Process parameter optimization (35% CAGR)</li>
+</ul>
+</div>
+<h3>Key Market Trends</h3>
+<div class="two-column">
+<div>
+<h4>Industry Consolidation</h4>
+<p>Major AM hardware and software companies are acquiring SI startups to enhance their offerings. This trend is accelerating with:</p>
+<ul>
+<li>12 significant acquisitions in the past 24 months</li>
+<li>Strategic partnerships between AM leaders and SI companies</li>
+<li>Integration of SI capabilities into established AM platforms</li>
+</ul>
+</div>
+<div>
+<h4>Specialized Solution Providers</h4>
+<p>Despite consolidation, specialized SI providers are emerging in niche areas:</p>
+<ul>
+<li>Industry-specific design generation (medical, aerospace)</li>
+<li>Material-specific optimization engines</li>
+<li>Process-specific monitoring and control systems</li>
+<li>Custom LLM implementations for AM knowledge</li>
+</ul>
+</div>
+</div>
+<h3>Investment and Funding</h3>
+<p>The SI in AM sector is attracting significant investment:</p>
+<ul>
+<li><strong>Venture Capital:</strong> $450M+ invested in SI-focused AM startups in the past 18 months</li>
+<li><strong>Corporate R&amp;D:</strong> Major manufacturers increasing internal SI/AM R&amp;D budgets by 30-45%</li>
+<li><strong>Government Funding:</strong> Public research initiatives in US, EU, and Asia totaling $280M+ for SI in manufacturing</li>
+<li><strong>Valuation Trends:</strong> SI in AM startups commanding 2-3x higher valuations than traditional AM software companies</li>
+</ul>
+</section>
+<h2>Current Challenges</h2>
+<p>Despite significant progress, several challenges are currently limiting the full potential of generative SI in additive manufacturing. Understanding these challenges provides context for current limitations and areas requiring further development.</p>
+<div class="two-column">
+<div>
+<h3>Technical Challenges</h3>
+<ul>
+<li><strong>Limited Training Data:</strong> Insufficient labeled datasets specific to AM processes and materials</li>
+<li><strong>Physics Integration:</strong> Balancing data-driven approaches with physics-based constraints</li>
+<li><strong>Computational Requirements:</strong> High resource demands for complex simulations and optimizations</li>
+<li><strong>Multi-Scale Optimization:</strong> Addressing micro, meso, and macro scales simultaneously</li>
+<li><strong>Process Variability:</strong> Accounting for inherent variability in AM processes when making predictions</li>
+</ul>
+<h3>Implementation Challenges</h3>
+<ul>
+<li><strong>Integration Complexity:</strong> Connecting SI solutions with existing AM software ecosystems</li>
+<li><strong>Validation Approaches:</strong> Establishing reliable methods to validate SI-generated designs</li>
+<li><strong>Skills Gap:</strong> Shortage of professionals with expertise in both AM and SI</li>
+<li><strong>Cost Barriers:</strong> High implementation costs for comprehensive SI solutions</li>
+<li><strong>Legacy Systems:</strong> Integration with established manufacturing infrastructure</li>
+</ul>
+</div>
+<div>
+<h3>Business Challenges</h3>
+<ul>
+<li><strong>ROI Demonstration:</strong> Proving concrete return on investment for SI adoption</li>
+<li><strong>Intellectual Property:</strong> Unclear frameworks for SI-generated designs and methods</li>
+<li><strong>Regulatory Uncertainty:</strong> Evolving compliance requirements for SI in critical applications</li>
+<li><strong>Risk Management:</strong> Establishing appropriate oversight and validation for SI systems</li>
+<li><strong>Change Management:</strong> Organizational resistance to new design and manufacturing approaches</li>
+</ul>
+<h3>Ongoing Research Areas</h3>
+<ul>
+<li><strong>Explainable SI:</strong> Making SI decisions transparent and interpretable</li>
+<li><strong>Transfer Learning:</strong> Applying knowledge from one domain to another with minimal data</li>
+<li><strong>Online Learning:</strong> Continuously improving models during the manufacturing process</li>
+<li><strong>Uncertainty Quantification:</strong> Reliable confidence metrics for SI predictions</li>
+<li><strong>Multi-Objective Optimization:</strong> Balancing competing requirements effectively</li>
+</ul>
+</div>
+</div>
+<div class="code-block">
+<div class="code-header">
+<span>Research Challenge: Multi-Physics Integration</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code># Pseudocode for multi-physics aware AI model
 class MultiPhysicsAwareDesignGenerator:
     def __init__(self):
         self.thermal_model = ThermalPredictionModel()
@@ -466,164 +414,121 @@ class MultiPhysicsAwareDesignGenerator:
             # Feedback loop to refine generation process
             return self.refine_and_regenerate(initial_designs, constraints)
 </code></pre>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Emerging Directions (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="emerging-directions">
-                    <h2>Emerging Directions</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>Several emerging directions are shaping the future landscape of generative AI in additive manufacturing. These developments are in various stages of research, early implementation, or commercial introduction.</p>
-                    
-                    <h3>Technical Advancements</h3>
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Multi-Material & Multi-Process Optimization</h3>
-                                <p class="card-text">Beyond single material design to optimize material distribution and process parameters simultaneously across multiple materials and manufacturing methods.</p>
-                                <div class="maturity-indicator">
-                                    <span class="maturity-label">Maturity:</span>
-                                    <span class="maturity-level maturity-early">Early Stage</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Autonomous Manufacturing Agents</h3>
-                                <p class="card-text">AI systems that manage the entire AM workflow, from design interpretation to final quality verification, with minimal human intervention.</p>
-                                <div class="maturity-indicator">
-                                    <span class="maturity-label">Maturity:</span>
-                                    <span class="maturity-level maturity-research">Research</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Natural Language Design Interfaces</h3>
-                                <p class="card-text">Conversational interfaces allowing users to describe functional requirements in natural language and receive optimized designs.</p>
-                                <div class="maturity-indicator">
-                                    <span class="maturity-label">Maturity:</span>
-                                    <span class="maturity-level maturity-emerging">Emerging</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3>Convergence with Other Technologies</h3>
-                    <p>The integration of AI with other emerging technologies is creating powerful new capabilities:</p>
-                    <div class="two-column">
-                        <div>
-                            <h4>AI + Digital Twins</h4>
-                            <p>Virtual representations that combine real-time data with predictive capabilities:</p>
-                            <ul>
-                                <li>Dynamic prediction of part quality during printing</li>
-                                <li>Real-time process parameter adjustments</li>
-                                <li>Continuous learning from operational feedback</li>
-                                <li>Virtual testing of designs before physical production</li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4>AI + Robotics</h4>
-                            <p>Autonomous systems that combine physical capabilities with intelligence:</p>
-                            <ul>
-                                <li>Adaptive path planning for robotic deposition</li>
-                                <li>Autonomous post-processing operations</li>
-                                <li>Multi-robot coordination for large-scale printing</li>
-                                <li>Self-calibrating manufacturing systems</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <h3>Research Frontiers</h3>
-                    <p>Advanced research is exploring several promising directions that may reshape AM capabilities:</p>
-                    <ul>
-                        <li><strong>Microstructure Design:</strong> AI-driven control of material properties at the microscale level</li>
-                        <li><strong>Process-Aware Design:</strong> Design systems that incorporate process physics during generation</li>
-                        <li><strong>Bio-Inspired Generative Systems:</strong> Learning from natural growth processes to create optimized structures</li>
-                        <li><strong>Quantum-Enhanced Optimization:</strong> Using quantum computing to address complex multi-objective optimization challenges</li>
-                        <li><strong>Human-AI Collaborative Design:</strong> Interactive systems where human designers and AI work together seamlessly</li>
-                    </ul>
-                    
-                    <div class="cta-box">
-                        <h3>Ready to Explore Cutting-Edge Applications?</h3>
-                        <p>Discover how these emerging technologies are being applied in real-world manufacturing contexts:</p>
-                        <div class="cta-buttons">
-                            <a href="../case-studies/index.html" class="btn">View Case Studies</a>
-                            <a href="../resources/index.html" class="btn btn-outline">Access Resources</a>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Pagination -->
-                <div class="pagination">
-                    <span class="nist-link-unavailable">Previous Benefits in AM (link unavailable)</span>
-                    
-                    <a href="../Develop AI models/index_nowrin.html" class="pagination-item pagination-next">
-                        <div>
-                            <div class="pagination-label">Next</div>
-                            <div class="pagination-title">Core Technologies</div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <!-- <li><a href="../intro/index.html">Introduction</a></li>
-                        <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                        <li><a href="../tutorials/index.html">Tutorials</a></li>
-                        <li><a href="../case-studies/index.html">Case Studies</a></li>
-                        <li><a href="../resources/index.html">Resources</a></li> -->
-                        <li><a href="../Develop AI models/index_nowrin.html">Develop AI model</a></li>
-                        <li><a href="../AI Agent/index.html">AI Agent</a></li>
-                        <li><a href="../AM_dataset/datasets.html">Resources</a></li>
-                        <li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+</div>
+</div>
+</section>
+<h2>Emerging Directions</h2>
+<span class="complexity-badge complexity-advanced">Advanced</span>
+<p>Several emerging directions are shaping the future landscape of generative SI in additive manufacturing. These developments are in various stages of research, early implementation, or commercial introduction.</p>
+<h3>Technical Advancements</h3>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Multi-Material &amp; Multi-Process Optimization</h3>
+<p class="card-text">Beyond single material design to optimize material distribution and process parameters simultaneously across multiple materials and manufacturing methods.</p>
+<div class="maturity-indicator">
+<span class="maturity-label">Maturity:</span>
+<span class="maturity-level maturity-early">Early Stage</span>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Autonomous Manufacturing Agents</h3>
+<p class="card-text">SI systems that manage the entire AM workflow, from design interpretation to final quality verification, with minimal human intervention.</p>
+<div class="maturity-indicator">
+<span class="maturity-label">Maturity:</span>
+<span class="maturity-level maturity-research">Research</span>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Natural Language Design Interfaces</h3>
+<p class="card-text">Conversational interfaces allowing users to describe functional requirements in natural language and receive optimized designs.</p>
+<div class="maturity-indicator">
+<span class="maturity-label">Maturity:</span>
+<span class="maturity-level maturity-emerging">Emerging</span>
+</div>
+</div>
+</div>
+</div>
+<h3>Convergence with Other Technologies</h3>
+<p>The integration of SI with other emerging technologies is creating powerful new capabilities:</p>
+<div class="two-column">
+<div>
+<h4>SI + Digital Twins</h4>
+<p>Virtual representations that combine real-time data with predictive capabilities:</p>
+<ul>
+<li>Dynamic prediction of part quality during printing</li>
+<li>Real-time process parameter adjustments</li>
+<li>Continuous learning from operational feedback</li>
+<li>Virtual testing of designs before physical production</li>
+</ul>
+</div>
+<div>
+<h4>SI + Robotics</h4>
+<p>Autonomous systems that combine physical capabilities with intelligence:</p>
+<ul>
+<li>Adaptive path planning for robotic deposition</li>
+<li>Autonomous post-processing operations</li>
+<li>Multi-robot coordination for large-scale printing</li>
+<li>Self-calibrating manufacturing systems</li>
+</ul>
+</div>
+</div>
+<h3>Research Frontiers</h3>
+<p>Advanced research is exploring several promising directions that may reshape AM capabilities:</p>
+<ul>
+<li><strong>Microstructure Design:</strong> SI-driven control of material properties at the microscale level</li>
+<li><strong>Process-Aware Design:</strong> Design systems that incorporate process physics during generation</li>
+<li><strong>Bio-Inspired Generative Systems:</strong> Learning from natural growth processes to create optimized structures</li>
+<li><strong>Quantum-Enhanced Optimization:</strong> Using quantum computing to address complex multi-objective optimization challenges</li>
+<li><strong>Human-SI Collaborative Design:</strong> Interactive systems where human designers and SI work together seamlessly</li>
+</ul>
+<div class="cta-box">
+<h3>Ready to Explore Cutting-Edge Applications?</h3>
+<p>Discover how these emerging technologies are being applied in real-world manufacturing contexts:</p>
+<div class="cta-buttons">
+<a class="btn" href="../case-studies/index.html">View Case Studies</a>
+<a class="btn btn-outline" href="../resources/index.html">Access Resources</a>
+</div>
+</div>
+</section>
+<!-- Pagination -->
+<div class="pagination">
+<a class="pagination-item pagination-prev" href="../intro/benefits-in-am.html">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+<div>
+<div class="pagination-label">Previous</div>
+<div class="pagination-title">Benefits in AM</div>
+</div>
+</a>
+<a class="pagination-item pagination-next" href="../Develop AI models/index_nowrin.html">
+<div>
+<div class="pagination-label">Next</div>
+<div class="pagination-title">Core Technologies</div>
+</div>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>

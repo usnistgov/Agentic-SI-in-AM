@@ -1,290 +1,267 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Implementation Tutorials for Generative AI in Additive Manufacturing - Step-by-step guides for applying AI in 3D printing workflows">
-    <title>Implementation Tutorials | AI in Additive Manufacturing</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- Official NIST site-wide header and footer -->
-    <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-    <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Implementation Tutorials for Generative SI in Additive Manufacturing - Step-by-step guides for applying SI in 3D printing workflows" name="description"/>
+<title>Implementation Tutorials | SI in Additive Manufacturing</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
+<!-- Official NIST site-wide header and footer -->
+<link href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" rel="stylesheet"/>
+<script defer="defer" src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"></script>
+<style data-si-disclosure="true">
+.si-image-disclosure {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+}
+.si-image-disclosure strong {
+  color: #333;
+}
+</style></head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
-            
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-            
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../intro/index.html">Introduction</a></li>
-                    <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                    <li><a href="../tutorials/index.html" class="active">Tutorials</a></li>
-                    <li><a href="../case-studies/index.html">Case Studies</a></li>
-                    <li><a href="../resources/index.html">Resources</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><span class="current">Tutorials</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Implementation Tutorials</h1>
-                        <p>Practical, step-by-step guides to implement generative AI solutions across various additive manufacturing workflows.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/general.jpg" alt="AI Implementation in AM" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">In This Section</h2>
-                    <ul class="toc-list">
-                        <li><a href="#prompt-engineering">Prompt Engineering</a></li>
-                        <li><a href="#benchmarking">Benchmarking</a></li>
-                        <li><a href="#model-selection">Model Selection</a></li>
-                        <li><a href="#implementation">Implementation Guides</a></li>
-                        <li><a href="#evaluation">Evaluation Methods</a></li>
-                    </ul>
-                </div>
-                
-                <div class="section-navigation">
-                    <h3>Explore This Topic</h3>
-                    <ul class="toc-list">
-                        <li><a href="prompt-engineering.html">Prompt Engineering</a></li>
-                        <li><span class="nist-link-unavailable">Benchmarking Metrics (link unavailable)</span></li>
-                        <li><a href="benchmarking-tools.html">Benchmarking Tools</a></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Overview (Basic Level) -->
-                <section class="content-section" data-level="basic" id="overview">
-                    <h2>Practical Implementation Guides</h2>
-                    <span class="complexity-badge complexity-beginner">Beginner</span>
-                    
-                    <p>These tutorials provide practical guidance on implementing generative AI solutions across different aspects of the additive manufacturing workflow. From prompt engineering to model selection and evaluation, you'll find step-by-step instructions to help you successfully integrate AI capabilities into your AM processes.</p>
-                    
-                    <div class="key-points">
-                        <h3>What You'll Learn:</h3>
-                        <ul>
-                            <li><strong>Effective Prompting:</strong> Techniques to effectively communicate with AI models for AM-specific tasks</li>
-                            <li><strong>Model Selection:</strong> How to choose the right AI models for different AM applications</li>
-                            <li><strong>Implementation Strategies:</strong> Step-by-step guides for integrating AI into existing workflows</li>
-                            <li><strong>Evaluation Methods:</strong> Approaches to measure and validate AI performance in AM contexts</li>
-                        </ul>
-                    </div>
-                </section>
-                
-                <!-- Prompt Engineering (Basic Level) -->
-                <section class="content-section" data-level="basic" id="prompt-engineering">
-                    <h2>Prompt Engineering for AM</h2>
-                    <span class="complexity-badge complexity-beginner">Beginner</span>
-                    
-                    <p>Prompt engineering is the practice of crafting effective inputs for generative AI models to produce desired outputs. In additive manufacturing, well-designed prompts can help you generate optimized designs, simulate processes, and solve complex manufacturing challenges.</p>
-                    
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Basic Prompting Techniques</h3>
-                                <p class="card-text">Learn fundamental strategies for creating clear, effective prompts that produce consistent results for AM applications.</p>
-                                <a href="prompt-engineering.html#basics" class="btn">Learn More</a>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Domain-Specific Prompting</h3>
-                                <p class="card-text">Discover how to incorporate AM-specific terminology and constraints into your prompts for better results.</p>
-                                <a href="prompt-engineering.html#domain" class="btn">Learn More</a>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Iterative Prompting</h3>
-                                <p class="card-text">Master the art of refining prompts through feedback loops to progressively improve generated designs and solutions.</p>
-                                <a href="prompt-engineering.html#iterative" class="btn">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="prompt-engineering.html" class="btn">Explore Prompt Engineering in Detail</a>
-                </section>
-                
-                <!-- Benchmarking (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="benchmarking">
-                    <h2>Benchmarking AI in AM</h2>
-                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
-                    
-                    <p>Benchmarking is essential to evaluate the performance of generative AI models in additive manufacturing contexts. Effective benchmarking helps you select the right models, measure improvements, and ensure that AI-generated solutions meet your manufacturing requirements.</p>
-                    
-                    <div class="two-column">
-                        <div>
-                            <h3>Performance Metrics</h3>
-                            <p>Understanding the right metrics to evaluate AI performance in AM contexts is crucial for meaningful benchmarking. Key metrics include:</p>
-                            <ul>
-                                <li>Design quality and manufacturability</li>
-                                <li>Optimization effectiveness</li>
-                                <li>Processing time and computational efficiency</li>
-                                <li>Material usage optimization</li>
-                                <li>Defect prediction accuracy</li>
-                            </ul>
-                            <span class="nist-link-unavailable">Benchmarking Metrics Guide (link unavailable)</span>
-                        </div>
-                        
-                        <div>
-                            <h3>Benchmarking Tools</h3>
-                            <p>Various tools and frameworks can help you systematically evaluate AI performance in AM applications:</p>
-                            <ul>
-                                <li>Standard test cases and reference designs</li>
-                                <li>Automated evaluation pipelines</li>
-                                <li>Comparative analysis frameworks</li>
-                                <li>Simulation-based validation methods</li>
-                                <li>Real-world validation protocols</li>
-                            </ul>
-                            <a href="benchmarking-tools.html" class="btn">Benchmarking Tools Guide</a>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Model Selection (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="model-selection">
-                    <h2>Model Selection for AM Applications</h2>
-                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
-                    
-                    <p>Choosing the right generative AI model for your specific additive manufacturing application is critical for success. This guide helps you navigate the landscape of available models and make informed decisions based on your requirements.</p>
-                    
-                    <h3>Selection Criteria</h3>
-                    <p>Consider these factors when selecting generative AI models for AM applications:</p>
-                    <ul>
-                        <li><strong>Task Alignment:</strong> How well the model's capabilities match your specific AM task (design generation, parameter optimization, etc.)</li>
-                        <li><strong>Domain Specialization:</strong> Whether the model has been pre-trained or fine-tuned on AM-relevant data</li>
-                        <li><strong>Resource Requirements:</strong> Computational resources needed to run the model effectively</li>
-                        <li><strong>Integration Capabilities:</strong> Ease of integrating the model with existing AM software and workflows</li>
-                        <li><strong>Customization Options:</strong> Ability to fine-tune or adapt the model to your specific needs</li>
-                    </ul>
-                    
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Design Generation Models</h3>
-                                <p class="card-text">Models specialized in creating 3D designs and optimized structures for AM.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Process Optimization Models</h3>
-                                <p class="card-text">Models focused on optimizing print parameters and manufacturing processes.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Quality Control Models</h3>
-                                <p class="card-text">Models designed for defect detection, prediction, and quality assurance in AM.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Implementation Guides (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="implementation">
-                    <h2>Implementation Guides</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>These advanced guides provide detailed, step-by-step instructions for implementing generative AI solutions in specific AM contexts.</p>
-                    
-                    <div class="implementation-stages">
-                        <div class="stage">
-                            <h4>Step 1: Environment Setup</h4>
-                            <ul>
-                                <li>Configure computational resources and dependencies</li>
-                                <li>Install necessary libraries and frameworks</li>
-                                <li>Set up integration points with existing AM software</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="stage">
-                            <h4>Step 2: Model Preparation</h4>
-                            <ul>
-                                <li>Select or download appropriate pre-trained models</li>
-                                <li>Configure model parameters for your specific use case</li>
-                                <li>Prepare any necessary fine-tuning datasets</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="stage">
-                            <h4>Step 3: Integration and Testing</h4>
-                            <ul>
-                                <li>Connect models to your AM workflow</li>
-                                <li>Develop necessary interfaces and automation</li>
-                                <li>Test with representative use cases</li>
-                                <li>Iterate based on performance feedback</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Example: Model Loading and Inference</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code>import torch
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav>
+<ul class="nav-links">
+<li><a href="../intro/index.html">Introduction</a></li>
+<li><a href="../core-technologies/index.html">Core Technologies</a></li>
+<li><a class="active" href="../tutorials/index.html">Tutorials</a></li>
+<li><a href="../case-studies/index.html">Case Studies</a></li>
+<li><a href="../resources/index.html">Resources</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><span class="current">Tutorials</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Implementation Tutorials</h1>
+<p>Practical, step-by-step guides to implement generative SI solutions across various additive manufacturing workflows.</p>
+</div>
+<div class="hero-image">
+<img alt="SI Implementation in AM" height="300" src="../../images/general.jpg" width="500"/><p class="si-image-disclosure"><strong>Disclosure:</strong> This image was generated using SI.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">In This Section</h2>
+<ul class="toc-list">
+<li><a href="#prompt-engineering">Prompt Engineering</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#model-selection">Model Selection</a></li>
+<li><a href="#implementation">Implementation Guides</a></li>
+<li><a href="#evaluation">Evaluation Methods</a></li>
+</ul>
+</div>
+<div class="section-navigation">
+<h3>Explore This Topic</h3>
+<ul class="toc-list">
+<li><a href="prompt-engineering.html">Prompt Engineering</a></li>
+<li><a href="../Develop%20AI%20models/benchmarking-metrics.html">Benchmarking Metrics</a></li>
+<li><a href="benchmarking-tools.html">Benchmarking Tools</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Overview (Basic Level) -->
+<section class="content-section" data-level="basic" id="overview">
+<h2>Practical Implementation Guides</h2>
+<span class="complexity-badge complexity-beginner">Beginner</span>
+<p>These tutorials provide practical guidance on implementing generative SI solutions across different aspects of the additive manufacturing workflow. From prompt engineering to model selection and evaluation, you'll find step-by-step instructions to help you successfully integrate SI capabilities into your AM processes.</p>
+<div class="key-points">
+<h3>What You'll Learn:</h3>
+<ul>
+<li><strong>Effective Prompting:</strong> Techniques to effectively communicate with SI models for AM-specific tasks</li>
+<li><strong>Model Selection:</strong> How to choose the right SI models for different AM applications</li>
+<li><strong>Implementation Strategies:</strong> Step-by-step guides for integrating SI into existing workflows</li>
+<li><strong>Evaluation Methods:</strong> Approaches to measure and validate SI performance in AM contexts</li>
+</ul>
+</div>
+</section>
+<!-- Prompt Engineering (Basic Level) -->
+<section class="content-section" data-level="basic" id="prompt-engineering">
+<h2>Prompt Engineering for AM</h2>
+<span class="complexity-badge complexity-beginner">Beginner</span>
+<p>Prompt engineering is the practice of crafting effective inputs for generative SI models to produce desired outputs. In additive manufacturing, well-designed prompts can help you generate optimized designs, simulate processes, and solve complex manufacturing challenges.</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Basic Prompting Techniques</h3>
+<p class="card-text">Learn fundamental strategies for creating clear, effective prompts that produce consistent results for AM applications.</p>
+<a class="btn" href="prompt-engineering.html">Learn More</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Domain-Specific Prompting</h3>
+<p class="card-text">Discover how to incorporate AM-specific terminology and constraints into your prompts for better results.</p>
+<a class="btn" href="prompt-engineering.html">Learn More</a>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Iterative Prompting</h3>
+<p class="card-text">Master the art of refining prompts through feedback loops to progressively improve generated designs and solutions.</p>
+<a class="btn" href="prompt-engineering.html">Learn More</a>
+</div>
+</div>
+</div>
+<a class="btn" href="prompt-engineering.html">Explore Prompt Engineering in Detail</a>
+</section>
+<!-- Benchmarking (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="benchmarking">
+<h2>Benchmarking SI in AM</h2>
+<span class="complexity-badge complexity-intermediate">Intermediate</span>
+<p>Benchmarking is essential to evaluate the performance of generative SI models in additive manufacturing contexts. Effective benchmarking helps you select the right models, measure improvements, and ensure that SI-generated solutions meet your manufacturing requirements.</p>
+<div class="two-column">
+<div>
+<h3>Performance Metrics</h3>
+<p>Understanding the right metrics to evaluate SI performance in AM contexts is crucial for meaningful benchmarking. Key metrics include:</p>
+<ul>
+<li>Design quality and manufacturability</li>
+<li>Optimization effectiveness</li>
+<li>Processing time and computational efficiency</li>
+<li>Material usage optimization</li>
+<li>Defect prediction accuracy</li>
+</ul>
+<a class="btn" href="../Develop%20AI%20models/benchmarking-metrics.html">Benchmarking Metrics Guide</a>
+</div>
+<div>
+<h3>Benchmarking Tools</h3>
+<p>Various tools and frameworks can help you systematically evaluate SI performance in AM applications:</p>
+<ul>
+<li>Standard test cases and reference designs</li>
+<li>Automated evaluation pipelines</li>
+<li>Comparative analysis frameworks</li>
+<li>Simulation-based validation methods</li>
+<li>Real-world validation protocols</li>
+</ul>
+<a class="btn" href="benchmarking-tools.html">Benchmarking Tools Guide</a>
+</div>
+</div>
+</section>
+<!-- Model Selection (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="model-selection">
+<h2>Model Selection for AM Applications</h2>
+<span class="complexity-badge complexity-intermediate">Intermediate</span>
+<p>Choosing the right generative SI model for your specific additive manufacturing application is critical for success. This guide helps you navigate the landscape of available models and make informed decisions based on your requirements.</p>
+<h3>Selection Criteria</h3>
+<p>Consider these factors when selecting generative SI models for AM applications:</p>
+<ul>
+<li><strong>Task Alignment:</strong> How well the model's capabilities match your specific AM task (design generation, parameter optimization, etc.)</li>
+<li><strong>Domain Specialization:</strong> Whether the model has been pre-trained or fine-tuned on AM-relevant data</li>
+<li><strong>Resource Requirements:</strong> Computational resources needed to run the model effectively</li>
+<li><strong>Integration Capabilities:</strong> Ease of integrating the model with existing AM software and workflows</li>
+<li><strong>Customization Options:</strong> Ability to fine-tune or adapt the model to your specific needs</li>
+</ul>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Design Generation Models</h3>
+<p class="card-text">Models specialized in creating 3D designs and optimized structures for AM.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Process Optimization Models</h3>
+<p class="card-text">Models focused on optimizing print parameters and manufacturing processes.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Quality Control Models</h3>
+<p class="card-text">Models designed for defect detection, prediction, and quality assurance in AM.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Implementation Guides (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="implementation">
+<h2>Implementation Guides</h2>
+<span class="complexity-badge complexity-advanced">Advanced</span>
+<p>These advanced guides provide detailed, step-by-step instructions for implementing generative SI solutions in specific AM contexts.</p>
+<div class="implementation-stages">
+<div class="stage">
+<h4>Step 1: Environment Setup</h4>
+<ul>
+<li>Configure computational resources and dependencies</li>
+<li>Install necessary libraries and frameworks</li>
+<li>Set up integration points with existing AM software</li>
+</ul>
+</div>
+<div class="stage">
+<h4>Step 2: Model Preparation</h4>
+<ul>
+<li>Select or download appropriate pre-trained models</li>
+<li>Configure model parameters for your specific use case</li>
+<li>Prepare any necessary fine-tuning datasets</li>
+</ul>
+</div>
+<div class="stage">
+<h4>Step 3: Integration and Testing</h4>
+<ul>
+<li>Connect models to your AM workflow</li>
+<li>Develop necessary interfaces and automation</li>
+<li>Test with representative use cases</li>
+<li>Iterate based on performance feedback</li>
+</ul>
+</div>
+</div>
+<div class="code-block">
+<div class="code-header">
+<span>Example: Model Loading and Inference</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code>import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # Load pre-trained model for design generation
@@ -316,107 +293,66 @@ Design a lightweight bracket for a 3D printer with the following specs:
 
 design = generate_design(requirements)
 print(design)</code></pre>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Evaluation Methods (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="evaluation">
-                    <h2>Evaluation Methods</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>Proper evaluation is essential to ensure that generative AI solutions meet the requirements and constraints of additive manufacturing. These advanced methods help you rigorously assess AI performance in AM contexts.</p>
-                    
-                    <h3>Comprehensive Evaluation Framework</h3>
-                    <p>A holistic approach to evaluating AI in AM should include:</p>
-                    <ul>
-                        <li><strong>Technical Performance:</strong> Accuracy, precision, computational efficiency</li>
-                        <li><strong>Manufacturing Viability:</strong> Printability, structural integrity, material usage</li>
-                        <li><strong>Business Impact:</strong> Cost reduction, time savings, quality improvements</li>
-                        <li><strong>User Experience:</strong> Ease of use, integration with existing workflows</li>
-                        <li><strong>Compliance:</strong> Meeting industry standards and regulatory requirements</li>
-                    </ul>
-                    
-                    <div class="cta-box">
-                        <h3>Ready to Apply These Concepts?</h3>
-                        <p>Explore our real-world case studies to see how these implementation approaches have been applied in industry settings:</p>
-                        <div class="cta-buttons">
-                            <a href="../case-studies/index.html" class="btn">View Case Studies</a>
-                            <a href="../resources/index.html" class="btn btn-outline">Access Resources</a>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Pagination -->
-                <div class="pagination">
-                    <a href="../core-technologies/index.html" class="pagination-item pagination-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                        </svg>
-                        <div>
-                            <div class="pagination-label">Previous</div>
-                            <div class="pagination-title">Core Technologies</div>
-                        </div>
-                    </a>
-                    
-                    <a href="prompt-engineering.html" class="pagination-item pagination-next">
-                        <div>
-                            <div class="pagination-label">Next</div>
-                            <div class="pagination-title">Prompt Engineering</div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="../intro/index.html">Introduction</a></li>
-                        <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                        <li><a href="../tutorials/index.html">Tutorials</a></li>
-                        <li><a href="../case-studies/index.html">Case Studies</a></li>
-                        <li><a href="../resources/index.html">Resources</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+</div>
+</div>
+</section>
+<!-- Evaluation Methods (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="evaluation">
+<h2>Evaluation Methods</h2>
+<span class="complexity-badge complexity-advanced">Advanced</span>
+<p>Proper evaluation is essential to ensure that generative SI solutions meet the requirements and constraints of additive manufacturing. These advanced methods help you rigorously assess SI performance in AM contexts.</p>
+<h3>Comprehensive Evaluation Framework</h3>
+<p>A holistic approach to evaluating SI in AM should include:</p>
+<ul>
+<li><strong>Technical Performance:</strong> Accuracy, precision, computational efficiency</li>
+<li><strong>Manufacturing Viability:</strong> Printability, structural integrity, material usage</li>
+<li><strong>Business Impact:</strong> Cost reduction, time savings, quality improvements</li>
+<li><strong>User Experience:</strong> Ease of use, integration with existing workflows</li>
+<li><strong>Compliance:</strong> Meeting industry standards and regulatory requirements</li>
+</ul>
+<div class="cta-box">
+<h3>Ready to Apply These Concepts?</h3>
+<p>Explore our real-world case studies to see how these implementation approaches have been applied in industry settings:</p>
+<div class="cta-buttons">
+<a class="btn" href="../case-studies/index.html">View Case Studies</a>
+<a class="btn btn-outline" href="../resources/index.html">Access Resources</a>
+</div>
+</div>
+</section>
+<!-- Pagination -->
+<div class="pagination">
+<a class="pagination-item pagination-prev" href="../core-technologies/index.html">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+<div>
+<div class="pagination-label">Previous</div>
+<div class="pagination-title">Core Technologies</div>
+</div>
+</a>
+<a class="pagination-item pagination-next" href="prompt-engineering.html">
+<div>
+<div class="pagination-label">Next</div>
+<div class="pagination-title">Prompt Engineering</div>
+</div>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>

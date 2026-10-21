@@ -1,219 +1,202 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Benchmarking Metrics for AI in Additive Manufacturing - Learn how to evaluate and compare generative AI models using qualitative metrics">
-    <title>Benchmarking Metrics for AI in AM | Develop AI Models</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- Official NIST site-wide header and footer -->
-    <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-    <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Benchmarking Metrics for SI in Additive Manufacturing - Learn how to evaluate and compare generative SI models using qualitative metrics" name="description"/>
+<title>Benchmarking Metrics for SI in AM | Develop SI Models</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
+<!-- Official NIST site-wide header and footer -->
+<link href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" rel="stylesheet"/>
+<script defer="defer" src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"></script>
+<style data-si-disclosure="true">
+.si-image-disclosure {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+}
+.si-image-disclosure strong {
+  color: #333;
+}
+</style></head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
-            
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-            
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../Develop AI models/index_nowrin.html">Develop AI model</a></li>
-                    <li><a href="../AI Agent/index.html">AI Agent</a></li>
-                    <li><a href="../AM_dataset/datasets.html">Resources</a></li>
-                    <li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
-                    <!-- <li><a href="../intro/index.html">Introduction</a></li>
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav>
+<ul class="nav-links">
+<li><a href="../Develop AI models/index_nowrin.html">Develop SI model</a></li>
+<li><a href="../AI Agent/index.html">SI Agent</a></li>
+<li><a href="../AM_dataset/datasets.html">Resources</a></li>
+<li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
+<!-- <li><a href="../intro/index.html">Introduction</a></li>
                     <li><a href="../core-technologies/index.html">Core Technologies</a></li>
                     <li><a href="../tutorials/index.html" class="active">Tutorials</a></li>
                     <li><a href="../case-studies/index.html">Case Studies</a></li>
                     <li><a href="../resources/index.html">Resources</a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="index_nowrin.html">Develop AI Models</a></li>
-                    <li><span class="current">Benchmarking Metrics</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Benchmarking Metrics for AI in AM</h1>
-                        <p>A comprehensive methodology for evaluating the capabilities of different AI models in addressing AM tasks.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/general-project1.jpg" alt="AI Benchmarking for AM" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">On This Page</h2>
-                    <ul class="toc-list">
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#metrics">Qualitative Metrics</a></li>
-                        <li><a href="#Contribution">Source Code and Resources</a></li>
-                        <!-- <li><a href="#Contribution">Contribution</a></li> -->
-                        <!-- <li><a href="#agnostic-metrics">Publication</a></li> -->
-                        
-                       
-                        <!-- <li><a href="#scoring">Scoring Matrix</a></li> -->
-                        <!-- <li><a href="#implementation">Implementation</a></li> -->
-                    </ul>
-                </div>
-                
-                <div class="section-navigation">
-                    <h3>Related Topics</h3>
-                    <ul class="toc-list">
-                        <li><span class="nist-link-unavailable">Benchmarking Tools (link unavailable)</span></li>
-                        <li><span class="nist-link-unavailable">Prompt Engineering (link unavailable)</span></li>
-                        <li><a href="../resources/datasets.html">AM Datasets</a></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Overview (Basic Level) -->
-                <section class="content-section" data-level="basic" id="overview">
-                    <h2>Benchmarking AI Models for AM</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>This project presents a comprehensive methodology for evaluating the capabilities of various existing AI tools in addressing diverse AM-related tasks. The focus is on establishing qualitative metrics that can help you assess and compare different AI models for additive manufacturing applications.</p>
-                    
-                    <div class="key-points">
-                        <h3>Key Concepts:</h3>
-                        <ul>
-                            <li><strong>Evaluation Framework:</strong> A structured approach to assess AI performance in AM contexts</li>
-                            <li><strong>Qualitative Metrics:</strong> 35 metrics across three categories to comprehensively evaluate model capabilities</li>
-                            <li><strong>Scoring Matrix:</strong> A practical tool for assessing different AI models on AM-specific tasks</li>
-                            <li><strong>Comparative Analysis:</strong> Methods to benchmark various AI tools against each other</li>
-                        </ul>
-                    </div>
-                    
-                    <p>Our research evaluated several major AI models including GPT-4, GPT-3.5, Gemini (previously BARD), Llama 2, DALL·E 3, and Stable Diffusion across a range of AM-specific tasks using these metrics.</p>
-                </section>
-                
-                <!-- Qualitative Metrics (Basic Level) -->
-                <section class="content-section" data-level="basic" id="metrics">
-                    <h2>Qualitative Metrics Framework</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>Our benchmarking framework is built around 35 qualitative metrics organized into three main categories. This comprehensive set of metrics allows for a detailed assessment of how well different AI models perform on AM-related tasks.</p>
-                    
-                    <div class="image-with-caption">
-                        <img src="../../images/general-project1.jpg" alt="AI Metrics Categories" class="medium-image">
-                        <p class="caption">The three categories of qualitative metrics for evaluating AI models in AM</p>
-                    </div>
-                    
-                    <h3>Metric Categories</h3>
-                    <p>The metrics are divided into three main categories, each addressing different aspects of AI performance:</p>
-                    
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Agnostic Metrics</h3>
-                                <p class="card-text">General capabilities applicable across domains, including accuracy, coherence, and relevance.</p>
-                                <!-- <a href="#agnostic-metrics" class="btn">View Agnostic Metrics</a> -->
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Domain Task Metrics</h3>
-                                <p class="card-text">Metrics specific to the additive manufacturing domain, such as AM knowledge and process understanding.</p>
-                                <!-- <a href="#domain-metrics" class="btn">View Domain Metrics</a> -->
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Problem Task Metrics</h3>
-                                <p class="card-text">Metrics focused on specific AM problem types, like design generation, parameter optimization, and defect detection.</p>
-                                <!-- <a href="#problem-metrics" class="btn">View Problem Metrics</a> -->
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="content-section" data-level="basic" id="Contribution"></section> 
-                    <h3>Source Code and Resources</h3>
-                    <p>For practical implementation of this benchmarking framework, you can access the following resources:</p>
-                    <ul>
-                        <li><span class="nist-dataset-pending">Dataset access pending NIST review and publication</span> with implementation code and examples</li>
-                        <li>Standardized test queries for AM applications</li>
-                        <li>Sample scoring templates and evaluation protocols</li>
-                    </ul>
-                    
-
-                    <h2>Contribution</h2> 
-                    <p>The wrok is a collaboration of Nowrin, <a href="https://www.linkedin.com/in/paul-witherell-a378422/" target="_blank">
+</ul>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="index_nowrin.html">Develop SI Models</a></li>
+<li><span class="current">Benchmarking Metrics</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Benchmarking Metrics for SI in AM</h1>
+<p>A comprehensive methodology for evaluating the capabilities of different SI models in addressing AM tasks.</p>
+</div>
+<div class="hero-image">
+<img alt="SI Benchmarking for AM" height="300" src="../../images/general-project1.jpg" width="500"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">On This Page</h2>
+<ul class="toc-list">
+<li><a href="#overview">Overview</a></li>
+<li><a href="#metrics">Qualitative Metrics</a></li>
+<li><a href="#Contribution">Source Code and Resources</a></li>
+<!-- <li><a href="#Contribution">Contribution</a></li> -->
+<!-- <li><a href="#agnostic-metrics">Publication</a></li> -->
+<!-- <li><a href="#scoring">Scoring Matrix</a></li> -->
+<!-- <li><a href="#implementation">Implementation</a></li> -->
+</ul>
+</div>
+<div class="section-navigation">
+<h3>Related Topics</h3>
+<ul class="toc-list">
+<li><a href="../tutorials/benchmarking-tools.html">Benchmarking Tools</a></li>
+<li><a href="../tutorials/prompt-engineering.html">Prompt Engineering</a></li>
+<li><a href="../resources/datasets.html">AM Datasets</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Overview (Basic Level) -->
+<section class="content-section" data-level="basic" id="overview">
+<h2>Benchmarking SI Models for AM</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>This project presents a comprehensive methodology for evaluating the capabilities of various existing SI tools in addressing diverse AM-related tasks. The focus is on establishing qualitative metrics that can help you assess and compare different SI models for additive manufacturing applications.</p>
+<div class="key-points">
+<h3>Key Concepts:</h3>
+<ul>
+<li><strong>Evaluation Framework:</strong> A structured approach to assess SI performance in AM contexts</li>
+<li><strong>Qualitative Metrics:</strong> 35 metrics across three categories to comprehensively evaluate model capabilities</li>
+<li><strong>Scoring Matrix:</strong> A practical tool for assessing different SI models on AM-specific tasks</li>
+<li><strong>Comparative Analysis:</strong> Methods to benchmark various SI tools against each other</li>
+</ul>
+</div>
+<p>Our research evaluated several major SI models including GPT-4, GPT-3.5, Gemini (previously BARD), Llama 2, DALL·E 3, and Stable Diffusion across a range of AM-specific tasks using these metrics.</p>
+</section>
+<!-- Qualitative Metrics (Basic Level) -->
+<section class="content-section" data-level="basic" id="metrics">
+<h2>Qualitative Metrics Framework</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>Our benchmarking framework is built around 35 qualitative metrics organized into three main categories. This comprehensive set of metrics allows for a detailed assessment of how well different SI models perform on AM-related tasks.</p>
+<div class="image-with-caption">
+<img alt="SI Metrics Categories" class="medium-image" src="../../images/general-project1.jpg"/>
+<p class="caption">The three categories of qualitative metrics for evaluating SI models in AM</p>
+</div>
+<h3>Metric Categories</h3>
+<p>The metrics are divided into three main categories, each addressing different aspects of SI performance:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Agnostic Metrics</h3>
+<p class="card-text">General capabilities applicable across domains, including accuracy, coherence, and relevance.</p>
+<!-- <a href="#agnostic-metrics" class="btn">View Agnostic Metrics</a> -->
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Domain Task Metrics</h3>
+<p class="card-text">Metrics specific to the additive manufacturing domain, such as AM knowledge and process understanding.</p>
+<!-- <a href="#domain-metrics" class="btn">View Domain Metrics</a> -->
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Problem Task Metrics</h3>
+<p class="card-text">Metrics focused on specific AM problem types, like design generation, parameter optimization, and defect detection.</p>
+<!-- <a href="#problem-metrics" class="btn">View Problem Metrics</a> -->
+</div>
+</div>
+</div>
+</section>
+<section class="content-section" data-level="basic" id="Contribution"></section>
+<h3>Source Code and Resources</h3>
+<p>For practical implementation of this benchmarking framework, you can access the following resources:</p>
+<ul>
+<li><a href="https://github.com/nowrin0102/IDETC-2024" target="_blank">GitHub Repository</a> with implementation code and examples</li>
+<li>Standardized test queries for AM applications</li>
+<li>Sample scoring templates and evaluation protocols</li>
+</ul>
+<h2>Contribution</h2>
+<p>The wrok is a collaboration of Nowrin, <a href="https://www.linkedin.com/in/paul-witherell-a378422/" target="_blank">
                     Paul withrell</a>, <a href="https://www.linkedin.com/in/vinaysmathew/" target="_blank">
                         Vinay Saji</a>,<a href="https://www.linkedin.com/in/soundar-kumara-1919971/" target="_blank">
                         Soundar Kumara</a></p>
-                    <h2>Publication</h2> 
-                    <p>If you are interested in the details, please refer to my following paper:</p> 
-                        <a href="https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2024/88346/1208798" target="_blank">
-                        Current state and benchmarking of generative artificial intelligence for additive manufacturing, IDETC-CIE 2024.</a> 
-                    
-                    <br><br>
-                    <div class="cta-box">
-                        <h3>Learn More About AI Benchmarking</h3>
-                        <p>For more comprehensive understanding of benchmarking and evaluation, explore these related resources:</p>
-                        <div class="cta-buttons">
-                            <a href="../tutorials/benchmarking-tools.html" class="btn">Benchmarking Tools</a>
-                            <a href="../resources/datasets.html" class="btn btn-outline">AM Datasets</a>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Agnostic Metrics (Intermediate Level) -->
-                <!-- <section class="content-section" data-level="intermediate" id="agnostic-metrics">
+<h2>Publication</h2>
+<p>If you are interested in the details, please refer to my following paper:</p>
+<a href="https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2024/88346/1208798" target="_blank">
+                        Current state and benchmarking of generative super intelligence for additive manufacturing, IDETC-CIE 2024.</a>
+<br/><br/>
+<div class="cta-box">
+<h3>Learn More About SI Benchmarking</h3>
+<p>For more comprehensive understanding of benchmarking and evaluation, explore these related resources:</p>
+<div class="cta-buttons">
+<a class="btn" href="../tutorials/benchmarking-tools.html">Benchmarking Tools</a>
+<a class="btn btn-outline" href="../resources/datasets.html">AM Datasets</a>
+</div>
+</div>
+<!-- Agnostic Metrics (Intermediate Level) -->
+<!-- <section class="content-section" data-level="intermediate" id="agnostic-metrics">
                     <h2>Agnostic Metrics</h2>
                     <span class="complexity-badge complexity-intermediate">Intermediate</span>
                     
@@ -323,8 +306,7 @@
                             </ul>
                         </div>
                     </div> -->
-                    
-                    <!-- <h3>Example Assessment: Process Understanding</h3>
+<!-- <h3>Example Assessment: Process Understanding</h3>
                     <div class="example-box">
                         <h4>Query: Explain the key differences between SLA and DMLS processes.</h4>
                         <div class="example-content">
@@ -334,9 +316,8 @@
                         </div>
                     </div>
                 </section> -->
-                
-                <!-- Problem Task Metrics (Advanced Level) -->
-                <!-- <section class="content-section" data-level="advanced" id="problem-metrics">
+<!-- Problem Task Metrics (Advanced Level) -->
+<!-- <section class="content-section" data-level="advanced" id="problem-metrics">
                     <h2>Problem Task Metrics</h2>
                     <span class="complexity-badge complexity-advanced">Advanced</span>
                     
@@ -355,8 +336,7 @@
                                 </div>
                             </div>
                         </div> -->
-                        
-                        <!-- <div class="card">
+<!-- <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">Process Parameter Selection</h3>
                                 <p class="card-text">Ability to recommend appropriate process parameters based on material, geometry, and desired outcomes.</p>
@@ -367,8 +347,7 @@
                                 </div>
                             </div>
                         </div> -->
-                        
-                        <!-- <div class="card">
+<!-- <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">Defect Analysis</h3>
                                 <p class="card-text">Ability to identify, categorize, and suggest remediation for AM defects based on descriptions or images.</p>
@@ -380,8 +359,7 @@
                             </div>
                         </div>
                     </div> -->
-                    
-                    <!-- <div class="card-grid">
+<!-- <div class="card-grid">
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">Cost Estimation</h3>
@@ -393,8 +371,7 @@
                                 </div>
                             </div>
                         </div> -->
-                        
-                        <!-- <div class="card">
+<!-- <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">Material Selection</h3>
                                 <p class="card-text">Ability to recommend appropriate materials based on application requirements and process constraints.</p>
@@ -429,9 +406,8 @@
                         <li>Test with variations of the same problem to assess robustness</li>
                     </ul>
                 </section> -->
-                
-                <!-- Scoring Matrix (Advanced Level) -->
-                <!-- <section class="content-section" data-level="advanced" id="scoring">
+<!-- Scoring Matrix (Advanced Level) -->
+<!-- <section class="content-section" data-level="advanced" id="scoring">
                     <h2>Scoring Matrix Implementation</h2>
                     <span class="complexity-badge complexity-advanced">Advanced</span>
                     
@@ -447,8 +423,7 @@
                         <li><strong>Scoring Process:</strong> Evaluate each model's responses according to the defined metrics and scale</li>
                         <li><strong>Aggregation:</strong> Calculate weighted scores to produce overall performance ratings</li>
                     </ol> -->
-                    
-                    <!-- <div class="code-block">
+<!-- <div class="code-block">
                         <div class="code-header">
                             <span>Matrix Implementation Example (Python)</span>
                             <button class="copy-button">Copy</button>
@@ -463,9 +438,7 @@ metrics = {
     'domain': ['process_understanding', 'material_knowledge', 'design_for_am'],
     'problem': ['design_generation', 'parameter_selection', 'defect_analysis']
 } -->
-
 <!-- models = ['GPT-4', 'GPT-3.5', 'Gemini', 'Llama 2'] -->
-
 <!-- # Assign weights (example)
 weights = {
     'accuracy': 0.8, 'coherence': 0.7, 'relevance': 0.9, 'completeness': 0.6, 'consistency': 0.7,
@@ -488,7 +461,6 @@ def fill_matrix_with_scores(matrix, scores_dict):
         for model in matrix.columns:
             matrix.loc[metric, model] = scores_dict.get((metric, model), np.nan)
     return matrix -->
-
 <!-- # Calculate weighted scores
 def calculate_weighted_scores(matrix, weights):
     weighted_matrix = matrix.copy()
@@ -511,9 +483,8 @@ def calculate_weighted_scores(matrix, weights):
                         </div>
                     </div>
                 </section> -->
-                
-                <!-- Implementation (Basic Level) -->
-                <!-- <section class="content-section" data-level="basic" id="implementation">
+<!-- Implementation (Basic Level) -->
+<!-- <section class="content-section" data-level="basic" id="implementation">
                     <h2>Implementing the Benchmarking Framework</h2>
                     <span class="complexity-badge complexity-beginner">Beginner</span>
                     
@@ -538,8 +509,7 @@ def calculate_weighted_scores(matrix, weights):
                                 <li>Prepare reference solutions or criteria for evaluation</li>
                             </ul>
                         </div> -->
-                        
-                        <!-- <div class="stage">
+<!-- <div class="stage">
                             <h4>Step 3: Set Up Evaluation Process</h4>
                             <ul>
                                 <li>Implement the scoring matrix using spreadsheets or custom tools</li>
@@ -559,81 +529,40 @@ def calculate_weighted_scores(matrix, weights):
                             </ul>
                         </div>
                     </div> -->
-                
-                
-                <!-- Pagination -->
-                <div class="pagination">
-                    <a href="index_nowrin.html" class="pagination-item pagination-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                        </svg>
-                        <div>
-                            <div class="pagination-label">Previous</div>
-                            <div class="pagination-title">Develope AI model</div>
-                        </div>
-                    </a>
-                    
-                    <a href=""../tutorials/benchmarking-tools.html" class="pagination-item pagination-next">
-                        <div>
-                            <div class="pagination-label">Next</div>
-                            <div class="pagination-title">Benchmarking Tools</div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <!-- <li><a href="../intro/index.html">Introduction</a></li>
-                        <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                        <li><a href="../tutorials/index.html">Tutorials</a></li>
-                        <li><a href="../case-studies/index.html">Case Studies</a></li> -->
-                        <li><a href="../Develop AI models/index_nowrin.html">Develop AI model</a></li>
-                        <li><a href="../AI Agent/index.html">AI Agent</a></li>
-                        <li><a href="../AM_dataset/datasets.html">Resources</a></li>
-                        <li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+<!-- Pagination -->
+<div class="pagination">
+<a class="pagination-item pagination-prev" href="index_nowrin.html">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+<div>
+<div class="pagination-label">Previous</div>
+<div class="pagination-title">Develope SI model</div>
+</div>
+</a>
+<a ..="" benchmarking-tools.html"="" class="pagination-item pagination-next" href="" tutorials="">
+<div>
+<div class="pagination-label">Next</div>
+<div class="pagination-title">Benchmarking Tools</div>
+</div>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>

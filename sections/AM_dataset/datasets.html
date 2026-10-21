@@ -1,184 +1,168 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AM Datasets for AI Models - Comprehensive collection of datasets for training, testing, and benchmarking generative AI models in additive manufacturing">
-    <title>AM Datasets for AI Models | Resource</title>
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- Official NIST site-wide header and footer -->
-    <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-    <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="AM Datasets for SI Models - Comprehensive collection of datasets for training, testing, and benchmarking generative SI models in additive manufacturing" name="description"/>
+<title>AM Datasets for SI Models | Resource</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
+<!-- Official NIST site-wide header and footer -->
+<link href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" rel="stylesheet"/>
+<script defer="defer" src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"></script>
+<style data-si-disclosure="true">
+.si-image-disclosure {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+}
+.si-image-disclosure strong {
+  color: #333;
+}
+</style></head>
 <body>
-<p class="nist-dataset-review-notice" role="note">Dataset download links are withheld pending NIST dataset review, registration, and publication. Descriptions are informational only.</p>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav>
+<ul class="nav-links">
+<li><a href="../Agentic AI/index.html">Agentic SI For AM</a></li>
+<li><a href="../Develop AI models/index_nowrin.html">SI Models Development</a></li>
+<li><a href="../AI Agent/index.html">SI agent</a></li>
+<li><a href="../AM_dataset/datasets.html">Data for SI</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<!-- <li><a href="index.html">AM_dataset</a></li> -->
+<li><span class="current">Datasets</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>AM Datasets for SI Models</h1>
+<p>A comprehensive collection of datasets for training, testing, and benchmarking generative SI models across various aspects of additive manufacturing.</p>
+</div>
+<div class="hero-image">
+<img alt="AM Datasets" height="300" src="../../images/data prep.png" width="500"/><p class="si-image-disclosure"><strong>Disclosure:</strong> This image was generated using SI.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">On This Page</h2>
+<ul class="toc-list">
+<li><a href="#overview">Overview</a></li>
+<li><a href="#main-content">Golden Dataset Details</a></li>
+<li><a href="#benchmarking-role">Role in Benchmarking</a></li>
+<li><a href="#training-role">Role in Training</a></li>
+<li><a href="#agent-role">Role in Agentic SI</a></li>
+<li><a href="#prompt-role">Role in Prompt Engineering</a></li>
+<li><a href="#reuse">Data Reuse &amp; Cross-Applicability</a></li>
+<li><a href="#main-content">Contributing Data</a></li>
+</ul>
+</div>
+<div class="section-navigation">
+<h3>Related Resources</h3>
+<ul class="toc-list">
+<li><a href="../Develop%20AI%20models/benchmarking-metrics.html">Benchmarking Metrics</a></li>
+<li><a href="../tutorials/benchmarking-tools.html">Benchmarking Tools</a></li>
+<li><a href="../tutorials/prompt-engineering.html">Prompt Engineering</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Overview (Basic Level) -->
+<section class="content-section" data-level="basic" id="overview">
+<h2>Golden Datasets in Additive Manufacturing SI</h2>
+<p>In additive manufacturing, high-quality datasets are essential for developing reliable SI models. A golden dataset is a high-quality, curated collection of data that serves as a reference standard for training, validating, and benchmarking SI models, especially in agentic SI systems. In the AM context, it encompasses diverse, representative samples that capture the full spectrum of AM processes, materials, geometries, and operational conditions. Their detailed characteristics and applications are explored in the sections below.</p>
+<div class="key-points">
+<h3>Purpose of Golden Datasets:</h3>
+<ul>
+<li><strong>Agentic SI:</strong> Support the development and evaluation of autonomous SI systems</li>
+<li><strong>Benchmarking:</strong> Enable standardized evaluation and comparison of SI models</li>
+<li><strong>Training:</strong> Provide the foundational data for model learning and fine-tuning</li>
+<li><strong>Prompt Engineering:</strong> Guide effective interactions between humans and SI models</li>
+</ul>
+</div>
+<p>Each golden dataset is characterized by its specific data formats, structure, and intended applications. Understanding the role of these datasets helps researchers and practitioners select the right resources for their SI in AM workflows.</p>
+<div class="overview-diagram">
+<img alt="AM Context Golden Dataset with Agentic SI Stack and Layers" height="400" src="../../images/updated_diagram.png" width="600"/>
+<p class="diagram-caption">Illustration showing the relationship between AM context, golden datasets, agentic SI stack layers, and various control knobs for SI system configuration.</p>
+</div>
+</section>
+<!-- Role of Golden Datasets for Benchmarking (Basic Level) -->
+<section class="content-section" data-level="basic" id="benchmarking-role">
+<h2>Role of Golden Datasets for Benchmarking</h2>
+<p>Golden datasets for benchmarking provide standardized reference points for evaluating and comparing the performance of different SI models on consistent AM tasks. These datasets enable reproducible research and objective assessment of model capabilities.</p>
+<p><strong>Typical Data Formats:</strong> JSON, CSV, STL, OBJ, STEP, HDF5, Images, XML</p>
+<div class="dataset-card">
+<div class="dataset-header">
+<h3>AM-SI Benchmark Dataset</h3>
+<!-- <span class="dataset-badge">Public</span> -->
+</div>
+<div class="dataset-body">
+<p>A comprehensive benchmark dataset for evaluating SI models across common AM tasks including design optimization, parameter selection, and defect classification.</p>
+<div class="dataset-details">
+<div class="detail-item">
+<span class="detail-label">Size:</span>
+<span class="detail-value">2.3 GB</span>
+</div>
+<div class="detail-item">
+<span class="detail-label">Formats:</span>
+<span class="detail-value">JSON, CSV, STL</span>
+</div>
+<div class="detail-item">
+<span class="detail-label">Tasks:</span>
+<span class="detail-value">Design, Process Parameters, Quality Control</span>
+</div>
+</div>
 
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../Agentic AI/index.html">Agentic AI For AM</a></li>
-                    <li><a href="../Develop AI models/index_nowrin.html">AI Models Development</a></li>
-                    <li><a href="../AI Agent/index.html">AI agent</a></li>
-                    <li><a href="../AM_dataset/datasets.html">Data for AI</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <!-- <li><span class="nist-link-unavailable">AM_dataset (link unavailable)</span></li> -->
-                    <li><span class="current">Datasets</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>AM Datasets for AI Models</h1>
-                        <p>A comprehensive collection of datasets for training, testing, and benchmarking generative AI models across various aspects of additive manufacturing.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/data prep.png" alt="AM Datasets" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">On This Page</h2>
-                    <ul class="toc-list">
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#golden-dataset">Golden Dataset Details</a></li>
-                        <li><a href="#benchmarking-role">Role in Benchmarking</a></li>
-                        <li><a href="#training-role">Role in Training</a></li>
-                        <li><a href="#agent-role">Role in Agentic AI</a></li>
-                        <li><a href="#prompt-role">Role in Prompt Engineering</a></li>
-                        <li><a href="#reuse">Data Reuse & Cross-Applicability</a></li>
-                        <li><a href="#contribute">Contributing Data</a></li>
-                    </ul>
-                </div>
-
-                <div class="section-navigation">
-                    <h3>Related Resources</h3>
-                    <ul class="toc-list">
-                        <li><span class="nist-link-unavailable">Benchmarking Metrics (link unavailable)</span></li>
-                        <li><a href="../tutorials/benchmarking-tools.html">Benchmarking Tools</a></li>
-                        <li><a href="../tutorials/prompt-engineering.html">Prompt Engineering</a></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Overview (Basic Level) -->
-                <section class="content-section" data-level="basic" id="overview">
-                    <h2>Golden Datasets in Additive Manufacturing AI</h2>
-
-                    <p>In additive manufacturing, high-quality datasets are essential for developing reliable AI models. A golden dataset is a high-quality, curated collection of data that serves as a reference standard for training, validating, and benchmarking AI models, especially in agentic AI systems. In the AM context, it encompasses diverse, representative samples that capture the full spectrum of AM processes, materials, geometries, and operational conditions. Their detailed characteristics and applications are explored in the sections below.</p>
-
-                    <div class="key-points">
-                        <h3>Purpose of Golden Datasets:</h3>
-                        <ul>
-                            <li><strong>Agentic AI:</strong> Support the development and evaluation of autonomous AI systems</li>
-                            <li><strong>Benchmarking:</strong> Enable standardized evaluation and comparison of AI models</li>
-                            <li><strong>Training:</strong> Provide the foundational data for model learning and fine-tuning</li>
-                            <li><strong>Prompt Engineering:</strong> Guide effective interactions between humans and AI models</li>
-                        </ul>
-                    </div>
-
-                    <p>Each golden dataset is characterized by its specific data formats, structure, and intended applications. Understanding the role of these datasets helps researchers and practitioners select the right resources for their AI in AM workflows.</p>
-
-                    <div class="overview-diagram">
-                        <img src="../../images/updated_diagram.png" alt="AM Context Golden Dataset with Agentic AI Stack and Layers" width="600" height="400">
-                        <p class="diagram-caption">Illustration showing the relationship between AM context, golden datasets, agentic AI stack layers, and various control knobs for AI system configuration.</p>
-                    </div>
-                </section>
-
-
-
-
-
-                <!-- Role of Golden Datasets for Benchmarking (Basic Level) -->
-                <section class="content-section" data-level="basic" id="benchmarking-role">
-                    <h2>Role of Golden Datasets for Benchmarking</h2>
-
-                    <p>Golden datasets for benchmarking provide standardized reference points for evaluating and comparing the performance of different AI models on consistent AM tasks. These datasets enable reproducible research and objective assessment of model capabilities.</p>
-
-                    <p><strong>Typical Data Formats:</strong> JSON, CSV, STL, OBJ, STEP, HDF5, Images, XML</p>
-
-                    <div class="dataset-card">
-                        <div class="dataset-header">
-                            <h3>AM-AI Benchmark Dataset</h3>
-                            <!-- <span class="dataset-badge">Public</span> -->
-                        </div>
-                        <div class="dataset-body">
-                            <p>A comprehensive benchmark dataset for evaluating AI models across common AM tasks including design optimization, parameter selection, and defect classification.</p>
-                            <div class="dataset-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Size:</span>
-                                    <span class="detail-value">2.3 GB</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Formats:</span>
-                                    <span class="detail-value">JSON, CSV, STL</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Tasks:</span>
-                                    <span class="detail-value">Design, Process Parameters, Quality Control</span>
-                                </div>
-                            </div>
-                            <div class="dataset-links">
-                                <a href="../../dataset_1.html" class="btn">View Details</a>
-                                <!-- <a href="#" class="btn btn-outline">Download</a> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="dataset-card">
+</div>
+</div>
+<!-- <div class="dataset-card">
                         <div class="dataset-header">
                             <h3>NIST AM Process Benchmark</h3>
                             <span class="dataset-badge">Public</span>
@@ -205,321 +189,214 @@
                             </div>
                         </div>
                     </div> -->
-
-                    <h3>Using Benchmarking Datasets</h3>
-                    <p>When utilizing these benchmarking datasets, consider the following best practices:</p>
-                    <ul>
-                        <li>Use the provided evaluation metrics for consistent comparison</li>
-                        <li>Report all relevant model parameters and training details</li>
-                        <li>Benchmark against the provided baseline model performances</li>
-                        <li>Consider both quantitative metrics and qualitative assessments</li>
-                        <li>Document any preprocessing or modifications to the dataset</li>
-                    </ul>
-
-                    <p><strong>Reuse Potential:</strong> Benchmarking datasets often contain valuable data that can be repurized for training tasks, particularly the NIST AM Process Benchmark dataset which includes comprehensive process parameter data suitable for machine learning model training.</p>
-                </section>
-
-                <!-- Role of Golden Datasets for Training (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="training-role">
-                    <h2>Role of Golden Datasets for Training</h2>
-
-                    <p>Golden datasets for training provide the comprehensive data collections necessary for teaching AI models the patterns, relationships, and characteristics specific to additive manufacturing processes. These datasets enable models to learn from real-world examples and generalize to new AM scenarios.</p>
-
-                    <p><strong>Typical Data Formats:</strong> STL, OBJ, STEP, JSON, CSV, Images, XML annotations</p>
-
-                    <div class="dataset-card">
-                        <div class="dataset-header">
-                            <h3>AM Design Corpus</h3>
-                            <!-- <span class="dataset-badge">Public</span> -->
-                        </div>
-                        <div class="dataset-body">
-                            <p>A large collection of 3D models specifically designed for additive manufacturing, with associated metadata on design intent, manufacturing constraints, and performance requirements.</p>
-                            <div class="dataset-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Size:</span>
-                                    <span class="detail-value">12.8 GB</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Formats:</span>
-                                    <span class="detail-value">STL, OBJ, STEP, JSON</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Volume:</span>
-                                    <span class="detail-value">50,000+ models</span>
-                                </div>
-                            </div>
-                            <div class="dataset-links">
-                                <!-- <a href="#" class="btn">View Details</a> -->
-                                <!-- <a href="#" class="btn btn-outline">Access Dataset</a> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dataset-card">
-                        <div class="dataset-header">
-                            <h3>LPBF Process Parameter Dataset</h3>
-                            <!-- <span class="dataset-badge">Public with Registration</span> -->
-                        </div>
-                        <div class="dataset-body">
-                            <p>Comprehensive dataset of laser powder bed fusion process parameters and resulting part characteristics, covering multiple materials and machine configurations.</p>
-                            <div class="dataset-details">
-                            </div>
-                            <div class="dataset-links">
-                                <!-- <a href="#" class="btn">View Details</a> -->
-                                <!-- <a href="#" class="btn btn-outline">Register for Access</a> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dataset-card">
-                        <div class="dataset-header">
-                            <h3>AM Defect Classification Dataset</h3>
-                            <!-- <span class="dataset-badge">Public</span> -->
-                        </div>
-                        <div class="dataset-body">
-                            <p>Labeled image dataset of common AM defects across multiple process types, with annotations on defect type, severity, and probable causes.</p>
-                            <div class="dataset-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Size:</span>
-                                    <span class="detail-value">5.2 GB</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Formats:</span>
-                                    <span class="detail-value">Images, XML annotations</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Images:</span>
-                                    <span class="detail-value">15,000+ labeled images</span>
-                                </div>
-                            </div>
-                            <div class="dataset-links">
-                                <!-- <a href="#" class="btn">View Details</a> -->
-                                <!-- <a href="#" class="btn btn-outline">Download</a> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <h3>Best Practices for Training Data Usage</h3>
-                    <p>When using these datasets for model training:</p>
-                    <ul>
-                        <li>Ensure proper data preprocessing and normalization</li>
-                        <li>Split data appropriately into training, validation, and test sets</li>
-                        <li>Consider data augmentation techniques to increase dataset diversity</li>
-                        <li>Monitor for overfitting and use regularization techniques</li>
-                        <li>Validate model performance on unseen data</li>
-                    </ul>
-
-                    <p><strong>Reuse Potential:</strong> Training datasets like the AM Design Corpus can also serve benchmarking purposes for evaluating generative design models, while the LPBF Process Parameter Dataset shares overlap with benchmarking datasets for process optimization tasks.</p>
-                </section>
-
-                <!-- Role of Golden Datasets for Agentic AI (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="agent-role">
-                    <h2>Role of Golden Datasets for Agentic AI</h2>
-
-                    <p>Golden datasets for agentic AI provide structured data representations of AM workflows, decision-making processes, and human-agent interactions necessary for developing and evaluating autonomous AI systems in additive manufacturing environments.</p>
-
-                    <p><strong>Typical Data Formats:</strong> JSON, YAML, CSV, Text</p>
-
-                    <div class="dataset-card">
-
-                    <ul>
-                        <li><strong>Decision Quality Metrics:</strong> Evaluating the effectiveness of agent decisions against expert benchmarks</li>
-                        <li><strong>Interaction Quality Assessment:</strong> Measuring the clarity and usefulness of agent communications</li>
-                        <li><strong>Process Optimization Evaluation:</span> Assessing improvements in manufacturing outcomes</li>
-                        <li><strong>Adaptation Capability Testing:</strong> Measuring how effectively agents adapt to novel scenarios</li>
-                    </ul>
-
-                    <p><strong>Reuse Potential:</strong> Agent interaction datasets can inform the development of better training datasets by identifying common challenges and decision points in AM workflows, while workflow datasets can be adapted for benchmarking agent planning capabilities.</p>
-                </section>
-
-                <!-- Role of Golden Datasets for Prompt Engineering (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="prompt-role">
-                    <h2>Role of Golden Datasets for Prompt Engineering</h2>
-
-                    <p>Golden datasets for prompt engineering provide curated collections of effective prompts and prompt-engineering techniques specifically designed for additive manufacturing contexts. These datasets help users structure effective interactions with AI models to achieve desired outputs in AM applications.</p>
-
-                    <p><strong>Typical Data Formats:</strong> Text, JSON, Markdown</p>
-
-                    <div class="dataset-card">
-                        <div class="dataset-header">
-                            <h3>AM Prompt Engineering Collection</h3>
-                            <!-- <span class="dataset-badge">Public</span> -->
-                        </div>
-                        <div class="dataset-body">
-                            <p>Curated collection of effective prompts for various AM tasks, organized by technique (Zero-shot, Few-shot, Chain-of-thought, ReAct, and Directional Stimulus Prompting) with examples and explanations.</p>
-                            <div class="dataset-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Size:</span>
-                                    <span class="detail-value">15 MB</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Formats:</span>
-                                    <span class="detail-value">Text, JSON, Markdown</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Prompts:</span>
-                                    <span class="detail-value">500+ structured prompts</span>
-                                </div>
-                            </div>
-                            <div class="dataset-links">
-                                <!-- <a href="#" class="btn">View Details</a> -->
-                                <!-- <a href="#" class="btn btn-outline">Access Collection</a> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <h3>Prompt Engineering Techniques</h3>
-                    <p>The prompt collections include examples of five popular prompt engineering methods applied to AM-specific tasks:</p>
-                    <ul>
-                        <li><strong>Zero-shot:</strong> Prompts that elicit responses without providing examples</li>
-                        <li><strong>Few-shot:</strong> Prompts that include examples of expected outputs</li>
-                        <li><strong>Chain-of-thought:</strong> Prompts that guide the model through a reasoning process</li>
-                        <li><strong>ReAct:</strong> Prompts that combine reasoning and actions in a structured format</li>
-                        <li><strong>Directional Stimulus:</strong> Prompts that guide the model toward specific types of responses</li>
-                    </ul>
-
-                    <p>For more information on effective prompt engineering for AM, see our <a href="../tutorials/prompt-engineering.html">Prompt Engineering Tutorial</a>.</p>
-
-                    <p><strong>Reuse Potential:</strong> Prompt engineering datasets can support training efforts by providing examples of effective query formulations for fine-tuning language models, and can enhance benchmarking by enabling standardized evaluation of model responses to AM-specific prompts.</p>
-                </section>
-
-                <!-- Data Reuse & Cross-Applicability -->
-                <section class="content-section" data-level="basic" id="reuse">
-                    <h2>Data Reuse & Cross-Applicability</h2>
-
-                    <p>Many golden datasets in the AM AI repository possess characteristics that make them valuable across multiple application categories. Understanding these overlaps can help researchers maximize the utility of their data resources and reduce redundancy in data collection efforts.</p>
-
-                    <div class="key-points">
-                        <h3>Common Reuse Patterns:</h3>
-                        <ul>
-                            <li><strong>Benchmarking ↔ Training:</strong> Process parameter and quality control datasets often serve dual purposes</li>
-                            <li><strong>Training ↔ Agentic AI:</strong> Design and workflow datasets support both model training and agent behavior learning</li>
-                            <li><strong>Benchmarking ↔ Agentic AI:</strong> Interaction datasets can benchmark agent communication capabilities</li>
-                            <li><strong>All Categories ↔ Prompt Engineering:</strong> Prompt collections enhance effectiveness across all AI applications</li>
-                        </ul>
-                    </div>
-
-                    <div class="dataset-card">
-                        <div class="dataset-header">
-                            <h3>High-Reuse Dataset Examples</h3>
-                            <!-- <span class="dataset-badge">Multi-Purpose</span> -->
-                        </div>
-                        <div class="dataset-body">
-                            <p>Certain datasets in our collection are particularly valuable for multiple AI applications due to their comprehensive nature and versatile data structures.</p>
-                            <div class="dataset-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">LPBF Process Parameter Dataset:</span>
-                                    <span class="detail-value">Useful for benchmarking process optimization models, training ML models for parameter prediction, and evaluating agent decision-making in process control scenarios</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">AM Design Corpus:</span>
-                                    <span class="detail-value">Supports benchmarking generative design models, training diffusion and GAN models for 3D generation, and providing design alternatives for agent-based workflow planning</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">AM Manufacturing Workflow Dataset:</span>
-                                    <span class="detail-value">Enables benchmarking agent planning capabilities, training sequential decision-making models, and evaluating end-to-end process optimization agents</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h3>Guidelines for Data Reuse</h3>
-                    <p>When considering reuse of datasets across categories:</p>
-                    <ul>
-                        <li>Verify that the dataset contains appropriate data types and annotations for the target application</li>
-                        <li>Check licensing and usage restrictions to ensure compliance across intended uses</li>
-                        <li>Consider whether additional processing or annotation is needed for the new application</li>
-                        <li>Document any adaptations made to the dataset for reuse purposes</li>
-                        <li>Validate that performance metrics remain meaningful in the new context</li>
-                    </ul>
-                </section>
-
-
-                <!-- Example: AM Lifecycle Golden Dataset -->
-                <section class="content-section" data-level="basic" id="lifecycle-example">
-                    <h2>Example: Golden Dataset Across the AM Lifecycle</h2>
-
-                    <p>To illustrate how a golden dataset manifests across different stages of additive manufacturing, here's a concrete example showing the types of data typically included:</p>
-
-                    <h3>What a Golden Dataset Looks Like for AM Lifecycle:</h3>
-                    <ul>
-                        <li><strong>Design:</strong> <span class="nist-dataset-pending">Dataset access pending NIST review and publication</span> – CAD models, material specifications, functional requirements.</li>
-                        <li><strong>Process Planning:</strong> <span class="nist-dataset-pending">Dataset access pending NIST review and publication</span> – sliced layers, support structures, scan strategies.</li>
-                        <li><strong>Build &amp; Monitoring:</strong>
-                            <ul>
-                                <li><span class="nist-dataset-pending">Dataset access pending NIST review and publication</span> – sensor logs (temperature, melt‑pool, laser power).</li>
-                                <li><span class="nist-dataset-pending">Dataset access pending NIST review and publication</span> – high‑speed imaging of the melt pool.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Post‑Process:</strong>
-                            <ul>
-                                <li><span class="nist-dataset-pending">Dataset access pending NIST review and publication</span> – heat treatment, machining, surface finishing.</li>
-                                <li><span class="nist-dataset-pending">Dataset access pending NIST review and publication</span> – XCT or microscopy images showing pores.</li>
-                                <li><span class="nist-dataset-pending">Dataset access pending NIST review and publication</span> – mechanical testing, dimensional accuracy, surface roughness.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Feedback Loops:</strong> Records of human‑in‑the‑loop corrections and agent decisions that can be used for reinforcement learning.</li>
-                    </ul>
-
-                    <p><em>This example demonstrates how a comprehensive golden dataset spans the entire AM lifecycle, providing valuable data for training, validating, and benchmarking AI systems at every stage.</em></p>
-                </section>
-
-                <!-- Pagination -->
-                <div class="pagination">
-                    <span class="nist-link-unavailable">Previous Resources (link unavailable)</span>
-
-                    <span class="nist-link-unavailable">Next Tools &amp; Software (link unavailable)</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="../Develop AI models/index_nowrin.html">Develop AI model</a></li>
-                        <li><a href="../AI Agent/index.html">AI Agent</a></li>
-                        <li><a href="../AM_dataset/datasets.html">Resources</a></li>
-                        <li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
-                        <!-- <li><a href="../intro/index.html">Introduction</a></li>
-                        <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                        <li><a href="../tutorials/index.html">Tutorials</a></li>
-                        <li><a href="../case-studies/index.html">Case Studies</a></li>
-                        <li><a href="../resources/index.html">Resources</a></li> -->
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+<h3>Using Benchmarking Datasets</h3>
+<p>When utilizing these benchmarking datasets, consider the following best practices:</p>
+<ul>
+<li>Use the provided evaluation metrics for consistent comparison</li>
+<li>Report all relevant model parameters and training details</li>
+<li>Benchmark against the provided baseline model performances</li>
+<li>Consider both quantitative metrics and qualitative assessments</li>
+<li>Document any preprocessing or modifications to the dataset</li>
+</ul>
+<p><strong>Reuse Potential:</strong> Benchmarking datasets often contain valuable data that can be repurized for training tasks, particularly the NIST AM Process Benchmark dataset which includes comprehensive process parameter data suitable for machine learning model training.</p>
+</section>
+<!-- Role of Golden Datasets for Training (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="training-role">
+<h2>Role of Golden Datasets for Training</h2>
+<p>Golden datasets for training provide the comprehensive data collections necessary for teaching SI models the patterns, relationships, and characteristics specific to additive manufacturing processes. These datasets enable models to learn from real-world examples and generalize to new AM scenarios.</p>
+<p><strong>Typical Data Formats:</strong> STL, OBJ, STEP, JSON, CSV, Images, XML annotations</p>
+<div class="dataset-card">
+<div class="dataset-header">
+<h3>AM Design Corpus</h3>
+<!-- <span class="dataset-badge">Public</span> -->
+</div>
+<div class="dataset-body">
+<p>A large collection of 3D models specifically designed for additive manufacturing, with associated metadata on design intent, manufacturing constraints, and performance requirements.</p>
+<div class="dataset-details">
+<div class="detail-item">
+<span class="detail-label">Size:</span>
+<span class="detail-value">12.8 GB</span>
+</div>
+<div class="detail-item">
+<span class="detail-label">Formats:</span>
+<span class="detail-value">STL, OBJ, STEP, JSON</span>
+</div>
+<div class="detail-item">
+<span class="detail-label">Volume:</span>
+<span class="detail-value">50,000+ models</span>
+</div>
+</div>
+<div class="dataset-links">
+<!-- <a href="#" class="btn">View Details</a> -->
+<!-- <a href="#" class="btn btn-outline">Access Dataset</a> -->
+</div>
+</div>
+</div>
+<div class="dataset-card">
+<div class="dataset-header">
+<h3>LPBF Process Parameter Dataset</h3>
+<!-- <span class="dataset-badge">Public with Registration</span> -->
+</div>
+<div class="dataset-body">
+<p>Comprehensive dataset of laser powder bed fusion process parameters and resulting part characteristics, covering multiple materials and machine configurations.</p>
+<div class="dataset-details">
+</div>
+<div class="dataset-links">
+<!-- <a href="#" class="btn">View Details</a> -->
+<!-- <a href="#" class="btn btn-outline">Register for Access</a> -->
+</div>
+</div>
+</div>
+<div class="dataset-card">
+<div class="dataset-header">
+<h3>AM Defect Classification Dataset</h3>
+<!-- <span class="dataset-badge">Public</span> -->
+</div>
+<div class="dataset-body">
+<p>Labeled image dataset of common AM defects across multiple process types, with annotations on defect type, severity, and probable causes.</p>
+<div class="dataset-details">
+<div class="detail-item">
+<span class="detail-label">Size:</span>
+<span class="detail-value">5.2 GB</span>
+</div>
+<div class="detail-item">
+<span class="detail-label">Formats:</span>
+<span class="detail-value">Images, XML annotations</span>
+</div>
+<div class="detail-item">
+<span class="detail-label">Images:</span>
+<span class="detail-value">15,000+ labeled images</span>
+</div>
+</div>
+<div class="dataset-links">
+<!-- <a href="#" class="btn">View Details</a> -->
+<!-- <a href="#" class="btn btn-outline">Download</a> -->
+</div>
+</div>
+</div>
+<h3>Best Practices for Training Data Usage</h3>
+<p>When using these datasets for model training:</p>
+<ul>
+<li>Ensure proper data preprocessing and normalization</li>
+<li>Split data appropriately into training, validation, and test sets</li>
+<li>Consider data augmentation techniques to increase dataset diversity</li>
+<li>Monitor for overfitting and use regularization techniques</li>
+<li>Validate model performance on unseen data</li>
+</ul>
+<p><strong>Reuse Potential:</strong> Training datasets like the AM Design Corpus can also serve benchmarking purposes for evaluating generative design models, while the LPBF Process Parameter Dataset shares overlap with benchmarking datasets for process optimization tasks.</p>
+</section>
+<!-- Role of Golden Datasets for Agentic AI (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="agent-role">
+<h2>Role of Golden Datasets for Agentic SI</h2>
+<p>Golden datasets for agentic SI provide structured data representations of AM workflows, decision-making processes, and human-agent interactions necessary for developing and evaluating autonomous SI systems in additive manufacturing environments.</p>
+<p><strong>Typical Data Formats:</strong> JSON, YAML, CSV, Text</p>
+<div class="dataset-card">
+<ul>
+<li><strong>Decision Quality Metrics:</strong> Evaluating the effectiveness of agent decisions against expert benchmarks</li>
+<li><strong>Interaction Quality Assessment:</strong> Measuring the clarity and usefulness of agent communications</li>
+<li><strong>Process Optimization Evaluation: Assessing improvements in manufacturing outcomes</strong></li>
+<li><strong>Adaptation Capability Testing:</strong> Measuring how effectively agents adapt to novel scenarios</li>
+</ul>
+<p><strong>Reuse Potential:</strong> Agent interaction datasets can inform the development of better training datasets by identifying common challenges and decision points in AM workflows, while workflow datasets can be adapted for benchmarking agent planning capabilities.</p>
+</div></section>
+<!-- Role of Golden Datasets for Prompt Engineering (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="prompt-role">
+<h2>Role of Golden Datasets for Prompt Engineering</h2>
+<p>Golden datasets for prompt engineering provide curated collections of effective prompts and prompt-engineering techniques specifically designed for additive manufacturing contexts. These datasets help users structure effective interactions with SI models to achieve desired outputs in AM applications.</p>
+<p><strong>Typical Data Formats:</strong> Text, JSON, Markdown</p>
+<div class="dataset-card">
+<div class="dataset-header">
+<h3>AM Prompt Engineering Collection</h3>
+<!-- <span class="dataset-badge">Public</span> -->
+</div>
+<div class="dataset-body">
+<p>Curated collection of effective prompts for various AM tasks, organized by technique (Zero-shot, Few-shot, Chain-of-thought, ReAct, and Directional Stimulus Prompting) with examples and explanations.</p>
+<div class="dataset-details">
+<div class="detail-item">
+<span class="detail-label">Size:</span>
+<span class="detail-value">15 MB</span>
+</div>
+<div class="detail-item">
+<span class="detail-label">Formats:</span>
+<span class="detail-value">Text, JSON, Markdown</span>
+</div>
+<div class="detail-item">
+<span class="detail-label">Prompts:</span>
+<span class="detail-value">500+ structured prompts</span>
+</div>
+</div>
+<div class="dataset-links">
+<!-- <a href="#" class="btn">View Details</a> -->
+<!-- <a href="#" class="btn btn-outline">Access Collection</a> -->
+</div>
+</div>
+</div>
+<h3>Prompt Engineering Techniques</h3>
+<p>The prompt collections include examples of five popular prompt engineering methods applied to AM-specific tasks:</p>
+<ul>
+<li><strong>Zero-shot:</strong> Prompts that elicit responses without providing examples</li>
+<li><strong>Few-shot:</strong> Prompts that include examples of expected outputs</li>
+<li><strong>Chain-of-thought:</strong> Prompts that guide the model through a reasoning process</li>
+<li><strong>ReAct:</strong> Prompts that combine reasoning and actions in a structured format</li>
+<li><strong>Directional Stimulus:</strong> Prompts that guide the model toward specific types of responses</li>
+</ul>
+<p>For more information on effective prompt engineering for AM, see our <a href="../tutorials/prompt-engineering.html">Prompt Engineering Tutorial</a>.</p>
+<p><strong>Reuse Potential:</strong> Prompt engineering datasets can support training efforts by providing examples of effective query formulations for fine-tuning language models, and can enhance benchmarking by enabling standardized evaluation of model responses to AM-specific prompts.</p>
+</section>
+<!-- Data Reuse & Cross-Applicability -->
+<section class="content-section" data-level="basic" id="reuse">
+<h2>Data Reuse &amp; Cross-Applicability</h2>
+<p>Many golden datasets in the AM SI repository possess characteristics that make them valuable across multiple application categories. Understanding these overlaps can help researchers maximize the utility of their data resources and reduce redundancy in data collection efforts.</p>
+<div class="key-points">
+<h3>Common Reuse Patterns:</h3>
+<ul>
+<li><strong>Benchmarking ↔ Training:</strong> Process parameter and quality control datasets often serve dual purposes</li>
+<li><strong>Training ↔ Agentic SI:</strong> Design and workflow datasets support both model training and agent behavior learning</li>
+<li><strong>Benchmarking ↔ Agentic SI:</strong> Interaction datasets can benchmark agent communication capabilities</li>
+<li><strong>All Categories ↔ Prompt Engineering:</strong> Prompt collections enhance effectiveness across all SI applications</li>
+</ul>
+</div>
+<div class="dataset-card">
+<div class="dataset-header">
+<h3>High-Reuse Dataset Examples</h3>
+<!-- <span class="dataset-badge">Multi-Purpose</span> -->
+</div>
+<div class="dataset-body">
+<p>Certain datasets in our collection are particularly valuable for multiple SI applications due to their comprehensive nature and versatile data structures.</p>
+<div class="dataset-details">
+<div class="detail-item">
+<span class="detail-label">LPBF Process Parameter Dataset:</span>
+<span class="detail-value">Useful for benchmarking process optimization models, training ML models for parameter prediction, and evaluating agent decision-making in process control scenarios</span>
+</div>
+<div class="detail-item">
+<span class="detail-label">AM Design Corpus:</span>
+<span class="detail-value">Supports benchmarking generative design models, training diffusion and GAN models for 3D generation, and providing design alternatives for agent-based workflow planning</span>
+</div>
+<div class="detail-item">
+<span class="detail-label">AM Manufacturing Workflow Dataset:</span>
+<span class="detail-value">Enables benchmarking agent planning capabilities, training sequential decision-making models, and evaluating end-to-end process optimization agents</span>
+</div>
+</div>
+</div>
+</div>
+<h3>Guidelines for Data Reuse</h3>
+<p>When considering reuse of datasets across categories:</p>
+<ul>
+<li>Verify that the dataset contains appropriate data types and annotations for the target application</li>
+<li>Check licensing and usage restrictions to ensure compliance across intended uses</li>
+<li>Consider whether additional processing or annotation is needed for the new application</li>
+<li>Document any adaptations made to the dataset for reuse purposes</li>
+<li>Validate that performance metrics remain meaningful in the new context</li>
+</ul>
+</section>
+<!-- Example: AM Lifecycle Golden Dataset -->
+<section class="content-section" data-level="basic" id="lifecycle-example">
+<h2>Example: Golden Dataset Across the AM Lifecycle</h2>
+<p>To illustrate how a golden dataset manifests across different stages of additive manufacturing, here's a concrete example showing the types of data typically included:</p>
+<!-- Footer -->
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>

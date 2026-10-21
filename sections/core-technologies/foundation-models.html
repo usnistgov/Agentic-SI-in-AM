@@ -1,426 +1,393 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore foundation models in Generative AI for Additive Manufacturing - Learn about large language models, vision transformers, and multimodal approaches for 3D printing">
-    <title>Foundation Models | Core Technologies | AI in AM</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- Official NIST site-wide header and footer -->
-    <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-    <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore foundation models in Generative SI for Additive Manufacturing - Learn about large language models, vision transformers, and multimodal approaches for 3D printing" name="description"/>
+<title>Foundation Models | Core Technologies | SI in AM</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
+<!-- Official NIST site-wide header and footer -->
+<link href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" rel="stylesheet"/>
+<script defer="defer" src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"></script>
+<style data-si-disclosure="true">
+.si-image-disclosure {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+}
+.si-image-disclosure strong {
+  color: #333;
+}
+</style></head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
-            
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-            
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            
-            <nav>
-                <!-- <ul class="nav-links">
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav>
+<!-- <ul class="nav-links">
                     <li><a href="../intro/index.html">Introduction</a></li>
                     <li><a href="../core-technologies/index.html" class="active">Core Technologies</a></li>
                     <li><a href="../tutorials/index.html">Tutorials</a></li>
                     <li><a href="../case-studies/index.html">Case Studies</a></li>
                     <li><a href="../resources/index.html">AI for Data</a></li>
                 </ul> -->
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <!-- <li><a href="../../index.html">Home</a></li> -->
-                    <!-- <li><a href="index.html">Core Technologies</a></li> -->
-                    <li><span class="current">Foundation Models</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section (Basic Introduction) -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Foundation Models for AM</h1>
-                        <p>Exploring the large-scale AI models that serve as the basis for generative applications in additive manufacturing.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/automated.webp" alt="AI Model Architecture" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">On This Page</h2>
-                    <ul class="toc-list">
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#llms">Large Language Models</a></li>
-                        <li><a href="#vision">Vision Transformers</a></li>
-                        <li><a href="#multimodal">Multimodal Models</a></li>
-                        <li><a href="#selection">Model Selection</a></li>
-                        <li><a href="#technical-details">Technical Details</a></li>
-                    </ul>
-                </div>
-                
-                <div class="section-navigation">
-                    <h3>Related Topics</h3>
-                    <ul class="toc-list">
-                        <li><span class="nist-link-unavailable">Generative AI Models (link unavailable)</span></li>
-                        <li><span class="nist-link-unavailable">Fine-Tuning Approaches (link unavailable)</span></li>
-                        <li><a href="../tutorials/prompt-engineering.html">Prompt Engineering</a></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Basic Overview (Top Level) -->
-                <section class="content-section" data-level="basic" id="overview">
-                    <h2>Understanding Foundation Models</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>Foundation models are large-scale artificial intelligence systems trained on vast amounts of data that serve as the basis for more specialized applications. These models capture general patterns and knowledge that can then be adapted to specific domains like additive manufacturing.</p>
-                    
-                    <div class="key-points">
-                        <h3>Key Characteristics:</h3>
-                        <ul>
-                            <li><strong>Scale:</strong> Foundation models are typically much larger than traditional AI models, with billions or even trillions of parameters.</li>
-                            <li><strong>Pre-training:</strong> They undergo extensive pre-training on diverse datasets before being fine-tuned for specific tasks.</li>
-                            <li><strong>Transfer Learning:</strong> Knowledge gained from general pre-training can be transferred to specialized domains like AM.</li>
-                            <li><strong>Adaptability:</strong> They can be applied to multiple downstream tasks through fine-tuning or prompt engineering.</li>
-                        </ul>
-                    </div>
-                    
-                    <p>In the context of additive manufacturing, foundation models provide the underlying AI capabilities that can be directed toward specific AM challenges like design optimization, process parameter selection, and defect detection.</p>
-                </section>
-                
-                <!-- Large Language Models (Basic - Mid Level) -->
-                <section class="content-section" data-level="basic" id="llms">
-                    <h2>Large Language Models (LLMs)</h2>
-                    <!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
-                    
-                    <p>Large Language Models (LLMs) are a type of foundation model specifically designed to understand and generate natural language. These models have been trained on vast text corpora, enabling them to perform a wide range of language-related tasks.</p>
-                    
-                    <div class="two-column">
-                        <div>
-                            <h3>Popular LLMs</h3>
-                            <ul>
-                                <li><strong>GPT-4 and GPT-4o:</strong> Advanced models from OpenAI with strong reasoning capabilities</li>
-                                <li><strong>Claude:</strong> Anthropic's assistant model known for detailed responses</li>
-                                <li><strong>LLaMA:</strong> Meta's open-weight large language model</li>
-                                <li><strong>PaLM and Gemini:</strong> Google's language models with strong multimodal capabilities</li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h3>LLMs in AM</h3>
-                            <p>Despite being primarily text-based, LLMs can contribute significantly to additive manufacturing in several ways:</p>
-                            <ul>
-                                <li>Generating and interpreting design specifications</li>
-                                <li>Creating process workflows and documentation</li>
-                                <li>Analyzing and reporting on manufacturing data</li>
-                                <li>Assisting with troubleshooting and problem-solving</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <h3>Text-to-CAD Applications</h3>
-                    <p>One promising application of LLMs in AM is the ability to generate 3D designs from textual descriptions:</p>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Text-to-CAD Example Prompt</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code>Design a bracket with the following specifications:
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<!-- <li><a href="../../index.html">Home</a></li> -->
+<!-- <li><a href="index.html">Core Technologies</a></li> -->
+<li><span class="current">Foundation Models</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section (Basic Introduction) -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Foundation Models for AM</h1>
+<p>Exploring the large-scale SI models that serve as the basis for generative applications in additive manufacturing.</p>
+</div>
+<div class="hero-image">
+<img alt="SI Model Architecture" height="300" src="../../images/automated.webp" width="500"/><p class="si-image-disclosure"><strong>Disclosure:</strong> This image was generated using SI.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">On This Page</h2>
+<ul class="toc-list">
+<li><a href="#overview">Overview</a></li>
+<li><a href="#llms">Large Language Models</a></li>
+<li><a href="#vision">Vision Transformers</a></li>
+<li><a href="#multimodal">Multimodal Models</a></li>
+<li><a href="#selection">Model Selection</a></li>
+<li><a href="#technical-details">Technical Details</a></li>
+</ul>
+</div>
+<div class="section-navigation">
+<h3>Related Topics</h3>
+<ul class="toc-list">
+<li><a href="foundation-models.html">Generative SI Models</a></li>
+<li><a href="../Develop%20AI%20models/Fine_tune.html">Fine-Tuning Approaches</a></li>
+<li><a href="../tutorials/prompt-engineering.html">Prompt Engineering</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Basic Overview (Top Level) -->
+<section class="content-section" data-level="basic" id="overview">
+<h2>Understanding Foundation Models</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>Foundation models are large-scale super intelligence systems trained on vast amounts of data that serve as the basis for more specialized applications. These models capture general patterns and knowledge that can then be adapted to specific domains like additive manufacturing.</p>
+<div class="key-points">
+<h3>Key Characteristics:</h3>
+<ul>
+<li><strong>Scale:</strong> Foundation models are typically much larger than traditional SI models, with billions or even trillions of parameters.</li>
+<li><strong>Pre-training:</strong> They undergo extensive pre-training on diverse datasets before being fine-tuned for specific tasks.</li>
+<li><strong>Transfer Learning:</strong> Knowledge gained from general pre-training can be transferred to specialized domains like AM.</li>
+<li><strong>Adaptability:</strong> They can be applied to multiple downstream tasks through fine-tuning or prompt engineering.</li>
+</ul>
+</div>
+<p>In the context of additive manufacturing, foundation models provide the underlying SI capabilities that can be directed toward specific AM challenges like design optimization, process parameter selection, and defect detection.</p>
+</section>
+<!-- Large Language Models (Basic - Mid Level) -->
+<section class="content-section" data-level="basic" id="llms">
+<h2>Large Language Models (LLMs)</h2>
+<!-- <span class="complexity-badge complexity-beginner">Beginner</span> -->
+<p>Large Language Models (LLMs) are a type of foundation model specifically designed to understand and generate natural language. These models have been trained on vast text corpora, enabling them to perform a wide range of language-related tasks.</p>
+<div class="two-column">
+<div>
+<h3>Popular LLMs</h3>
+<ul>
+<li><strong>GPT-4 and GPT-4o:</strong> Advanced models from OpenAI with strong reasoning capabilities</li>
+<li><strong>Claude:</strong> Anthropic's assistant model known for detailed responses</li>
+<li><strong>LLaMA:</strong> Meta's open-weight large language model</li>
+<li><strong>PaLM and Gemini:</strong> Google's language models with strong multimodal capabilities</li>
+</ul>
+</div>
+<div>
+<h3>LLMs in AM</h3>
+<p>Despite being primarily text-based, LLMs can contribute significantly to additive manufacturing in several ways:</p>
+<ul>
+<li>Generating and interpreting design specifications</li>
+<li>Creating process workflows and documentation</li>
+<li>Analyzing and reporting on manufacturing data</li>
+<li>Assisting with troubleshooting and problem-solving</li>
+</ul>
+</div>
+</div>
+<h3>Text-to-CAD Applications</h3>
+<p>One promising application of LLMs in AM is the ability to generate 3D designs from textual descriptions:</p>
+<div class="code-block">
+<div class="code-header">
+<span>Text-to-CAD Example Prompt</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code>Design a bracket with the following specifications:
 - Material: aluminum alloy
 - Must support a load of at least 50kg
 - Mounting holes: 4 × M6 holes in a rectangular pattern, 80mm × 60mm
 - Overall dimensions should not exceed 100mm × 80mm × 20mm
 - Optimize for weight reduction while maintaining structural integrity
 - Must be printable on an FDM printer with minimal support structures</code></pre>
-                        </div>
-                    </div>
-                    
-                    <p>Advanced LLMs can interpret this description and, when integrated with 3D modeling tools, generate design candidates that meet these specifications.</p>
-                </section>
-                
-                <!-- Vision Transformers (Mid Level) -->
-                <section class="content-section" data-level="intermediate" id="vision">
-                    <h2>Vision Transformers</h2>
-                    <!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
-                    
-                    <p>Vision Transformers (ViTs) are foundation models designed for visual understanding tasks. Unlike traditional convolutional neural networks, these models apply transformer architectures—originally developed for language tasks—to image analysis.</p>
-                    
-                    <h3>Vision Models in AM</h3>
-                    <p>In additive manufacturing, vision models play crucial roles in several areas:</p>
-                    <ul>
-                        <li><strong>In-process Monitoring:</strong> Analyzing images and video feeds of the printing process to detect anomalies in real-time</li>
-                        <li><strong>Defect Detection:</strong> Identifying flaws, porosity, or delamination in printed parts</li>
-                        <li><strong>Quality Assurance:</strong> Verifying that printed parts match design specifications</li>
-                        <li><strong>Material Analysis:</strong> Characterizing material properties based on visual appearance</li>
-                    </ul>
-                    
-                    <div class="two-column">
-                        <div>
-                            <h3>Vision Transformer Architecture</h3>
-                            <p>Vision Transformers process images by:</p>
-                            <ol>
-                                <li>Dividing the image into patches (typically 16×16 pixels)</li>
-                                <li>Flattening these patches into sequences of vectors</li>
-                                <li>Adding positional embeddings to retain spatial information</li>
-                                <li>Processing through transformer layers with self-attention mechanisms</li>
-                                <li>Generating output representations for the entire image</li>
-                            </ol>
-                        </div>
-                        
-                        <div>
-                            <h3>Key Vision Foundation Models</h3>
-                            <ul>
-                                <li><strong>CLIP:</strong> OpenAI's model that connects images and text, useful for retrieving designs by description</li>
-                                <li><strong>SAM (Segment Anything Model):</strong> Meta's segmentation model that can identify specific regions in images</li>
-                                <li><strong>DINOv2:</strong> Facebook's self-supervised vision model with strong feature extraction capabilities</li>
-                                <li><strong>MidJourney and DALL-E:</strong> Image generation models that can inspire design ideas</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="example-application">
-                        <h4>Case Study: Layer-wise Defect Detection</h4>
-                        <p>A vision transformer model can be fine-tuned to monitor each layer of a 3D print as it's being created. The system compares the actual printed layer against the expected pattern from the sliced model, flagging discrepancies that might indicate printing issues.</p>
-                        <!-- <img src="../../images/quality.PNG" alt="Defect Detection System" class="project-image"> -->
-                        <p class="caption">Visual inspection system detecting layer anomalies during printing process</p>
-                    </div>
-                </section>
-                
-                <!-- Multimodal Models (Mid Level) -->
-                <section class="content-section" data-level="intermediate" id="multimodal">
-                    <h2>Multimodal Models</h2>
-                    <!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
-                    
-                    <p>Multimodal foundation models can process and generate multiple types of data—such as text, images, 3D models, and sensor readings—making them particularly valuable for additive manufacturing applications that involve diverse data formats.</p>
-                    
-                    <h3>Key Capabilities</h3>
-                    <p>These models excel at tasks that require integrating information across modalities:</p>
-                    <ul>
-                        <li><strong>Cross-modal Translation:</strong> Converting between formats (e.g., text descriptions to 3D models)</li>
-                        <li><strong>Joint Understanding:</strong> Interpreting relationships between different data types</li>
-                        <li><strong>Multi-source Analysis:</strong> Drawing insights from combinations of data (e.g., design specs, sensor readings, and process parameters)</li>
-                        <li><strong>Comprehensive Output Generation:</strong> Creating outputs that combine multiple formats (e.g., 3D design with accompanying documentation)</li>
-                    </ul>
-                    
-                    <h3>Notable Multimodal Foundation Models</h3>
-                    <div class="card-grid">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">GPT-4V and GPT-4o</h4>
-                                <p class="card-text">These models combine strong language capabilities with vision understanding, enabling them to interpret images and respond to visual content.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Gemini</h4>
-                                <p class="card-text">Google's multimodal model designed to understand and reason across text, images, video, and code.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Point-E and Shape-E</h4>
-                                <p class="card-text">OpenAI's text-to-3D generative models focused on creating 3D content from textual descriptions.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">3D-LLM</h4>
-                                <p class="card-text">Large language models specifically extended to understand and generate 3D content in addition to text.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3>AM-Specific Applications</h3>
-                    <p>Multimodal models are particularly valuable in these AM scenarios:</p>
-                    <ul>
-                        <li><strong>Design Synthesis:</strong> Generating 3D models based on textual requirements, reference images, and performance constraints</li>
-                        <li><strong>Process Diagnosis:</strong> Analyzing combinations of sensor data, visual inspection, and process parameters to identify issues</li>
-                        <li><strong>Material Development:</strong> Correlating material composition, processing conditions, and resulting properties</li>
-                        <li><strong>Documentation Generation:</strong> Creating comprehensive technical documentation with text, images, and 3D visualizations</li>
-                    </ul>
-                </section>
-                
-                <!-- Model Selection (Mid Level) -->
-                <section class="content-section" data-level="intermediate" id="selection">
-                    <h2>Model Selection for AM Applications</h2>
-                    <!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
-                    
-                    <p>Selecting the right foundation model for your additive manufacturing application requires considering several factors:</p>
-                    
-                    <div class="selection-framework">
-                        <h3>Selection Framework</h3>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Consideration</th>
-                                    <th>Factors to Evaluate</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Task Requirements</strong></td>
-                                    <td>
-                                        <ul>
-                                            <li>Data types involved (text, images, 3D models, sensor data)</li>
-                                            <li>Complexity of the task</li>
-                                            <li>Required accuracy and precision</li>
-                                            <li>Real-time requirements</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Resource Constraints</strong></td>
-                                    <td>
-                                        <ul>
-                                            <li>Available computing hardware</li>
-                                            <li>Memory limitations</li>
-                                            <li>Inference time requirements</li>
-                                            <li>Deployment environment (cloud, edge, on-premise)</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Data Availability</strong></td>
-                                    <td>
-                                        <ul>
-                                            <li>Amount of domain-specific data for fine-tuning</li>
-                                            <li>Quality of available data</li>
-                                            <li>Data privacy and security considerations</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Model Characteristics</strong></td>
-                                    <td>
-                                        <ul>
-                                            <li>Open vs. closed source</li>
-                                            <li>License restrictions</li>
-                                            <li>Community support</li>
-                                            <li>Integration capabilities with existing systems</li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <h3>Decision Matrix Example</h3>
-                    <p>The following matrix provides guidance on selecting foundation models for common AM applications:</p>
-                    
-                    <div class="table-responsive">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>AM Application</th>
-                                    <th>Recommended Model Types</th>
-                                    <th>Key Selection Criteria</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Design Generation</td>
-                                    <td>3D-LLM, Point-E, Shape-E, or LLM + CAD integration</td>
-                                    <td>3D generation capabilities, geometric understanding, CAD compatibility</td>
-                                </tr>
-                                <tr>
-                                    <td>Process Parameter Optimization</td>
-                                    <td>Domain-specialized LLMs with reinforcement learning</td>
-                                    <td>Support for numerical optimization, ability to incorporate physics-based constraints</td>
-                                </tr>
-                                <tr>
-                                    <td>In-process Monitoring</td>
-                                    <td>Vision Transformers, real-time capable models</td>
-                                    <td>Low latency, anomaly detection capabilities, support for sensor fusion</td>
-                                </tr>
-                                <tr>
-                                    <td>Quality Assurance</td>
-                                    <td>High-precision vision models, CLIP, SAM</td>
-                                    <td>Accuracy in defect detection, support for comparison against design intent</td>
-                                </tr>
-                                <tr>
-                                    <td>Knowledge Management</td>
-                                    <td>General-purpose LLMs with RAG</td>
-                                    <td>Ability to process technical documentation, support for domain-specific knowledge bases</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                
-                <!-- Technical Details (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="technical-details">
-                    <h2>Technical Implementation Details</h2>
-                    <!-- <span class="complexity-badge complexity-advanced">Advanced</span> -->
-                    
-                    <p>Implementing foundation models for AM applications involves several technical considerations that influence performance, efficiency, and integration:</p>
-                    
-                    <h3>Model Architecture Considerations</h3>
-                    <p>Understanding the architectural details of foundation models helps in effectively adapting them for AM:</p>
-                    <ul>
-                        <li><strong>Attention Mechanisms:</strong> Self-attention allows models to focus on relevant parts of the input, critical for understanding complex designs or identifying specific features in manufacturing data.</li>
-                        <li><strong>Context Windows:</strong> The amount of information a model can process at once affects its ability to understand complex designs or long sequences of manufacturing instructions.</li>
-                        <li><strong>Tokenization Strategies:</strong> How inputs are broken down into processable units affects how well models handle specialized AM terminology and notation.</li>
-                        <li><strong>Model Depth and Width:</strong> The size and structure of the model determine its capacity to capture complex patterns in AM data.</li>
-                    </ul>
-                    
-                    <h3>Advanced Implementation Strategies</h3>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Model Integration Pattern (Python)</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code>import torch
+</div>
+</div>
+<p>Advanced LLMs can interpret this description and, when integrated with 3D modeling tools, generate design candidates that meet these specifications.</p>
+</section>
+<!-- Vision Transformers (Mid Level) -->
+<section class="content-section" data-level="intermediate" id="vision">
+<h2>Vision Transformers</h2>
+<!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
+<p>Vision Transformers (ViTs) are foundation models designed for visual understanding tasks. Unlike traditional convolutional neural networks, these models apply transformer architectures—originally developed for language tasks—to image analysis.</p>
+<h3>Vision Models in AM</h3>
+<p>In additive manufacturing, vision models play crucial roles in several areas:</p>
+<ul>
+<li><strong>In-process Monitoring:</strong> Analyzing images and video feeds of the printing process to detect anomalies in real-time</li>
+<li><strong>Defect Detection:</strong> Identifying flaws, porosity, or delamination in printed parts</li>
+<li><strong>Quality Assurance:</strong> Verifying that printed parts match design specifications</li>
+<li><strong>Material Analysis:</strong> Characterizing material properties based on visual appearance</li>
+</ul>
+<div class="two-column">
+<div>
+<h3>Vision Transformer Architecture</h3>
+<p>Vision Transformers process images by:</p>
+<ol>
+<li>Dividing the image into patches (typically 16×16 pixels)</li>
+<li>Flattening these patches into sequences of vectors</li>
+<li>Adding positional embeddings to retain spatial information</li>
+<li>Processing through transformer layers with self-attention mechanisms</li>
+<li>Generating output representations for the entire image</li>
+</ol>
+</div>
+<div>
+<h3>Key Vision Foundation Models</h3>
+<ul>
+<li><strong>CLIP:</strong> OpenAI's model that connects images and text, useful for retrieving designs by description</li>
+<li><strong>SAM (Segment Anything Model):</strong> Meta's segmentation model that can identify specific regions in images</li>
+<li><strong>DINOv2:</strong> Facebook's self-supervised vision model with strong feature extraction capabilities</li>
+<li><strong>MidJourney and DALL-E:</strong> Image generation models that can inspire design ideas</li>
+</ul>
+</div>
+</div>
+<div class="example-application">
+<h4>Case Study: Layer-wise Defect Detection</h4>
+<p>A vision transformer model can be fine-tuned to monitor each layer of a 3D print as it's being created. The system compares the actual printed layer against the expected pattern from the sliced model, flagging discrepancies that might indicate printing issues.</p>
+<!-- <img src="../../images/quality.PNG" alt="Defect Detection System" class="project-image"> -->
+<p class="caption">Visual inspection system detecting layer anomalies during printing process</p>
+</div>
+</section>
+<!-- Multimodal Models (Mid Level) -->
+<section class="content-section" data-level="intermediate" id="multimodal">
+<h2>Multimodal Models</h2>
+<!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
+<p>Multimodal foundation models can process and generate multiple types of data—such as text, images, 3D models, and sensor readings—making them particularly valuable for additive manufacturing applications that involve diverse data formats.</p>
+<h3>Key Capabilities</h3>
+<p>These models excel at tasks that require integrating information across modalities:</p>
+<ul>
+<li><strong>Cross-modal Translation:</strong> Converting between formats (e.g., text descriptions to 3D models)</li>
+<li><strong>Joint Understanding:</strong> Interpreting relationships between different data types</li>
+<li><strong>Multi-source Analysis:</strong> Drawing insights from combinations of data (e.g., design specs, sensor readings, and process parameters)</li>
+<li><strong>Comprehensive Output Generation:</strong> Creating outputs that combine multiple formats (e.g., 3D design with accompanying documentation)</li>
+</ul>
+<h3>Notable Multimodal Foundation Models</h3>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">GPT-4V and GPT-4o</h4>
+<p class="card-text">These models combine strong language capabilities with vision understanding, enabling them to interpret images and respond to visual content.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">Gemini</h4>
+<p class="card-text">Google's multimodal model designed to understand and reason across text, images, video, and code.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">Point-E and Shape-E</h4>
+<p class="card-text">OpenAI's text-to-3D generative models focused on creating 3D content from textual descriptions.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">3D-LLM</h4>
+<p class="card-text">Large language models specifically extended to understand and generate 3D content in addition to text.</p>
+</div>
+</div>
+</div>
+<h3>AM-Specific Applications</h3>
+<p>Multimodal models are particularly valuable in these AM scenarios:</p>
+<ul>
+<li><strong>Design Synthesis:</strong> Generating 3D models based on textual requirements, reference images, and performance constraints</li>
+<li><strong>Process Diagnosis:</strong> Analyzing combinations of sensor data, visual inspection, and process parameters to identify issues</li>
+<li><strong>Material Development:</strong> Correlating material composition, processing conditions, and resulting properties</li>
+<li><strong>Documentation Generation:</strong> Creating comprehensive technical documentation with text, images, and 3D visualizations</li>
+</ul>
+</section>
+<!-- Model Selection (Mid Level) -->
+<section class="content-section" data-level="intermediate" id="selection">
+<h2>Model Selection for AM Applications</h2>
+<!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
+<p>Selecting the right foundation model for your additive manufacturing application requires considering several factors:</p>
+<div class="selection-framework">
+<h3>Selection Framework</h3>
+<table>
+<thead>
+<tr>
+<th>Consideration</th>
+<th>Factors to Evaluate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Task Requirements</strong></td>
+<td>
+<ul>
+<li>Data types involved (text, images, 3D models, sensor data)</li>
+<li>Complexity of the task</li>
+<li>Required accuracy and precision</li>
+<li>Real-time requirements</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Resource Constraints</strong></td>
+<td>
+<ul>
+<li>Available computing hardware</li>
+<li>Memory limitations</li>
+<li>Inference time requirements</li>
+<li>Deployment environment (cloud, edge, on-premise)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Data Availability</strong></td>
+<td>
+<ul>
+<li>Amount of domain-specific data for fine-tuning</li>
+<li>Quality of available data</li>
+<li>Data privacy and security considerations</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Model Characteristics</strong></td>
+<td>
+<ul>
+<li>Open vs. closed source</li>
+<li>License restrictions</li>
+<li>Community support</li>
+<li>Integration capabilities with existing systems</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Decision Matrix Example</h3>
+<p>The following matrix provides guidance on selecting foundation models for common AM applications:</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>AM Application</th>
+<th>Recommended Model Types</th>
+<th>Key Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Design Generation</td>
+<td>3D-LLM, Point-E, Shape-E, or LLM + CAD integration</td>
+<td>3D generation capabilities, geometric understanding, CAD compatibility</td>
+</tr>
+<tr>
+<td>Process Parameter Optimization</td>
+<td>Domain-specialized LLMs with reinforcement learning</td>
+<td>Support for numerical optimization, ability to incorporate physics-based constraints</td>
+</tr>
+<tr>
+<td>In-process Monitoring</td>
+<td>Vision Transformers, real-time capable models</td>
+<td>Low latency, anomaly detection capabilities, support for sensor fusion</td>
+</tr>
+<tr>
+<td>Quality Assurance</td>
+<td>High-precision vision models, CLIP, SAM</td>
+<td>Accuracy in defect detection, support for comparison against design intent</td>
+</tr>
+<tr>
+<td>Knowledge Management</td>
+<td>General-purpose LLMs with RAG</td>
+<td>Ability to process technical documentation, support for domain-specific knowledge bases</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Technical Details (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="technical-details">
+<h2>Technical Implementation Details</h2>
+<!-- <span class="complexity-badge complexity-advanced">Advanced</span> -->
+<p>Implementing foundation models for AM applications involves several technical considerations that influence performance, efficiency, and integration:</p>
+<h3>Model Architecture Considerations</h3>
+<p>Understanding the architectural details of foundation models helps in effectively adapting them for AM:</p>
+<ul>
+<li><strong>Attention Mechanisms:</strong> Self-attention allows models to focus on relevant parts of the input, critical for understanding complex designs or identifying specific features in manufacturing data.</li>
+<li><strong>Context Windows:</strong> The amount of information a model can process at once affects its ability to understand complex designs or long sequences of manufacturing instructions.</li>
+<li><strong>Tokenization Strategies:</strong> How inputs are broken down into processable units affects how well models handle specialized AM terminology and notation.</li>
+<li><strong>Model Depth and Width:</strong> The size and structure of the model determine its capacity to capture complex patterns in AM data.</li>
+</ul>
+<h3>Advanced Implementation Strategies</h3>
+<div class="code-block">
+<div class="code-header">
+<span>Model Integration Pattern (Python)</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code>import torch
 from transformers import AutoModel, AutoTokenizer
 from am_utils import process_cad_data, load_process_parameters
 
@@ -476,91 +443,61 @@ class AMFoundationModelWrapper:
         # Implementation details for extracting valid process parameters
         # ...
         return process_parameters</code></pre>
-                        </div>
-                    </div>
-                    
-                    <h3>Performance Optimization Techniques</h3>
-                    <p>Several techniques can improve the efficiency of foundation models in AM environments:</p>
-                    <ul>
-                        <li><strong>Knowledge Distillation:</strong> Creating smaller, faster models that mimic the behavior of larger foundation models</li>
-                        <li><strong>Quantization:</strong> Reducing numerical precision from FP32 to FP16 or INT8 to improve inference speed</li>
-                        <li><strong>Pruning:</strong> Removing unnecessary connections in the model to reduce size and improve performance</li>
-                        <li><strong>Caching:</strong> Storing commonly used outputs to avoid redundant computation</li>
-                        <li><strong>Batching:</strong> Processing multiple inputs simultaneously to maximize throughput</li>
-                    </ul>
-                    
-                    <h3>Integration with AM Software Ecosystems</h3>
-                    <p>Foundation models need to be effectively integrated with existing AM software tools:</p>
-                    <ul>
-                        <li><strong>API Development:</strong> Creating standardized interfaces for communication between AI models and CAD/CAM software</li>
-                        <li><strong>Model Serving:</strong> Deploying models as microservices accessible to multiple systems</li>
-                        <li><strong>Data Pipelines:</strong> Establishing efficient flows for transferring design and process data between systems</li>
-                        <li><strong>Versioning:</strong> Managing model versions to ensure consistency and reproducibility</li>
-                        <li><strong>Monitoring:</strong> Tracking model performance and detecting drift or degradation over time</li>
-                    </ul>
-                </section>
-                
-                <!-- Pagination -->
-                <div class="pagination">
-                    <a href="index.html" class="pagination-item pagination-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                        </svg>
-                        <div>
-                            <div class="pagination-label">Previous</div>
-                            <div class="pagination-title">Core Technologies</div>
-                        </div>
-                    </a>
-                    
-                    <span class="nist-link-unavailable">Next Generative AI Models (link unavailable)</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <!-- <ul class="footer-links">
-                        <li><a href="../intro/index.html">Introduction</a></li>
-                        <li><a href="../core-technologies/index.html">Core Technologies</a></li>
-                        <li><a href="../tutorials/index.html">Tutorials</a></li>
-                        <li><a href="../case-studies/index.html">Case Studies</a></li>
-                        <li><a href="../resources/index.html">Resources</a></li>
-                    </ul> -->
-                </div>
-                
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+</div>
+</div>
+<h3>Performance Optimization Techniques</h3>
+<p>Several techniques can improve the efficiency of foundation models in AM environments:</p>
+<ul>
+<li><strong>Knowledge Distillation:</strong> Creating smaller, faster models that mimic the behavior of larger foundation models</li>
+<li><strong>Quantization:</strong> Reducing numerical precision from FP32 to FP16 or INT8 to improve inference speed</li>
+<li><strong>Pruning:</strong> Removing unnecessary connections in the model to reduce size and improve performance</li>
+<li><strong>Caching:</strong> Storing commonly used outputs to avoid redundant computation</li>
+<li><strong>Batching:</strong> Processing multiple inputs simultaneously to maximize throughput</li>
+</ul>
+<h3>Integration with AM Software Ecosystems</h3>
+<p>Foundation models need to be effectively integrated with existing AM software tools:</p>
+<ul>
+<li><strong>API Development:</strong> Creating standardized interfaces for communication between SI models and CAD/CAM software</li>
+<li><strong>Model Serving:</strong> Deploying models as microservices accessible to multiple systems</li>
+<li><strong>Data Pipelines:</strong> Establishing efficient flows for transferring design and process data between systems</li>
+<li><strong>Versioning:</strong> Managing model versions to ensure consistency and reproducibility</li>
+<li><strong>Monitoring:</strong> Tracking model performance and detecting drift or degradation over time</li>
+</ul>
+</section>
+<!-- Pagination -->
+<div class="pagination">
+<a class="pagination-item pagination-prev" href="index.html">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+<div>
+<div class="pagination-label">Previous</div>
+<div class="pagination-title">Core Technologies</div>
+</div>
+</a>
+<a class="pagination-item pagination-next" href="foundation-models.html">
+<div>
+<div class="pagination-label">Next</div>
+<div class="pagination-title">Generative SI Models</div>
+</div>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>

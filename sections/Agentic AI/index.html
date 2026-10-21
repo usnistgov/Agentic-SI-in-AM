@@ -1,280 +1,231 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Agentic AI for Additive Manufacturing - Learn about autonomous AI systems that can plan, reason, and execute complex manufacturing tasks">
-    <title>Agentic AI for AM | AI in AM</title>
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- Official NIST site-wide header and footer -->
-    <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-    <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Agentic SI for Additive Manufacturing - Learn about autonomous SI systems that can plan, reason, and execute complex manufacturing tasks" name="description"/>
+<title>Agentic SI for AM | SI in AM</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
+<!-- Official NIST site-wide header and footer -->
+<link href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" rel="stylesheet"/>
+<script defer="defer" src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"></script>
+<style data-si-disclosure="true">
+.si-image-disclosure {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+}
+.si-image-disclosure strong {
+  color: #333;
+}
+</style></head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
-
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../Agentic AI/index.html">Agentic AI For AM</a></li>
-                    <li><a href="../Develop AI models/index_nowrin.html">AI Models Development</a></li>
-                    <li><a href="../AI Agent/index.html">AI agent</a></li>
-                    <li><a href="../AM_dataset/datasets.html">Data for AI</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><span class="current">Agentic AI for AM</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Agentic AI for AM</h1>
-                        <p>Explore autonomous AI systems that can plan, reason, and execute complex manufacturing tasks in additive manufacturing.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/header-image.png" alt="Agentic AI in Additive Manufacturing" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">In This Section</h2>
-                    <ul class="toc-list">
-                        <li><a href="#role-in-am">Roles and Capabilities in AM</a></li>
-                        <li><a href="#agent-foundation">Agent Foundations</a></li>
-                        <!-- <li><a href="#models">Models and Development Approaches</a></li> -->
-                        <li><a href="#data">Data Strategy and Management</a></li>
-                    </ul>
-                </div>
-
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Agentic AI Overview -->
-                <section class="content-section" data-level="intermediate" id="genai-agents">
-                    <h2>Agentic AI for AM</h2>
-                    <!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
-
-                    <p>Agentic AI systems represent an advanced approach to implementing AI in manufacturing environments. These systems can autonomously perceive, reason, and act within complex manufacturing environments to perform complex tasks, make decisions, and continuously learn from their interactions. Understanding how to develop and deploy agentic AI for your specific use case is essential for leveraging AI effectively in additive manufacturing.</p>
-
-                    <div class="two-column">
-                        <div>
-                            <h3>Agent Capabilities</h3>
-                            <p>Modern AI agents in AM environments can perform a wide range of tasks:</p>
-                            <ul>
-                                <li>Autonomous design generation and optimization</li>
-                                <li>Real-time process monitoring and adjustment</li>
-                                <li>Predictive maintenance and quality control</li>
-                                <li>Supply chain optimization and material selection</li>
-                                <li>Multi-objective optimization considering various constraints</li>
-                            </ul>
-                            <img src="../../images/agent.webp" alt="AI Agent Architecture" class="project-image">
-                        </div>
-
-                        <!-- Removed Implementation Examples section as requested -->
-                    </div>
-
-                    <!-- <span class="nist-link-unavailable">Explore AI Agents in Detail (link unavailable)</span> -->
-                </section>
-
-                <!-- Roles and Capabilities in AM -->
-                    <section class="content-section" id="role-in-am">
-                        <h3>Roles and Capabilities in AM</h3>
-                        <p>Agentic AI systems in AM serve as intelligent autonomous agents that can independently manage complex manufacturing workflows. Understanding these roles is essential for developing effective agentic AI solutions:</p>
-                        <ul class="list-text">
-                            <li><strong>Workflow Orchestrator:</strong> Automatically manages end-to-end manufacturing processes from initial design through post-processing, coordinating between different software systems and machinery</li>
-                            <li><strong>Real-time Decision Maker:</strong> Processes live sensor data and makes immediate adjustments to printing parameters, path planning, and resource allocation based on current conditions</li>
-                            <li><strong>Adaptive Problem Solver:</strong> Detects anomalies and deviations from expected behavior, then implements corrective actions without human intervention</li>
-                            <li><strong>Continuous Learning Agent:</strong> Improves performance over time by analyzing outcomes, identifying patterns, and updating its decision-making models based on historical data</li>
-                            <li><strong>Process Optimizer:</strong> Continuously refines manufacturing parameters to improve quality, reduce waste, decrease production time, and enhance material efficiency</li>
-                        </ul>
-                    </section>
-
-                    <!-- Agent Foundation (Intermediate Level) -->
-                    <section class="content-section" data-level="intermediate" id="agent-foundation">
-                        <h2>Agent Foundations</h2>
-                        <!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
-
-                        <p>The foundation of effective AI agents in additive manufacturing involves several key components that enable autonomous operation, learning, and decision-making in complex manufacturing contexts.</p>
-
-                        <h3>Core Components of Agent Architecture</h3>
-                        <p>Successful agent implementations in AM typically include these foundational elements:</p>
-                        <ul>
-                            <li><strong>Perception Systems:</strong> Computer vision and sensor integration for real-time monitoring</li>
-                            <li><strong>Decision Models:</strong> AI frameworks for evaluating options and selecting optimal actions</li>
-                            <li><strong>Knowledge Representation:</strong> Structures for maintaining information about designs, processes, and constraints</li>
-                            <li><strong>Learning Mechanisms:</strong> Approaches for improving performance based on experience and feedback</li>
-                            <li><strong>Communication Interfaces:</strong> Methods for interaction with operators, other systems, and manufacturing equipment</li>
-                        </ul>
-
-                        <div class="card-grid">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Single-Task Agents</h3>
-                                    <p class="card-text">Specialized agents focused on one aspect of the AM process, such as topology optimization or slicing parameter selection.</p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Multi-Task Agents</h3>
-                                    <p class="card-text">Versatile agents capable of handling multiple aspects of the AM workflow, from design to post-processing.</p>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">Collaborative Agent Systems</h3>
-                                    <p class="card-text">Networks of specialized agents that work together to optimize the entire AM process chain.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="../AI Agent/agent-foundation.html" class="btn">Learn More About Agent Foundations</a>
-                    </section>
-
-                    <!-- Data Strategy and Management -->
-                    <section class="content-section" id="data">
-                        <h3>Data Strategy and Management</h3>
-                        <p>Data is fundamental to agentic AI success. To develop effective AI solutions for your manufacturing use case, you need to approach data strategically. Follow these guidelines to build the right data foundation for your specific needs:</p>
-                        <div class="two-column">
-                            <div>
-                                <h4>Training Data Development:</h4>
-                                <p>Create and curate datasets for model training:</p>
-                                <ul class="list-text">
-                                    <li>Historical print jobs with process parameters and outcomes</li>
-                                    <li>Design files correlated with manufacturing results</li>
-                                    <li>Sensor time-series data from successful and failed prints</li>
-                                    <li>Quality inspection data (dimensional accuracy, surface finish, internal defects)</li>
-                                    <li>Material certifications and batch information</li>
-                                </ul>
-                                <h4>Operational Data Pipeline:</h4>
-                                <p>Set up real-time data flows for live operation:</p>
-                                <p>IoT sensor integration (temperature, pressure, vibration, etc.)</p>
-                                <p>Printer API connections for status and control</p>
-                                <p>Environmental monitoring systems</p>
-                                <p>Material handling and logistics data</p>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4>Data Preparation Framework:</h4>
-                                <p>Follow these steps to make your data AI-ready:</p>
-                                <ul class="list-text">
-                                    <li>Data collection from all relevant sources</li>
-                                    <li>Cleaning and preprocessing (handling missing values, outliers, noise)</li>
-                                    <li>Feature engineering (creating meaningful input variables)</li>
-                                    <li>Labeling and annotation (for supervised learning tasks)</li>
-                                    <li>Validation and quality assurance</li>
-                                    <li>Versioning and governance (tracking changes over time)</li>
-                                </ul>
-                                <h4>Data Ethics and Security:</h4>
-                                <p>Important considerations for manufacturing data:</p>
-                                <ul class="list-text">
-                                    <li>Protecting proprietary design and process information</li>
-                                    <li>Ensuring data privacy and compliance</li>
-                                    <li>Maintaining data integrity and traceability</li>
-                                    <li>Implementing secure data storage and transmission</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into AI applications within the additive manufacturing.</p>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../Agentic AI/index.html">Agentic AI for AM</a></li>
-                        <li><a href="../Develop AI models/index_nowrin.html">AI Models Development</a></li>
-                        <li><a href="../AI Agent/index.html">AI Agent</a></li>
-                        <li><a href="../AM_dataset/datasets.html">Data For AI</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav>
+<ul class="nav-links">
+<li><a href="../Agentic AI/index.html">Agentic SI For AM</a></li>
+<li><a href="../Develop AI models/index_nowrin.html">SI Models Development</a></li>
+<li><a href="../AI Agent/index.html">SI agent</a></li>
+<li><a href="../AM_dataset/datasets.html">Data for SI</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><span class="current">Agentic SI for AM</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Agentic SI for AM</h1>
+<p>Explore autonomous SI systems that can plan, reason, and execute complex manufacturing tasks in additive manufacturing.</p>
+</div>
+<div class="hero-image">
+<img alt="Agentic SI in Additive Manufacturing" height="300" src="../../images/header-image.png" width="500"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">In This Section</h2>
+<ul class="toc-list">
+<li><a href="#role-in-am">Roles and Capabilities in AM</a></li>
+<li><a href="#agent-foundation">Agent Foundations</a></li>
+<!-- <li><a href="#models">Models and Development Approaches</a></li> -->
+<li><a href="#data">Data Strategy and Management</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Agentic AI Overview -->
+<section class="content-section" data-level="intermediate" id="genai-agents">
+<h2>Agentic SI for AM</h2>
+<!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
+<p>Agentic SI systems represent an advanced approach to implementing SI in manufacturing environments. These systems can autonomously perceive, reason, and act within complex manufacturing environments to perform complex tasks, make decisions, and continuously learn from their interactions. Understanding how to develop and deploy agentic SI for your specific use case is essential for leveraging SI effectively in additive manufacturing.</p>
+<div class="two-column">
+<div>
+<h3>Agent Capabilities</h3>
+<p>Modern SI agents in AM environments can perform a wide range of tasks:</p>
+<ul>
+<li>Autonomous design generation and optimization</li>
+<li>Real-time process monitoring and adjustment</li>
+<li>Predictive maintenance and quality control</li>
+<li>Supply chain optimization and material selection</li>
+<li>Multi-objective optimization considering various constraints</li>
+</ul>
+<img alt="SI Agent Architecture" class="project-image" src="../../images/agent.webp"/><p class="si-image-disclosure"><strong>Disclosure:</strong> This image was generated using SI.</p>
+</div>
+<!-- Removed Implementation Examples section as requested -->
+</div>
+<!-- <a href="genai-agents.html" class="btn">Explore AI Agents in Detail</a> -->
+</section>
+<!-- Roles and Capabilities in AM -->
+<section class="content-section" id="role-in-am">
+<h3>Roles and Capabilities in AM</h3>
+<p>Agentic SI systems in AM serve as intelligent autonomous agents that can independently manage complex manufacturing workflows. Understanding these roles is essential for developing effective agentic SI solutions:</p>
+<ul class="list-text">
+<li><strong>Workflow Orchestrator:</strong> Automatically manages end-to-end manufacturing processes from initial design through post-processing, coordinating between different software systems and machinery</li>
+<li><strong>Real-time Decision Maker:</strong> Processes live sensor data and makes immediate adjustments to printing parameters, path planning, and resource allocation based on current conditions</li>
+<li><strong>Adaptive Problem Solver:</strong> Detects anomalies and deviations from expected behavior, then implements corrective actions without human intervention</li>
+<li><strong>Continuous Learning Agent:</strong> Improves performance over time by analyzing outcomes, identifying patterns, and updating its decision-making models based on historical data</li>
+<li><strong>Process Optimizer:</strong> Continuously refines manufacturing parameters to improve quality, reduce waste, decrease production time, and enhance material efficiency</li>
+</ul>
+</section>
+<!-- Agent Foundation (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="agent-foundation">
+<h2>Agent Foundations</h2>
+<!-- <span class="complexity-badge complexity-intermediate">Intermediate</span> -->
+<p>The foundation of effective SI agents in additive manufacturing involves several key components that enable autonomous operation, learning, and decision-making in complex manufacturing contexts.</p>
+<h3>Core Components of Agent Architecture</h3>
+<p>Successful agent implementations in AM typically include these foundational elements:</p>
+<ul>
+<li><strong>Perception Systems:</strong> Computer vision and sensor integration for real-time monitoring</li>
+<li><strong>Decision Models:</strong> SI frameworks for evaluating options and selecting optimal actions</li>
+<li><strong>Knowledge Representation:</strong> Structures for maintaining information about designs, processes, and constraints</li>
+<li><strong>Learning Mechanisms:</strong> Approaches for improving performance based on experience and feedback</li>
+<li><strong>Communication Interfaces:</strong> Methods for interaction with operators, other systems, and manufacturing equipment</li>
+</ul>
+<div class="card-grid">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Single-Task Agents</h3>
+<p class="card-text">Specialized agents focused on one aspect of the AM process, such as topology optimization or slicing parameter selection.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Multi-Task Agents</h3>
+<p class="card-text">Versatile agents capable of handling multiple aspects of the AM workflow, from design to post-processing.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h3 class="card-title">Collaborative Agent Systems</h3>
+<p class="card-text">Networks of specialized agents that work together to optimize the entire AM process chain.</p>
+</div>
+</div>
+</div>
+<a class="btn" href="../AI Agent/agent-foundation.html">Learn More About Agent Foundations</a>
+</section>
+<!-- Data Strategy and Management -->
+<section class="content-section" id="data">
+<h3>Data Strategy and Management</h3>
+<p>Data is fundamental to agentic SI success. To develop effective SI solutions for your manufacturing use case, you need to approach data strategically. Follow these guidelines to build the right data foundation for your specific needs:</p>
+<div class="two-column">
+<div>
+<h4>Training Data Development:</h4>
+<p>Create and curate datasets for model training:</p>
+<ul class="list-text">
+<li>Historical print jobs with process parameters and outcomes</li>
+<li>Design files correlated with manufacturing results</li>
+<li>Sensor time-series data from successful and failed prints</li>
+<li>Quality inspection data (dimensional accuracy, surface finish, internal defects)</li>
+<li>Material certifications and batch information</li>
+</ul>
+<h4>Operational Data Pipeline:</h4>
+<p>Set up real-time data flows for live operation:</p>
+<p>IoT sensor integration (temperature, pressure, vibration, etc.)</p>
+<p>Printer API connections for status and control</p>
+<p>Environmental monitoring systems</p>
+<p>Material handling and logistics data</p>
+</div>
+<div>
+<h4>Data Preparation Framework:</h4>
+<p>Follow these steps to make your data SI-ready:</p>
+<ul class="list-text">
+<li>Data collection from all relevant sources</li>
+<li>Cleaning and preprocessing (handling missing values, outliers, noise)</li>
+<li>Feature engineering (creating meaningful input variables)</li>
+<li>Labeling and annotation (for supervised learning tasks)</li>
+<li>Validation and quality assurance</li>
+<li>Versioning and governance (tracking changes over time)</li>
+</ul>
+<h4>Data Ethics and Security:</h4>
+<p>Important considerations for manufacturing data:</p>
+<ul class="list-text">
+<li>Protecting proprietary design and process information</li>
+<li>Ensuring data privacy and compliance</li>
+<li>Maintaining data integrity and traceability</li>
+<li>Implementing secure data storage and transmission</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>

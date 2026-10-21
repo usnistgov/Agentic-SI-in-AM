@@ -1,117 +1,118 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore core technologies and frameworks behind Generative AI in Additive Manufacturing - Foundation models, fine-tuning approaches, and technical frameworks">
-    <title> AI in Additive Manufacturing</title>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <!-- Official NIST site-wide header and footer -->
-    <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-    <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore core technologies and frameworks behind Generative SI in Additive Manufacturing - Foundation models, fine-tuning approaches, and technical frameworks" name="description"/>
+<title> SI in Additive Manufacturing</title>
+<!-- Stylesheets -->
+<link href="../../css/style.css" rel="stylesheet"/>
+<link href="../../css/components.css" rel="stylesheet"/>
+<link href="../../css/responsive.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
+<!-- Official NIST site-wide header and footer -->
+<link href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" rel="stylesheet"/>
+<script defer="defer" src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"></script>
+<style data-si-disclosure="true">
+.si-image-disclosure {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+}
+.si-image-disclosure strong {
+  color: #333;
+}
+</style></head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="navbar">
-        <div class="container">
-            <a href="../../index.html" class="logo">
-                <span>AI in AM</span>
-            </a>
-            
-            <div class="search-container">
-                <form class="search-form" role="search">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="search-results"></div>
-            </div>
-            
-            <button class="hamburger-menu" aria-label="Toggle menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../Develop AI models/index_nowrin.html">Develop AI model</a></li>
-                    <li><a href="../AI Agent/index.html">AI Agent</a></li>
-                    <li><a href="../AM_dataset/datasets.html">Resources</a></li>
-                    <li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
-                    <!-- <li><a href="../resources/index.html">Resources</a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><span class="current">Core Technologies</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Fine-Tuning</h1>
-                        <p>model fine-tuning with AM-specific datasets is required for improved accuracy and domain adaptation.</p>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../../images/summary.webp" alt="Core AI Technologies in Manufacturing" width="500" height="300">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content with Sidebar -->
-        <div class="container with-sidebar">
-            <!-- Sidebar with Table of Contents -->
-            <aside class="sidebar">
-                <div class="toc">
-                    <h2 class="toc-title">In This Section</h2>
-                    <ul class="toc-list">
-                        <!-- <li><a href="#foundation-models">Foundation Models</a></li>
+<!-- Header & Navigation -->
+<header class="navbar">
+<div class="container">
+<a class="logo" href="../../index.html">
+<span>SI in AM</span>
+</a>
+<div class="search-container">
+<form class="search-form" role="search">
+<svg class="search-icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<input aria-label="Search" class="search-input" placeholder="Search..." type="search"/>
+</form>
+<div class="search-results"></div>
+</div>
+<button aria-label="Toggle menu" class="hamburger-menu">
+<div></div>
+<div></div>
+<div></div>
+</button>
+<nav>
+<ul class="nav-links">
+<li><a href="../Develop AI models/index_nowrin.html">Develop SI model</a></li>
+<li><a href="../AI Agent/index.html">SI Agent</a></li>
+<li><a href="../AM_dataset/datasets.html">Resources</a></li>
+<li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
+<!-- <li><a href="../resources/index.html">Resources</a></li> -->
+</ul>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+<!-- Breadcrumbs -->
+<div class="container">
+<div class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><span class="current">Core Technologies</span></li>
+</ul>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<h1>Fine-Tuning</h1>
+<p>model fine-tuning with AM-specific datasets is required for improved accuracy and domain adaptation.</p>
+</div>
+<div class="hero-image">
+<img alt="Core SI Technologies in Manufacturing" height="300" src="../../images/summary.webp" width="500"/><p class="si-image-disclosure"><strong>Disclosure:</strong> This image was generated using SI.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Content with Sidebar -->
+<div class="container with-sidebar">
+<!-- Sidebar with Table of Contents -->
+<aside class="sidebar">
+<div class="toc">
+<h2 class="toc-title">In This Section</h2>
+<ul class="toc-list">
+<!-- <li><a href="#foundation-models">Foundation Models</a></li>
                         <li><a href="#generative-ai-models">Generative AI Models</a></li> -->
-                        <li><a href="#fine-tuning">Fine-Tuning Approaches</a></li>
-                        <!-- <li><a href="#frameworks">Technical Frameworks</a></li>
+<li><a href="#fine-tuning">Fine-Tuning Approaches</a></li>
+<!-- <li><a href="#frameworks">Technical Frameworks</a></li>
                         <li><a href="#implementation">Implementation Strategies</a></li> -->
-                    </ul>
-                </div>
-                
-                <div class="section-navigation">
-                    <h3>Explore This Topic</h3>
-                    <ul class="toc-list">
-                        <li><span class="nist-link-unavailable">Foundation Models (link unavailable)</span></li>
-                        <li><span class="nist-link-unavailable">Generative AI Models (link unavailable)</span></li>
-                        <li><span class="nist-link-unavailable">Fine-Tuning Approaches (link unavailable)</span></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content">
-                <!-- Overview (Basic Level) -->
-                <!-- <section class="content-section" data-level="basic" id="overview">
+</ul>
+</div>
+<div class="section-navigation">
+<h3>Explore This Topic</h3>
+<ul class="toc-list">
+<li><a href="../core-technologies/foundation-models.html">Foundation Models</a></li>
+<li><a href="../core-technologies/foundation-models.html">Generative SI Models</a></li>
+<li><a href="Fine_tune.html">Fine-Tuning Approaches</a></li>
+</ul>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="content">
+<!-- Overview (Basic Level) -->
+<!-- <section class="content-section" data-level="basic" id="overview">
                     <h2>Technical Foundations of AI in AM</h2>
                     <span class="complexity-badge complexity-beginner">Beginner</span>
                     
@@ -129,9 +130,8 @@
                     
                     <p>Understanding these technologies provides the basis for implementing AI solutions in your additive manufacturing workflows.</p>
                 </section> -->
-                
-                <!-- Foundation Models (Basic Level) -->
-                <!-- <section class="content-section" data-level="basic" id="foundation-models">
+<!-- Foundation Models (Basic Level) -->
+<!-- <section class="content-section" data-level="basic" id="foundation-models">
                     <h2>Foundation Models</h2>
                     <span class="complexity-badge complexity-beginner">Beginner</span>
                     
@@ -142,7 +142,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">Large Language Models (LLMs)</h3>
                                 <p class="card-text">Text-based foundation models that can understand and generate natural language, code, and even design specifications.</p>
-                                <span class="nist-link-unavailable">Learn More (link unavailable)</span>
+                                <a href="foundation-models.html#llms" class="btn">Learn More</a>
                             </div>
                         </div>
                         
@@ -150,7 +150,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">Vision Transformers</h3>
                                 <p class="card-text">Models designed to understand and process visual information, critical for defect detection and quality control in AM.</p>
-                                <span class="nist-link-unavailable">Learn More (link unavailable)</span>
+                                <a href="foundation-models.html#vision" class="btn">Learn More</a>
                             </div>
                         </div>
                         
@@ -158,16 +158,15 @@
                             <div class="card-body">
                                 <h3 class="card-title">Multimodal Models</h3>
                                 <p class="card-text">Combined models that can process multiple types of data (text, images, 3D) simultaneously, enabling more sophisticated AM applications.</p>
-                                <span class="nist-link-unavailable">Learn More (link unavailable)</span>
+                                <a href="foundation-models.html#multimodal" class="btn">Learn More</a>
                             </div>
                         </div>
                     </div>
                     
-                    <span class="nist-link-unavailable">Explore Foundation Models in Detail (link unavailable)</span>
+                    <a href="foundation-models.html" class="btn">Explore Foundation Models in Detail</a>
                 </section> -->
-                
-                <!-- Generative AI Models (Intermediate Level) -->
-                <!-- <section class="content-section" data-level="intermediate" id="generative-ai-models">
+<!-- Generative AI Models (Intermediate Level) -->
+<!-- <section class="content-section" data-level="intermediate" id="generative-ai-models">
                     <h2>Generative AI Models for AM</h2>
                     <span class="complexity-badge complexity-intermediate">Intermediate</span>
                     
@@ -188,8 +187,7 @@
                             <img src="../../images/machine independent.PNG" alt="GAN-Generated Structure" class="project-image">
                         </div>
                     </div> -->
-                    
-                    <!-- <h3>3D-Specific Generative Models</h3>
+<!-- <h3>3D-Specific Generative Models</h3>
                     <p>Specialized generative models have been developed specifically for 3D content creation and optimization, including:</p>
                     <ul>
                         <li><strong>NeRF (Neural Radiance Fields):</strong> For generating 3D structures from 2D images</li>
@@ -198,53 +196,44 @@
                         <li><strong>Mesh-Based Generators:</strong> For generating and modifying 3D mesh structures</li>
                     </ul>
                     
-                    <span class="nist-link-unavailable">Explore AI Models in Detail (link unavailable)</span>
+                    <a href="generative-ai-models.html" class="btn">Explore AI Models in Detail</a>
                 </section> -->
-                
-                <!-- Fine-Tuning Approaches (Intermediate Level) -->
-                <section class="content-section" data-level="intermediate" id="fine-tuning">
-                    <h2>Fine-Tuning Approaches</h2>
-                    <span class="complexity-badge complexity-intermediate">Intermediate</span>
-                    
-                    <p>Adapting foundation models to additive manufacturing requires specialized fine-tuning approaches to incorporate domain knowledge and improve performance on AM-specific tasks.</p>
-                    
-                    <h3>The Fine-Tuning Process</h3>
-                    <p>Fine-tuning involves taking a pre-trained model and further training it on a smaller, domain-specific dataset. This process typically follows these steps:</p>
-                    
-                    <ol>
-                        <li><strong>Dataset Preparation:</strong> Gathering and curating AM-specific data (designs, process parameters, outcomes)</li>
-                        <li><strong>Hyperparameter Selection:</strong> Choosing appropriate learning rates, batch sizes, and training durations</li>
-                        <li><strong>Training Strategy:</strong> Determining which layers to freeze vs. update during fine-tuning</li>
-                        <li><strong>Validation:</strong> Measuring performance on AM-specific metrics</li>
-                        <li><strong>Iteration:</strong> Refining the model based on validation results</li>
-                    </ol>
-                    
-                    <h3>Fine-Tuning Methods for AM</h3>
-                    <div class="two-column">
-                        <div>
-                            <h4>Parameter-Efficient Fine-Tuning</h4>
-                            <p>Techniques like LoRA (Low-Rank Adaptation) that modify only a small subset of model parameters, making fine-tuning more efficient.</p>
-                            
-                            <h4>Instruction Tuning</h4>
-                            <p>Training models to follow specific instructions relevant to AM tasks, such as "Design a lightweight bracket with support for 50kg load."</p>
-                        </div>
-                        
-                        <div>
-                            <h4>Transfer Learning</h4>
-                            <p>Leveraging knowledge from related domains (e.g., general 3D modeling) to improve performance on AM-specific tasks.</p>
-                            
-                            <h4>Few-Shot Learning</h4>
-                            <p>Techniques to adapt models using only a small number of AM examples, particularly useful when extensive training data is unavailable.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="code-block">
-                        <div class="code-header">
-                            <span>Fine-Tuning Configuration Example</span>
-                            <button class="copy-button">Copy</button>
-                        </div>
-                        <div class="code-content">
-                            <pre><code># Configuration for fine-tuning a model on AM design dataset
+<!-- Fine-Tuning Approaches (Intermediate Level) -->
+<section class="content-section" data-level="intermediate" id="fine-tuning">
+<h2>Fine-Tuning Approaches</h2>
+<span class="complexity-badge complexity-intermediate">Intermediate</span>
+<p>Adapting foundation models to additive manufacturing requires specialized fine-tuning approaches to incorporate domain knowledge and improve performance on AM-specific tasks.</p>
+<h3>The Fine-Tuning Process</h3>
+<p>Fine-tuning involves taking a pre-trained model and further training it on a smaller, domain-specific dataset. This process typically follows these steps:</p>
+<ol>
+<li><strong>Dataset Preparation:</strong> Gathering and curating AM-specific data (designs, process parameters, outcomes)</li>
+<li><strong>Hyperparameter Selection:</strong> Choosing appropriate learning rates, batch sizes, and training durations</li>
+<li><strong>Training Strategy:</strong> Determining which layers to freeze vs. update during fine-tuning</li>
+<li><strong>Validation:</strong> Measuring performance on AM-specific metrics</li>
+<li><strong>Iteration:</strong> Refining the model based on validation results</li>
+</ol>
+<h3>Fine-Tuning Methods for AM</h3>
+<div class="two-column">
+<div>
+<h4>Parameter-Efficient Fine-Tuning</h4>
+<p>Techniques like LoRA (Low-Rank Adaptation) that modify only a small subset of model parameters, making fine-tuning more efficient.</p>
+<h4>Instruction Tuning</h4>
+<p>Training models to follow specific instructions relevant to AM tasks, such as "Design a lightweight bracket with support for 50kg load."</p>
+</div>
+<div>
+<h4>Transfer Learning</h4>
+<p>Leveraging knowledge from related domains (e.g., general 3D modeling) to improve performance on AM-specific tasks.</p>
+<h4>Few-Shot Learning</h4>
+<p>Techniques to adapt models using only a small number of AM examples, particularly useful when extensive training data is unavailable.</p>
+</div>
+</div>
+<div class="code-block">
+<div class="code-header">
+<span>Fine-Tuning Configuration Example</span>
+<button class="copy-button">Copy</button>
+</div>
+<div class="code-content">
+<pre><code># Configuration for fine-tuning a model on AM design dataset
 fine_tuning_config = {
     "base_model": "stable-diffusion-xl-base-1.0",
     "training_data": "./am_designs_dataset",
@@ -259,175 +248,135 @@ fine_tuning_config = {
     "lora_alpha": 32,
     "validation_prompt": "Generate a lightweight bracket with minimal material use"
 }</code></pre>
-                        </div>
-                    </div>
-                    
-                    <span class="nist-link-unavailable">Explore Fine-Tuning Methods in Detail (link unavailable)</span>
-                </section>
-                
-                <!-- Technical Frameworks (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="frameworks">
-                    <h2>Technical Frameworks</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>Implementing AI solutions in additive manufacturing requires robust technical frameworks that can handle the unique demands of 3D design, simulation, and process control.</p>
-                    
-                    <h3>Model Deployment Architectures</h3>
-                    <p>Several architectural approaches can be used to deploy AI models in manufacturing settings:</p>
-                    <ul>
-                        <li><strong>Cloud-Based Deployment:</strong> Utilizing cloud computing resources for training and inference,
+</div>
+</div>
+<a class="btn" href="Fine_tune.html">Explore Fine-Tuning Methods in Detail</a>
+</section>
+<!-- Technical Frameworks (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="frameworks">
+<h2>Technical Frameworks</h2>
+<span class="complexity-badge complexity-advanced">Advanced</span>
+<p>Implementing SI solutions in additive manufacturing requires robust technical frameworks that can handle the unique demands of 3D design, simulation, and process control.</p>
+<h3>Model Deployment Architectures</h3>
+<p>Several architectural approaches can be used to deploy SI models in manufacturing settings:</p>
+<ul>
+<li><strong>Cloud-Based Deployment:</strong> Utilizing cloud computing resources for training and inference,
                             providing scalability but potentially introducing latency.</li>
-                        <li><strong>On-Premise (On-Prem) Deployment:</strong> Utilizing local computing resources for training and
+<li><strong>On-Premise (On-Prem) Deployment:</strong> Utilizing local computing resources for training and
                             inference, providing benefits such as additional security, reduced latency, and increased controllability.
                             However, this option comes with greater up-front costs, technical complexity, and maintenance requirements.</li>
-                        <li><strong>Edge Deployment:</strong> A form of on-prem deployment, edge deployment involves running models directly
+<li><strong>Edge Deployment:</strong> A form of on-prem deployment, edge deployment involves running models directly
                             on the equipment that collects the data points (such as manufacturing equipment) for real-time monitoring and
                             control.</li>
-                        <li><strong>Hybrid Deployment:</strong> Combining multiple deployment types to balance computational power with
+<li><strong>Hybrid Deployment:</strong> Combining multiple deployment types to balance computational power with
                             real-time requirements.</li>
-                    </ul>
-                    
-                    <h3>Integration with AM Software Ecosystems</h3>
-                    <p>Effective AI implementation requires integration with existing AM software tools:</p>
-                    <ul>
-                        <li><strong>CAD/CAM Integration:</strong> APIs and plugins to connect AI tools with design software</li>
-                        <li><strong>Slicing Software Connection:</strong> Interfaces to optimize print preparation based on AI-generated insights</li>
-                        <li><strong>MES (Manufacturing Execution System) Integration:</strong> Connecting AI systems with production management tools</li>
-                        <li><strong>Digital Twin Platforms:</strong> Incorporating AI into digital representations of physical AM systems</li>
-                    </ul>
-                    
-                    <h3>Performance Optimization</h3>
-                    <p>Technical considerations for ensuring AI systems perform effectively in manufacturing environments:</p>
-                    <ul>
-                        <li><strong>Model Quantization:</strong> Reducing model precision to improve inference speed and reduce memory requirements</li>
-                        <li><strong>Distributed Computing:</strong> Parallelizing computation across multiple machines for complex simulations</li>
-                        <li><strong>Model Distillation:</strong> Creating smaller, faster models that mimic the behavior of larger ones</li>
-                        <li><strong>Hardware Acceleration:</strong> Leveraging GPUs, TPUs, or specialized AI hardware for improved performance</li>
-                    </ul>
-                </section>
-                
-                <!-- Implementation Strategies (Advanced Level) -->
-                <section class="content-section" data-level="advanced" id="implementation">
-                    <h2>Implementation Strategies</h2>
-                    <span class="complexity-badge complexity-advanced">Advanced</span>
-                    
-                    <p>Successfully deploying AI in additive manufacturing environments requires thoughtful implementation strategies that address technical, organizational, and workflow considerations.</p>
-                    
-                    <h3>Technical Implementation Pathway</h3>
-                    <p>A staged approach to implementing AI technologies in AM:</p>
-                    
-                    <div class="implementation-stages">
-                        <div class="stage">
-                            <h4>Stage 1: Proof of Concept</h4>
-                            <ul>
-                                <li>Identify specific AM challenges that AI could address</li>
-                                <li>Select appropriate foundation models and fine-tuning approaches</li>
-                                <li>Develop small-scale demos to validate feasibility</li>
-                                <li>Establish baseline metrics for measuring success</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="stage">
-                            <h4>Stage 2: Pilot Implementation</h4>
-                            <ul>
-                                <li>Deploy AI solutions in controlled production environments</li>
-                                <li>Integrate with existing AM workflows and software</li>
-                                <li>Collect performance data and user feedback</li>
-                                <li>Refine models and interfaces based on real-world usage</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="stage">
-                            <h4>Stage 3: Full-Scale Deployment</h4>
-                            <ul>
-                                <li>Scale solutions across multiple machines and facilities</li>
-                                <li>Establish monitoring and maintenance protocols</li>
-                                <li>Implement continuous improvement mechanisms</li>
-                                <li>Develop training and documentation for users</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <h3>Common Implementation Challenges</h3>
-                    <p>Anticipating and addressing these challenges can improve implementation success:</p>
-                    <ul>
-                        <li><strong>Data Quality and Availability:</strong> AM-specific datasets may be limited or proprietary</li>
-                        <li><strong>Computational Resources:</strong> AI models can require significant computational power</li>
-                        <li><strong>Domain Knowledge Integration:</strong> Ensuring AI solutions incorporate manufacturing expertise</li>
-                        <li><strong>Workflow Disruption:</strong> Minimizing impact on existing production processes</li>
-                        <li><strong>Verification and Validation:</strong> Ensuring AI-generated designs meet quality and safety standards</li>
-                        <li><strong>Intellectual Property Considerations:</strong> Managing ownership of AI-generated designs</li>
-                    </ul>
-                    
-                    <div class="cta-box">
-                        <h3>Ready to Implement AI in Your AM Workflow?</h3>
-                        <p>Explore our practical tutorials and case studies to see how these technologies can be applied in real-world settings:</p>
-                        <div class="cta-buttons">
-                            <a href="../tutorials/index.html" class="btn">Implementation Tutorials</a>
-                            <a href="../case-studies/index.html" class="btn btn-outline">Case Studies</a>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Pagination -->
-                <div class="pagination">
-                    <a href="../intro/index.html" class="pagination-item pagination-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                        </svg>
-                        <div>
-                            <div class="pagination-label">Previous</div>
-                            <div class="pagination-title">Introduction</div>
-                        </div>
-                    </a>
-                    
-                    <span class="nist-link-unavailable">Next Foundation Models (link unavailable)</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Content Depth Indicator -->
-        <div class="content-depth-indicator">
-            <!-- Markers will be generated by JavaScript -->
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>AI in Additive Manufacturing</h3>
-                    <p>An educational resource designed to introduce and guide users into generative AI applications within the additive manufacturing/3D printing industry.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <li><a href="../Develop AI models/index_nowrin.html">Develop AI model</a></li>
-                    <li><a href="../AI Agent/index.html">AI Agent</a></li>
-                    <li><a href="../AM_dataset/datasets.html">Resources</a></li>
-                    <li><a href="../Miscellaneous/index.html">Miscellaneous</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>References</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://doi.org/10.1016/j.ijinfomgt.2023.102749" target="_blank">International Journal of Information Management</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> AI in Additive Manufacturing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/navigation.js"></script>
-    <script src="../../js/search.js"></script>
+</ul>
+<h3>Integration with AM Software Ecosystems</h3>
+<p>Effective SI implementation requires integration with existing AM software tools:</p>
+<ul>
+<li><strong>CAD/CAM Integration:</strong> APIs and plugins to connect SI tools with design software</li>
+<li><strong>Slicing Software Connection:</strong> Interfaces to optimize print preparation based on SI-generated insights</li>
+<li><strong>MES (Manufacturing Execution System) Integration:</strong> Connecting SI systems with production management tools</li>
+<li><strong>Digital Twin Platforms:</strong> Incorporating SI into digital representations of physical AM systems</li>
+</ul>
+<h3>Performance Optimization</h3>
+<p>Technical considerations for ensuring SI systems perform effectively in manufacturing environments:</p>
+<ul>
+<li><strong>Model Quantization:</strong> Reducing model precision to improve inference speed and reduce memory requirements</li>
+<li><strong>Distributed Computing:</strong> Parallelizing computation across multiple machines for complex simulations</li>
+<li><strong>Model Distillation:</strong> Creating smaller, faster models that mimic the behavior of larger ones</li>
+<li><strong>Hardware Acceleration:</strong> Leveraging GPUs, TPUs, or specialized SI hardware for improved performance</li>
+</ul>
+</section>
+<!-- Implementation Strategies (Advanced Level) -->
+<section class="content-section" data-level="advanced" id="implementation">
+<h2>Implementation Strategies</h2>
+<span class="complexity-badge complexity-advanced">Advanced</span>
+<p>Successfully deploying SI in additive manufacturing environments requires thoughtful implementation strategies that address technical, organizational, and workflow considerations.</p>
+<h3>Technical Implementation Pathway</h3>
+<p>A staged approach to implementing SI technologies in AM:</p>
+<div class="implementation-stages">
+<div class="stage">
+<h4>Stage 1: Proof of Concept</h4>
+<ul>
+<li>Identify specific AM challenges that SI could address</li>
+<li>Select appropriate foundation models and fine-tuning approaches</li>
+<li>Develop small-scale demos to validate feasibility</li>
+<li>Establish baseline metrics for measuring success</li>
+</ul>
+</div>
+<div class="stage">
+<h4>Stage 2: Pilot Implementation</h4>
+<ul>
+<li>Deploy SI solutions in controlled production environments</li>
+<li>Integrate with existing AM workflows and software</li>
+<li>Collect performance data and user feedback</li>
+<li>Refine models and interfaces based on real-world usage</li>
+</ul>
+</div>
+<div class="stage">
+<h4>Stage 3: Full-Scale Deployment</h4>
+<ul>
+<li>Scale solutions across multiple machines and facilities</li>
+<li>Establish monitoring and maintenance protocols</li>
+<li>Implement continuous improvement mechanisms</li>
+<li>Develop training and documentation for users</li>
+</ul>
+</div>
+</div>
+<h3>Common Implementation Challenges</h3>
+<p>Anticipating and addressing these challenges can improve implementation success:</p>
+<ul>
+<li><strong>Data Quality and Availability:</strong> AM-specific datasets may be limited or proprietary</li>
+<li><strong>Computational Resources:</strong> SI models can require significant computational power</li>
+<li><strong>Domain Knowledge Integration:</strong> Ensuring SI solutions incorporate manufacturing expertise</li>
+<li><strong>Workflow Disruption:</strong> Minimizing impact on existing production processes</li>
+<li><strong>Verification and Validation:</strong> Ensuring SI-generated designs meet quality and safety standards</li>
+<li><strong>Intellectual Property Considerations:</strong> Managing ownership of SI-generated designs</li>
+</ul>
+<div class="cta-box">
+<h3>Ready to Implement SI in Your AM Workflow?</h3>
+<p>Explore our practical tutorials and case studies to see how these technologies can be applied in real-world settings:</p>
+<div class="cta-buttons">
+<a class="btn" href="../tutorials/index.html">Implementation Tutorials</a>
+<a class="btn btn-outline" href="../case-studies/index.html">Case Studies</a>
+</div>
+</div>
+</section>
+<!-- Pagination -->
+<div class="pagination">
+<a class="pagination-item pagination-prev" href="../intro/index.html">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+<div>
+<div class="pagination-label">Previous</div>
+<div class="pagination-title">Introduction</div>
+</div>
+</a>
+<a class="pagination-item pagination-next" href="../core-technologies/foundation-models.html">
+<div>
+<div class="pagination-label">Next</div>
+<div class="pagination-title">Foundation Models</div>
+</div>
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Content Depth Indicator -->
+<div class="content-depth-indicator">
+<!-- Markers will be generated by JavaScript -->
+</div>
+</main>
+<!-- Footer -->
+<!-- Scripts -->
+<script src="../../js/main.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search.js"></script>
 </body>
 </html>
